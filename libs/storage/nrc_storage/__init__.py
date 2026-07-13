@@ -8,6 +8,13 @@ from .delta_io import DeltaIO, WriteMode
 from .minio_client import MinIOClient
 from .postgres_client import PostgresClient
 from .redis_client import RedisClient
+from .uploads import (
+    ALLOWED_EXTENSIONS,
+    INTERNAL_TRADES_CATEGORY,
+    UPLOAD_CATEGORIES,
+    UploadRecord,
+    UploadStore,
+)
 
 __all__ = [
     "StorageSettings",
@@ -17,4 +24,9 @@ __all__ = [
     "WriteMode",
     "PostgresClient",
     "RedisClient",
+    "UploadStore",
+    "UploadRecord",
+    "UPLOAD_CATEGORIES",
+    "INTERNAL_TRADES_CATEGORY",
+    "ALLOWED_EXTENSIONS",
 ]

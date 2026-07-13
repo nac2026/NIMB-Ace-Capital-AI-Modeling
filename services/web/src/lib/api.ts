@@ -502,6 +502,28 @@ async function del(path: string): Promise<unknown> {
   return await res.json();
 }
 
+// --- Internal file uploads (MinIO-backed) ---
+export interface InternalUploadCategory {
+  category: string;
+  extensions: string[];
+}
+export interface InternalUploadItem {
+  key: string;
+  filename: string;
+  category: string;
+  date: string;
+  size: number;
+  modified_at: string | null;
+  download_url: string;   // API-proxied path, relative to BACKEND
+}
+export interface InternalUploadResult {
+  key: string;
+  filename: string;
+  category: string;
+  date: string;
+  replaced: boolean;
+}
+
 // --- Floor-sheet / broker-flow (Phase 2 microstructure) ---
 export interface SpeculationRow {
   speculation_score: number | null;
@@ -955,6 +977,28 @@ export const api = {
     deleteSession: (sessionId: string) =>
       del(`/api/speculative/sessions/${sessionId}`),
     sampleTemplateUrl: () => `${BACKEND}/api/speculative/sample-template.csv`,
+  },
+
+  // --- Internal file uploads (MinIO-backed) ---
+  internal: {
+    uploads: {
+      categories: () =>
+        getJSON<InternalUploadCategory[]>("/api/internal/uploads/categories"),
+      list: (category?: string, date?: string) => {
+        const qs = new URLSearchParams();
+        if (category) qs.set("category", category);
+        if (date) qs.set("date", date);
+        const q = qs.toString();
+        return getJSON<InternalUploadItem[]>(`/api/internal/uploads${q ? `?${q}` : ""}`);
+      },
+      upload: (file: File, category: string, date?: string) =>
+        postForm<InternalUploadResult>("/api/internal/uploads", { file, category, date }),
+      remove: (key: string) =>
+        del(`/api/internal/uploads?key=${encodeURIComponent(key)}`),
+      // Proxied download (absolute URL for <a href> / new tab).
+      downloadUrl: (key: string) =>
+        `${BACKEND}/api/internal/uploads/download?key=${encodeURIComponent(key)}`,
+    },
   },
 
   chatStream: (

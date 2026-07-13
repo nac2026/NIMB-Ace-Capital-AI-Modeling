@@ -15,7 +15,7 @@ from __future__ import annotations
 
 import logging
 import os
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Literal
 
@@ -119,7 +119,7 @@ DAGSTER_STATUS_MAP: dict[str, Literal["idle", "running", "succeeded", "failed", 
 def _iso(ts: float | None) -> str | None:
     if ts is None:
         return None
-    return datetime.fromtimestamp(ts, tz=timezone.utc).isoformat(timespec="seconds")
+    return datetime.fromtimestamp(ts, tz=UTC).isoformat(timespec="seconds")
 
 
 async def _gql(query: str, variables: dict) -> dict:
@@ -208,10 +208,31 @@ def refresh_fundamentals_now(request: Request, limit: int | None = None) -> dict
 
 @router.get("/tradebook-files")
 def tradebook_files() -> dict:
-    """List the trade-book xlsx drop folder (NRC_INTERNAL_TRADES_DIR) so the
-    surveillance board can show what the server will ingest before the user
-    launches tradebook_job. Mirrors the ingestion glob: *.xlsx minus Excel
-    lock files, subfolders ignored."""
+    """List what the surveillance scan will ingest before the user launches
+    tradebook_job. Reads from MinIO (the deploy default) or the local drop
+    folder, matching NRC_INTERNAL_TRADES_BACKEND — the same toggle the Dagster
+    asset uses, so the two never disagree about the source."""
+    backend = os.getenv("NRC_INTERNAL_TRADES_BACKEND", "minio").strip().lower()
+
+    if backend == "minio":
+        from nrc_storage import INTERNAL_TRADES_CATEGORY, UploadStore
+        store = UploadStore()
+        try:
+            records = store.list(INTERNAL_TRADES_CATEGORY)
+        except Exception as e:  # noqa: BLE001 — surface as empty + error, don't 500 the board
+            _log.warning("tradebook-files MinIO list failed: %s", e)
+            return {"dir": f"minio://{store.bucket}/{INTERNAL_TRADES_CATEGORY}/", "count": 0, "files": [], "error": str(e)}
+        files = [
+            {
+                "name": r.filename,
+                "size": r.size,
+                "modified_at": (r.modified_at.isoformat(timespec="seconds") if r.modified_at else r.date),
+            }
+            for r in records
+        ]
+        files.sort(key=lambda r: r["modified_at"], reverse=True)
+        return {"dir": f"minio://{store.bucket}/{INTERNAL_TRADES_CATEGORY}/", "count": len(files), "files": files}
+
     folder = Path(os.getenv(
         "NRC_INTERNAL_TRADES_DIR",
         str(Path(__file__).resolve().parents[4] / "internal-trade-data"),
@@ -226,7 +247,7 @@ def tradebook_files() -> dict:
                 "name": f.name,
                 "size": st.st_size,
                 "modified_at": datetime.fromtimestamp(
-                    st.st_mtime, tz=timezone.utc
+                    st.st_mtime, tz=UTC
                 ).isoformat(timespec="seconds"),
             })
     files.sort(key=lambda r: r["modified_at"], reverse=True)

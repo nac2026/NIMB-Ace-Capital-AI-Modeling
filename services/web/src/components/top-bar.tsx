@@ -9,7 +9,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 import {
   LayoutGrid, Building2, MessageSquare, FileSearch, GitCompareArrows,
-  Activity, Database, Search, Bell, ChevronRight, Check, BellRing, ShieldAlert,
+  Activity, Database, Search, Bell, ChevronRight, Check, BellRing, ShieldAlert, FileUp,
 } from "lucide-react";
 import { api } from "@/lib/api";
 import { cn } from "@/lib/utils";
@@ -24,6 +24,7 @@ const MODULES: Mod[] = [
   { id: "speculative", href: "/speculative",       name: "Speculative Analysis",sub: "Report → unbiased flag verdict",      Icon: FileSearch },
   { id: "alerts",      href: "/alerts",            name: "Surveillance Alerts", sub: "Speculation & manipulation signals",  Icon: BellRing },
   { id: "surveillance",href: "/surveillance",      name: "Trade Surveillance",  sub: "Our own fills · suspicious trades",    Icon: ShieldAlert },
+  { id: "internal",    href: "/internal/file/uploads", name: "Internal Files",  sub: "Upload trade-book & strategy docs",    Icon: FileUp },
   { id: "compare",     href: "/compare",           name: "Compare",             sub: "Side-by-side scrips",                 Icon: GitCompareArrows },
   { id: "live",        href: "/live",              name: "Live Market",         sub: "Real-time ticks",                     Icon: Activity },
   { id: "data",        href: "/data-coverage",     name: "Data Coverage",       sub: "What's in the system",                Icon: Database },

@@ -4,6 +4,7 @@ Reads from environment (or a .env file at the project root). Downstream clients
 take a Settings instance by dependency injection — no module-level globals, no
 scattered os.getenv calls."""
 from __future__ import annotations
+
 from functools import lru_cache
 from pathlib import Path
 
@@ -29,6 +30,7 @@ class StorageSettings(BaseSettings):
     minio_region: str = Field(default="us-east-1")
     minio_bucket_lakehouse: str = Field(default="nepse-lakehouse")
     minio_bucket_snapshots: str = Field(default="raw-snapshots")
+    minio_bucket_uploads: str = Field(default="nrc-internal-uploads")
 
     # Postgres.
     postgres_url: str = Field(default="postgresql://nepse:nepse@localhost:5432/nepse")

@@ -4,6 +4,7 @@ Delta tables bypass this and use deltalake directly (see delta_io.py).
 This client is for everything else: raw HTML/JSON/CSV snapshots, large binary
 artifacts, presigned URLs for UI download, etc."""
 from __future__ import annotations
+
 from collections.abc import Iterator
 from io import BytesIO
 from typing import TYPE_CHECKING
@@ -61,6 +62,24 @@ class MinIOClient:
         for page in paginator.paginate(Bucket=self._bucket, Prefix=prefix):
             for obj in page.get("Contents", []):
                 yield obj["Key"]
+                count += 1
+                if limit is not None and count >= limit:
+                    return
+
+    def list_objects(self, prefix: str = "", limit: int | None = None) -> Iterator[dict]:
+        """Like list_keys but yields {key, size, last_modified} per object.
+
+        Used where the caller needs metadata (browse UIs, file listings) without
+        an extra head_object per key."""
+        paginator = self._s3.get_paginator("list_objects_v2")
+        count = 0
+        for page in paginator.paginate(Bucket=self._bucket, Prefix=prefix):
+            for obj in page.get("Contents", []):
+                yield {
+                    "key": obj["Key"],
+                    "size": obj["Size"],
+                    "last_modified": obj["LastModified"],
+                }
                 count += 1
                 if limit is not None and count >= limit:
                     return

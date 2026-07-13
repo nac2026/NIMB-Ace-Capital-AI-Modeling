@@ -3,26 +3,50 @@
 import { useCallback, useState } from "react";
 import { Upload, FileSpreadsheet, X } from "lucide-react";
 
+const DEFAULT_ACCEPT = ".csv,.xlsx,.xls,.pdf,.docx,.doc,.txt";
+const DEFAULT_HINT = (
+  <>
+    CSV or Excel · column named <code className="rounded bg-bg-subtle px-1 py-0.5 font-mono text-[11px]">scrip</code> or <code className="rounded bg-bg-subtle px-1 py-0.5 font-mono text-[11px]">ticker</code>
+  </>
+);
+
+// Turn an accept string (".csv,.xlsx") into a validation regex on file extension.
+function acceptRegex(accept: string): RegExp {
+  const exts = accept
+    .split(",")
+    .map((s) => s.trim().replace(/^\./, ""))
+    .filter(Boolean)
+    .map((s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  return new RegExp(`\\.(${exts.join("|")})$`, "i");
+}
+
 export function FileDropzone({
   onFile,
   disabled = false,
+  accept: acceptAttr = DEFAULT_ACCEPT,
+  hint = DEFAULT_HINT,
 }: {
   onFile: (file: File | null) => void;
   disabled?: boolean;
+  /** Comma-separated extension list, e.g. ".xlsx,.csv". Drives both the file
+   *  picker filter and client-side validation. Defaults to the speculative set. */
+  accept?: string;
+  /** Helper text under the drop target. */
+  hint?: React.ReactNode;
 }) {
   const [isDragging, setIsDragging] = useState(false);
   const [picked, setPicked] = useState<File | null>(null);
 
   const accept = useCallback((file: File | null) => {
     if (!file) { setPicked(null); onFile(null); return; }
-    const ok = /\.(csv|xlsx|xls|pdf|docx|doc|txt)$/i.test(file.name);
+    const ok = acceptRegex(acceptAttr).test(file.name);
     if (!ok) {
-      alert("Upload a ticker list (.csv, .xlsx) or a written research report (.pdf, .docx).");
+      alert(`Unsupported file type. Allowed: ${acceptAttr}`);
       return;
     }
     setPicked(file);
     onFile(file);
-  }, [onFile]);
+  }, [onFile, acceptAttr]);
 
   if (picked) {
     return (
@@ -72,7 +96,7 @@ export function FileDropzone({
     >
       <input
         type="file"
-        accept=".csv,.xlsx,.xls,.pdf,.docx,.doc,.txt"
+        accept={acceptAttr}
         className="hidden"
         disabled={disabled}
         onChange={(e) => accept(e.target.files?.[0] || null)}
@@ -87,7 +111,7 @@ export function FileDropzone({
         Drag and drop, or click to choose
       </div>
       <div className="mt-1.5 text-[12px] text-fg-muted">
-        CSV or Excel · column named <code className="rounded bg-bg-subtle px-1 py-0.5 font-mono text-[11px]">scrip</code> or <code className="rounded bg-bg-subtle px-1 py-0.5 font-mono text-[11px]">ticker</code>
+        {hint}
       </div>
     </label>
   );

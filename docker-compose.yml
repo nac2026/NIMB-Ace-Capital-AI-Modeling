@@ -44,8 +44,10 @@ services:
       set -e;
       mc mb --ignore-existing local/${MINIO_BUCKET_LAKEHOUSE:-nepse-lakehouse};
       mc mb --ignore-existing local/${MINIO_BUCKET_SNAPSHOTS:-raw-snapshots};
+      mc mb --ignore-existing local/${MINIO_BUCKET_UPLOADS:-nrc-internal-uploads};
       mc anonymous set none local/${MINIO_BUCKET_LAKEHOUSE:-nepse-lakehouse};
-      echo '✓ MinIO buckets ready: nepse-lakehouse, raw-snapshots';
+      mc anonymous set none local/${MINIO_BUCKET_UPLOADS:-nrc-internal-uploads};
+      echo '✓ MinIO buckets ready: nepse-lakehouse, raw-snapshots, nrc-internal-uploads';
       "
 
   # ----------------------------------------------------------------- Postgres

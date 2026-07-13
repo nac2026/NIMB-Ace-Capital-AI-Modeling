@@ -36,6 +36,7 @@ from .api_scrip import router as scrip_router
 from .api_smtm import router as smtm_router
 from .api_speculative import router as speculative_router
 from .api_surveillance import router as surveillance_router
+from .api_uploads import router as uploads_router
 from .conversation import ConversationStore
 from .trace_writer import write_trace
 
@@ -143,6 +144,7 @@ app.include_router(pipeline_router)    # /api/pipeline/refresh, /api/pipeline/st
 app.include_router(speculative_router) # /api/speculative/*
 app.include_router(alerts_router)      # /api/alerts/*
 app.include_router(surveillance_router) # /api/surveillance/*
+app.include_router(uploads_router)     # /api/internal/uploads/*
 
 
 # ---------------------------------------------------------------- endpoints
