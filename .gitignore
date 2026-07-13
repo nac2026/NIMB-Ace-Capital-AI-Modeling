@@ -29,12 +29,9 @@ Thumbs.db
 
 # IDE
 .idea/
-.vscode/
 *.swp
 
 # Secrets + local env
-.env
-.env.local
 *.pem
 *.key
 
@@ -53,3 +50,4 @@ build/
 
 # Dagster ephemeral home dirs (created by `dagster dev` in CWD)
 .tmp_dagster_home_*/
+config.bat
