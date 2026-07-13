@@ -1,0 +1,24 @@
+[project]
+name = "nrc-marketfeed"
+version = "0.1.0"
+description = "Live NEPSE feed pollers — SMTM quotes → serving layer; floor-sheet incremental puller"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "nrc-contracts",
+  "nrc-smtm",
+  "nrc-storage",
+  "nrc-nepal",
+  "nrc-ingestion",
+  "httpx>=0.27",
+  "typer>=0.12",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["nrc_marketfeed"]
+
+[project.scripts]
+nrc-marketfeed = "nrc_marketfeed.cli:app"

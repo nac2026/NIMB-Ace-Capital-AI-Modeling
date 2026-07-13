@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1180" viewBox="0 0 1500 1180">
+<defs><marker id="arr" markerWidth="11" markerHeight="11" refX="8" refY="5.5" orient="auto"><path d="M1,1 L9,5.5 L1,10 Z" fill="#64748b"/></marker><linearGradient id="sev" x1="0" x2="1"><stop offset="0" stop-color="#16a34a"/><stop offset="0.33" stop-color="#eab308"/><stop offset="0.66" stop-color="#f97316"/><stop offset="1" stop-color="#dc2626"/></linearGradient></defs>
+<rect x="0" y="0" width="1500" height="1180" rx="0" fill="#f5f7fb" stroke="none" stroke-width="1" />
+<text x="60" y="54" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#0f172a" text-anchor="start" letter-spacing="0">Trade Surveillance — What We Weigh, and How It Becomes One Flag</text>
+<text x="60" y="84" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" font-weight="normal" fill="#475569" text-anchor="start" letter-spacing="0">The trading factors behind every alert, and how they roll up into a single verdict for the desk.</text>
+<rect x="60" y="104" width="1380" height="84" rx="12" fill="#1e293b" stroke="none" stroke-width="1" />
+<text x="84" y="138" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#93c5fd" text-anchor="start" letter-spacing="1">THE TRADE WE REVIEW</text>
+<text x="84" y="162.0" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#e2e8f0" text-anchor="start" letter-spacing="0">We invest on behalf of client funds. For each fill we capture which fund it was bought or sold for, the stock, buy or sell, the time, the price and</text>
+<text x="84" y="180.48" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="normal" fill="#e2e8f0" text-anchor="start" letter-spacing="0">the size. Two questions follow: was the trade clean, and was it a sound decision?</text>
+<rect x="60" y="212" width="660" height="452" rx="12" fill="#ffffff" stroke="#dbeafe" stroke-width="1.5" />
+<rect x="60" y="212" width="660" height="46" rx="12" fill="#1d4ed8" stroke="none" stroke-width="1" />
+<text x="82" y="242" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="start" letter-spacing="0">A · WAS THE TRADE CLEAN?</text>
+<text x="700" y="242" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#bfdbfe" text-anchor="end" letter-spacing="0">market-integrity lenses</text>
+<rect x="78" y="272" width="624" height="70" rx="12" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1" />
+<text x="94" y="297" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="14.5" font-weight="700" fill="#1e3a8a" text-anchor="start" letter-spacing="0">1  Broker &amp; counterparty concentration</text>
+<text x="94" y="316.0" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#334155" text-anchor="start" letter-spacing="0">Did one broker take an unusual share of our flow — far beyond its normal presence in this</text>
+<text x="94" y="331.84" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#334155" text-anchor="start" letter-spacing="0">stock that day and over recent months?</text>
+<rect x="78" y="350" width="624" height="70" rx="12" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1" />
+<text x="94" y="375" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="14.5" font-weight="700" fill="#1e3a8a" text-anchor="start" letter-spacing="0">2  Execution quality</text>
+<text x="94" y="394.0" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#334155" text-anchor="start" letter-spacing="0">Did we fill worse than the prevailing market price in the surrounding minutes — overpaying on</text>
+<text x="94" y="409.84" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#334155" text-anchor="start" letter-spacing="0">a buy or underselling on a sell?</text>
+<rect x="78" y="428" width="624" height="70" rx="12" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1" />
+<text x="94" y="453" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="14.5" font-weight="700" fill="#1e3a8a" text-anchor="start" letter-spacing="0">3  Cross, wash &amp; churn</text>
+<text x="94" y="472.0" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#334155" text-anchor="start" letter-spacing="0">Did our own funds trade opposite each other within minutes, or buy and sell the same stock the</text>
+<text x="94" y="487.84" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#334155" text-anchor="start" letter-spacing="0">same day — volume with no real change in position?</text>
+<rect x="78" y="506" width="624" height="70" rx="12" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1" />
+<text x="94" y="531" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="14.5" font-weight="700" fill="#1e3a8a" text-anchor="start" letter-spacing="0">4  Market-manipulation context</text>
+<text x="94" y="550.0" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#334155" text-anchor="start" letter-spacing="0">Was the stock itself being operated that day — broker dominance, circular / wash trading, a</text>
+<text x="94" y="565.84" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#334155" text-anchor="start" letter-spacing="0">pump-and-run?</text>
+<rect x="78" y="584" width="624" height="70" rx="12" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1" />
+<text x="94" y="609" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="14.5" font-weight="700" fill="#1e3a8a" text-anchor="start" letter-spacing="0">5  Post-trade outcome</text>
+<text x="94" y="628.0" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#334155" text-anchor="start" letter-spacing="0">Did the price move against us straight after — we bought and it fell, or sold and it rose?</text>
+<rect x="740" y="212" width="700" height="452" rx="12" fill="#ffffff" stroke="#fde68a" stroke-width="1.5" />
+<rect x="740" y="212" width="700" height="46" rx="12" fill="#b45309" stroke="none" stroke-width="1" />
+<text x="762" y="242" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="start" letter-spacing="0">B · WAS IT A SOUND DECISION?</text>
+<text x="1420" y="242" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#fde68a" text-anchor="end" letter-spacing="0">investment-merit lenses</text>
+<rect x="758" y="272" width="664" height="158" rx="12" fill="#fffbeb" stroke="#fde68a" stroke-width="1" />
+<text x="774" y="298" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="14.5" font-weight="700" fill="#92400e" text-anchor="start" letter-spacing="0">6  Company fundamentals — at the trade date</text>
+<text x="774" y="320.0" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#334155" text-anchor="start" letter-spacing="0">Was the company financially weak when we bought it? We read its bad-loan ratio (NPL),</text>
+<text x="774" y="335.84" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#334155" text-anchor="start" letter-spacing="0">capital strength, profitability and returns, how it ranks against sector peers, its profit</text>
+<text x="774" y="351.68" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#334155" text-anchor="start" letter-spacing="0">trend, and whether it looked expensive versus peers.</text>
+<text x="774" y="375.52" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#9a6a00" text-anchor="start" letter-spacing="0">Point-in-time: only results public on the trade date — no hindsight.</text>
+<rect x="758" y="442" width="664" height="118" rx="12" fill="#fffbeb" stroke="#fde68a" stroke-width="1" />
+<text x="774" y="468" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="14.5" font-weight="700" fill="#92400e" text-anchor="start" letter-spacing="0">7  Technical entry — the chart that day</text>
+<text x="774" y="490.0" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#334155" text-anchor="start" letter-spacing="0">Did we chase the price — bought near a 20-day peak, overbought, stretched above its recent</text>
+<text x="774" y="505.84" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#334155" text-anchor="start" letter-spacing="0">average — instead of at a sensible level? (For a sale: did we dump into a capitulation low?)</text>
+<rect x="758" y="572" width="664" height="80" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="774" y="596" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#c2410c" text-anchor="start" letter-spacing="0">Coming next</text>
+<text x="774" y="616.0" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#7c2d12" text-anchor="start" letter-spacing="0">Order intent (cancellations / order-to-trade patterns) and news &amp; market sentiment — added</text>
+<text x="774" y="631.84" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#7c2d12" text-anchor="start" letter-spacing="0">as further lenses in the same framework.</text>
+<line x1="390" y1="664" x2="390" y2="690" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="1090" y1="664" x2="1090" y2="690" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="60" y="692" width="1380" height="46" rx="12" fill="#eef2f7" stroke="#cbd5e1" stroke-width="1" />
+<text x="84" y="720.0" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="normal" fill="#1f2937" text-anchor="start" letter-spacing="0">Each lens becomes a 0–100 concern score — side-aware: buying a weak, over-extended or concentrated name is concerning, selling it usually isn’t. If a lens has no data, it steps aside</text>
+<text x="84" y="737.82" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="normal" fill="#1f2937" text-anchor="start" letter-spacing="0">and the others carry the weight.</text>
+<line x1="750" y1="738" x2="750" y2="766" stroke="#64748b" stroke-width="2.5" marker-end="url(#arr)"/>
+<rect x="330" y="768" width="840" height="152" rx="12" fill="#0f172a" stroke="none" stroke-width="1" />
+<text x="360" y="800" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#34d399" text-anchor="start" letter-spacing="1">THE INTEGRATED VERDICT</text>
+<text x="360" y="822" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="normal" fill="#cbd5e1" text-anchor="start" letter-spacing="0">one judgement built from all the lenses together</text>
+<text x="360" y="848" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="700" fill="#ffffff" text-anchor="start" letter-spacing="0">•  Weigh every factor together —</text>
+<text x="591.0" y="848" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="normal" fill="#94a3b8" text-anchor="start" letter-spacing="0">balanced, so no single one — not even broker concentration — dominates the story.</text>
+<text x="360" y="874" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="700" fill="#ffffff" text-anchor="start" letter-spacing="0">•  Escalate when several lenses agree —</text>
+<text x="640.0" y="874" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="normal" fill="#94a3b8" text-anchor="start" letter-spacing="0">independent factors all pointing the same way raise conviction in the flag.</text>
+<text x="360" y="900" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="700" fill="#ffffff" text-anchor="start" letter-spacing="0">•  Floor on integrity —</text>
+<text x="528.0" y="900" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="normal" fill="#94a3b8" text-anchor="start" letter-spacing="0">a healthy balance sheet or a clean chart can never excuse a wash or concentration flag.</text>
+<line x1="750" y1="920" x2="750" y2="950" stroke="#64748b" stroke-width="2.5" marker-end="url(#arr)"/>
+<rect x="60" y="952" width="1380" height="176" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+<text x="84" y="984" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start" letter-spacing="0">THE OUTPUT — what the desk sees</text>
+<rect x="90" y="1006" width="560" height="22" rx="11" fill="url(#sev)" stroke="none" stroke-width="1" />
+<text x="96.0" y="1022" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="start" letter-spacing="0">Low</text>
+<text x="264.0" y="1022" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="start" letter-spacing="0">Moderate</text>
+<text x="409.6" y="1022" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="start" letter-spacing="0">Elevated</text>
+<text x="566.4" y="1022" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="start" letter-spacing="0">High</text>
+<text x="90" y="1050" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#334155" text-anchor="start" letter-spacing="0">One verdict, 0–100 + severity</text>
+<text x="90" y="1068" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="normal" fill="#64748b" text-anchor="start" letter-spacing="0">Low &lt;25 · Moderate 25–44 · Elevated 45–69 · High 70+</text>
+<line x1="690" y1="990" x2="690" y2="1110" stroke="#e2e8f0" stroke-width="1" />
+<text x="716" y="1002.0" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#1f2937" text-anchor="start" letter-spacing="0">A plain-language case note: a one-line verdict, then one balanced bullet for</text>
+<text x="716" y="1019.16" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#1f2937" text-anchor="start" letter-spacing="0">each lens with the actual numbers, and the single thing the desk should</text>
+<text x="716" y="1036.32" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="normal" fill="#1f2937" text-anchor="start" letter-spacing="0">confirm.</text>
+<text x="716" y="1060.0" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="normal" fill="#475569" text-anchor="start" letter-spacing="0">It is a flag for review, never an accusation. Reviewers can ask the case’s AI co-</text>
+<text x="716" y="1076.5" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="normal" fill="#475569" text-anchor="start" letter-spacing="0">pilot follow-up questions on any factor.</text>
+<text x="60" y="1158" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="normal" fill="#94a3b8" text-anchor="start" letter-spacing="0">Trade surveillance factor lineage · for management review</text>
+</svg>

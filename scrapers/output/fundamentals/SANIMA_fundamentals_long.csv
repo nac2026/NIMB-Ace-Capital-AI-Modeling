@@ -1,0 +1,87 @@
+scrip,section,metric,period,value_raw,value_num
+SANIMA,balance,Cash and cash equivalent,2nd Quarter 2082/2083,"10,972,976.10",10972976.1
+SANIMA,balance,Due from Nepal Rastra Bank,2nd Quarter 2082/2083,"23,579,328.82",23579328.82
+SANIMA,balance,Placement with Bank and Financial Institutions,2nd Quarter 2082/2083,"564,151.18",564151.18
+SANIMA,balance,Derivative financial instruments,2nd Quarter 2082/2083,0.00,0.0
+SANIMA,balance,Other trading assets,2nd Quarter 2082/2083,"550,958.21",550958.21
+SANIMA,balance,Loan and advances to B/FIs,2nd Quarter 2082/2083,"7,920,531.97",7920531.97
+SANIMA,balance,Loans and advances to customers,2nd Quarter 2082/2083,"183,862,229.80",183862229.8
+SANIMA,balance,Investment securities,2nd Quarter 2082/2083,"36,172,051.80",36172051.8
+SANIMA,balance,Current tax assets,2nd Quarter 2082/2083,0.00,0.0
+SANIMA,balance,Investment in subsidiaries,2nd Quarter 2082/2083,"450,000.00",450000.0
+SANIMA,balance,Investment in associates,2nd Quarter 2082/2083,0.00,0.0
+SANIMA,balance,Investment property,2nd Quarter 2082/2083,"1,018,473.37",1018473.37
+SANIMA,balance,Property and equipment,2nd Quarter 2082/2083,"1,316,543.21",1316543.21
+SANIMA,balance,Goodwill and Intangible assets,2nd Quarter 2082/2083,"109,078.26",109078.26
+SANIMA,balance,Deferred tax assets,2nd Quarter 2082/2083,"163,373.15",163373.15
+SANIMA,balance,Other assets,2nd Quarter 2082/2083,"3,703,317.67",3703317.67
+SANIMA,balance,Total Assets,2nd Quarter 2082/2083,"270,383,013.52",270383013.52
+SANIMA,balance,Due to Bank and Financial Institutions,2nd Quarter 2082/2083,"867,676.62",867676.62
+SANIMA,balance,Due to Nepal Rastra Bank,2nd Quarter 2082/2083,0.00,0.0
+SANIMA,balance,Derivative financial instruments,2nd Quarter 2082/2083,"16,891.68",16891.68
+SANIMA,balance,Deposits from customers,2nd Quarter 2082/2083,"231,050,046.83",231050046.83
+SANIMA,balance,Borrowing,2nd Quarter 2082/2083,"2,163,000.00",2163000.0
+SANIMA,balance,Current Tax Liabilities,2nd Quarter 2082/2083,"3,627.27",3627.27
+SANIMA,balance,Provisions,2nd Quarter 2082/2083,"55,103.92",55103.92
+SANIMA,balance,Deferred tax liabilities,2nd Quarter 2082/2083,0.00,0.0
+SANIMA,balance,Other liabilities,2nd Quarter 2082/2083,"3,429,993.62",3429993.62
+SANIMA,balance,Debt securities issued,2nd Quarter 2082/2083,"9,383,291.00",9383291.0
+SANIMA,balance,Subordinated Liabilities,2nd Quarter 2082/2083,0.00,0.0
+SANIMA,balance,Total liabilities,2nd Quarter 2082/2083,"246,969,630.94",246969630.94
+SANIMA,balance,Share capital,2nd Quarter 2082/2083,"13,581,525.41",13581525.41
+SANIMA,balance,Share premium,2nd Quarter 2082/2083,0.00,0.0
+SANIMA,balance,Retained earnings,2nd Quarter 2082/2083,"1,610,256.78",1610256.78
+SANIMA,balance,Reserves,2nd Quarter 2082/2083,"8,221,600.39",8221600.39
+SANIMA,balance,Total equity,2nd Quarter 2082/2083,"23,413,382.58",23413382.58
+SANIMA,balance,Total liabilities and equity,2nd Quarter 2082/2083,"270,383,013.52",270383013.52
+SANIMA,profitloss,Interest income,2nd Quarter 2082/2083,"8,466,396.97",8466396.97
+SANIMA,profitloss,Interest expense,2nd Quarter 2082/2083,"5,038,311.31",5038311.31
+SANIMA,profitloss,Net interest income,2nd Quarter 2082/2083,"3,428,085.66",3428085.66
+SANIMA,profitloss,Fees and commission income,2nd Quarter 2082/2083,"692,543.73",692543.73
+SANIMA,profitloss,Fees and commission expense,2nd Quarter 2082/2083,"86,646.14",86646.14
+SANIMA,profitloss,Net fee and commission income,2nd Quarter 2082/2083,"605,897.59",605897.59
+SANIMA,profitloss,"Net interest, fee and commission income",2nd Quarter 2082/2083,"4,033,983.26",4033983.26
+SANIMA,profitloss,Net trading income,2nd Quarter 2082/2083,"327,616.72",327616.72
+SANIMA,profitloss,Other operating income,2nd Quarter 2082/2083,"313,220.19",313220.19
+SANIMA,profitloss,Total operating income,2nd Quarter 2082/2083,"4,674,820.17",4674820.17
+SANIMA,profitloss,Impairment charge/(reversal) for loan and other losses,2nd Quarter 2082/2083,"1,078,974.03",1078974.03
+SANIMA,profitloss,Net operating income,2nd Quarter 2082/2083,"3,595,846.13",3595846.13
+SANIMA,profitloss,Personnel expense,2nd Quarter 2082/2083,"1,045,166.84",1045166.84
+SANIMA,profitloss,Other operating expense,2nd Quarter 2082/2083,"486,539.15",486539.15
+SANIMA,profitloss,Depreciation & Amortisation,2nd Quarter 2082/2083,"104,422.78",104422.78
+SANIMA,profitloss,Operating Profit,2nd Quarter 2082/2083,"1,959,717.36",1959717.36
+SANIMA,profitloss,Non operating income,2nd Quarter 2082/2083,"9,283.94",9283.94
+SANIMA,profitloss,Non operating expense,2nd Quarter 2082/2083,"25,619.05",25619.05
+SANIMA,profitloss,Profit before income tax,2nd Quarter 2082/2083,"1,943,382.25",1943382.25
+SANIMA,profitloss,Current Tax,2nd Quarter 2082/2083,"552,306.52",552306.52
+SANIMA,profitloss,Deferred Tax,2nd Quarter 2082/2083,0.00,0.0
+SANIMA,profitloss,Profit for the period,2nd Quarter 2082/2083,"1,391,075.72",1391075.72
+SANIMA,profitloss,Gains/(losses) from investments in equity instruments measured at fair value,2nd Quarter 2082/2083,0.00,0.0
+SANIMA,profitloss,Gains/(losses) on revalution,2nd Quarter 2082/2083,0.00,0.0
+SANIMA,profitloss,Actuarial gains/(losses) on defined benefit plans,2nd Quarter 2082/2083,0.00,0.0
+SANIMA,profitloss,Income tax relating to above items,2nd Quarter 2082/2083,0.00,0.0
+SANIMA,profitloss,Net other comprehsive income that will not be reclassified to profit or loss,2nd Quarter 2082/2083,0.00,0.0
+SANIMA,profitloss,Gains/(losses) on cash flow hedge,2nd Quarter 2082/2083,0.00,0.0
+SANIMA,profitloss,Exchange gains/(losses) (arising from translating financial assets of foreign operation),2nd Quarter 2082/2083,0.00,0.0
+SANIMA,profitloss,Income tax relating to above items,2nd Quarter 2082/2083,0.00,0.0
+SANIMA,profitloss,Net other comprehsive income that are or may be reclassified to profit or loss,2nd Quarter 2082/2083,0.00,0.0
+SANIMA,profitloss,"Other Comprehensive Income For The Period, Net Of Income Tax",2nd Quarter 2082/2083,"-7,836.26",-7836.26
+SANIMA,profitloss,Total Comprehensive Income For The Period,2nd Quarter 2082/2083,"1,383,239.46",1383239.46
+SANIMA,keymetrics,Basic Earnings Per Share(Annualized EPS),2nd Quarter 2082/2083,20.48,20.48
+SANIMA,keymetrics,Diluted Earnings Per Share,2nd Quarter 2082/2083,20.48,20.48
+SANIMA,keymetrics,Capital fund to RWA,2nd Quarter 2082/2083,12.57,12.57
+SANIMA,keymetrics,Tier I Capital to RWA,2nd Quarter 2082/2083,9.32,9.32
+SANIMA,keymetrics,CET I Capital to RWA,2nd Quarter 2082/2083,9.32,9.32
+SANIMA,keymetrics,Non-Performing loan(NPL) to Total Loan,2nd Quarter 2082/2083,1.33,1.33
+SANIMA,keymetrics,Total Loan loss provision to Total NPL,2nd Quarter 2082/2083,111.52,111.52
+SANIMA,keymetrics,Cost of Funds,2nd Quarter 2082/2083,4.02,4.02
+SANIMA,keymetrics,Credit to Deposit Ratio,2nd Quarter 2082/2083,79.42,79.42
+SANIMA,keymetrics,Base Rate,2nd Quarter 2082/2083,5.25,5.25
+SANIMA,keymetrics,Interest Spread Rate,2nd Quarter 2082/2083,3.32,3.32
+SANIMA,keymetrics,Total Shareholder's Equity (in Rs '000'),2nd Quarter 2082/2083,"23,413,382.58",23413382.58
+SANIMA,keymetrics,No. of Outstanding Shares,2nd Quarter 2082/2083,"135,815,254.14",135815254.14
+SANIMA,keymetrics,Net Worth Per Share,2nd Quarter 2082/2083,172.39,172.39
+SANIMA,keymetrics,P/E Ratio,2nd Quarter 2082/2083,16.45,16.45
+SANIMA,keymetrics,Price to Book (P/B) Ratio,2nd Quarter 2082/2083,1.95,1.95
+SANIMA,keymetrics,Return on Equity,2nd Quarter 2082/2083,11.88,11.88
+SANIMA,keymetrics,Return on Assets,2nd Quarter 2082/2083,1.03,1.03

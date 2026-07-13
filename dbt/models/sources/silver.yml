@@ -1,0 +1,148 @@
+# Silver-layer Delta tables declared as dbt sources. Gold models read
+# these via `{{ source('silver', <name>) }}` — dbt tracks the dependency
+# and dagster-dbt renders the lineage back to the Silver Dagster assets.
+#
+# Reads use the DuckDB `delta` extension's `delta_scan()` function. The
+# meta.external_location pattern is the dbt-duckdb-recommended way to
+# declare sources that live in Delta-format lakehouse buckets rather than
+# in the DuckDB catalog.
+#
+# We don't declare Bronze as a source because Gold should never skip
+# Silver. If a future model needs raw Bronze access, add it here
+# explicitly with a comment explaining why.
+
+version: 2
+
+sources:
+  - name: silver
+    description: >
+      Silver layer — contract-validated, tier-deduped, canonicalized data.
+      Source of truth for every Gold analytic. Produced by the
+      nrc_processing Python transforms, managed by the Dagster
+      `silver_*` assets.
+    meta:
+      owner: data-platform
+      data_tier: client_authoritative
+
+    tables:
+      - name: fundamentals_long
+        description: >
+          One row per (scrip, fiscal_year_bs, quarter, metric_name) after
+          source-tier precedence dedup. Monetary values are in NPR
+          thousands; ratios are decimal fractions.
+        meta:
+          external_location: "delta_scan('{{ env_var('NRC_LAKEHOUSE_URI', 's3://nepse-lakehouse') }}/silver/fundamentals_long')"
+        columns:
+          - name: scrip
+            description: Canonical NEPSE ticker (NICA→NICASIA, NEPAL SBI→SBI).
+          - name: fiscal_year_bs
+            description: Nepali fiscal year start (BS). 2082 = AD Jul 2025 – Jul 2026.
+          - name: quarter
+            description: 1..4 within the BS fiscal year.
+          - name: metric_name
+            description: Canonical snake_case metric slug (roe, npl_ratio, net_profit, ...).
+          - name: value
+            description: Metric value. Monetary = NPR '000s; ratio = decimal.
+          - name: source_tier
+            description: Winning tier after dedup. Typically client_authoritative.
+
+      - name: fundamentals_snapshots
+        description: >
+          Wide pivot of fundamentals_long — one row per (scrip, fy,
+          quarter) with ~55 canonical metric columns. This is the table
+          most Gold analytics JOIN onto price data.
+        meta:
+          external_location: "delta_scan('{{ env_var('NRC_LAKEHOUSE_URI', 's3://nepse-lakehouse') }}/silver/fundamentals_snapshots')"
+
+      - name: additional_info
+        description: >
+          Shreyas-provided ratio / capital / per-share block (CAR, NPL,
+          CD ratio, CoF, base rate, Tier 1/2, MVPS, EPS, PE, BVPS).
+          Pre-computed by the regulator / filing, we don't recompute.
+        meta:
+          external_location: "delta_scan('{{ env_var('NRC_LAKEHOUSE_URI', 's3://nepse-lakehouse') }}/silver/additional_info')"
+
+      - name: prices
+        description: >
+          Full OHLCV bars per (scrip, date), from scraper. Strict
+          contract — open/high/low/close/volume required. Used for
+          candlestick drawing and technical indicator inputs.
+        meta:
+          external_location: "delta_scan('{{ env_var('NRC_LAKEHOUSE_URI', 's3://nepse-lakehouse') }}/silver/prices')"
+
+      - name: closes
+        description: >
+          Close-only daily prices from Format B client dump — 14 years
+          of history for 18 of the 19-bank universe (SCB has
+          fundamentals but no price file).
+        meta:
+          external_location: "delta_scan('{{ env_var('NRC_LAKEHOUSE_URI', 's3://nepse-lakehouse') }}/silver/closes')"
+
+      - name: scrip_master
+        description: >
+          Active-universe master — one row per listed scrip with
+          company_name, sector, listed_shares, paid_up_capital,
+          is_active. Filters every Gold model's active-only JOIN.
+        meta:
+          external_location: "delta_scan('{{ env_var('NRC_LAKEHOUSE_URI', 's3://nepse-lakehouse') }}/silver/scrip_master')"
+
+      - name: index_snapshots
+        description: >
+          Daily OHLCV for NEPSE + sector indices. Populated by the
+          scraper (manual). Used by beta_and_volatility and sector
+          momentum models; if empty, those Gold models emit zero rows
+          but don't fail.
+        meta:
+          external_location: "delta_scan('{{ env_var('NRC_LAKEHOUSE_URI', 's3://nepse-lakehouse') }}/silver/index_snapshots')"
+
+      - name: corporate_actions
+        description: >
+          Bonus, cash dividend, and rights issue events per scrip.
+          Populated by the scraper (manual). Feeds
+          total_shareholder_return for the dividend component.
+        meta:
+          external_location: "delta_scan('{{ env_var('NRC_LAKEHOUSE_URI', 's3://nepse-lakehouse') }}/silver/corporate_actions')"
+
+      - name: floorsheet
+        description: >
+          One row per executed NEPSE trade (buyer broker, seller broker,
+          quantity, rate, amount, timestamp) from the SMTM live API.
+          Microstructure base for broker-flow, accumulation, and
+          speculation/manipulation detection. Deduped on contract_number.
+        meta:
+          external_location: "delta_scan('{{ env_var('NRC_LAKEHOUSE_URI', 's3://nepse-lakehouse') }}/silver/floorsheet')"
+        columns:
+          - name: scrip
+            description: Canonical NEPSE ticker.
+          - name: contract_number
+            description: Unique trade id (monotonic, date-encoded).
+          - name: buyer_broker
+            description: Integer broker id on the buy side.
+          - name: seller_broker
+            description: Integer broker id on the sell side.
+          - name: trade_date
+            description: Trading day (YYYY-MM-DD), partition key.
+
+      - name: internal_trades
+        description: >
+          The firm's own executed fills (NIMB Ace Capital trade book), one row
+          per fill. `contract_number` is the NEPSE contract id (BIGINT) and joins
+          to floorsheet to recover the broker the fund used and the counterparty
+          broker. Attribution is at the fund/portfolio level (client_code).
+          Deduped on (contract_number, client_code, side). Powers internal-trade
+          surveillance.
+        meta:
+          external_location: "delta_scan('{{ env_var('NRC_LAKEHOUSE_URI', 's3://nepse-lakehouse') }}/silver/internal_trades')"
+        columns:
+          - name: scrip
+            description: Canonical NEPSE ticker.
+          - name: contract_number
+            description: NEPSE contract id (BIGINT) — joins silver.floorsheet.
+          - name: client_code
+            description: Managed fund/portfolio account code.
+          - name: side
+            description: "'B' = the fund bought, 'S' = the fund sold."
+          - name: price
+            description: Fill price per share, NPR.
+          - name: trade_date
+            description: Trading day (YYYY-MM-DD), partition key.

@@ -1,0 +1,21 @@
+[project]
+name = "nrc-simulator"
+version = "0.1.0"
+description = "Real-time market tick simulator — replays daily_bars as intraday ticks"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "nrc-contracts",
+  "nrc-storage",
+  "httpx>=0.27",
+  "typer>=0.12",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["nrc_simulator"]
+
+[project.scripts]
+nrc-simulate = "nrc_simulator.cli:app"

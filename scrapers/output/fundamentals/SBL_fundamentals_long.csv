@@ -1,0 +1,87 @@
+scrip,section,metric,period,value_raw,value_num
+SBL,balance,Cash and cash equivalent,2nd Quarter 2082/2083,"16,541,637.02",16541637.02
+SBL,balance,Due from Nepal Rastra Bank,2nd Quarter 2082/2083,"13,593,274.68",13593274.68
+SBL,balance,Placement with Bank and Financial Institutions,2nd Quarter 2082/2083,"9,164,092.17",9164092.17
+SBL,balance,Derivative financial instruments,2nd Quarter 2082/2083,"33,160.70",33160.7
+SBL,balance,Other trading assets,2nd Quarter 2082/2083,0.00,0.0
+SBL,balance,Loan and advances to B/FIs,2nd Quarter 2082/2083,"8,460,430.85",8460430.85
+SBL,balance,Loans and advances to customers,2nd Quarter 2082/2083,"225,613,159.02",225613159.02
+SBL,balance,Investment securities,2nd Quarter 2082/2083,"67,564,370.77",67564370.77
+SBL,balance,Current tax assets,2nd Quarter 2082/2083,"257,634.81",257634.81
+SBL,balance,Investment in subsidiaries,2nd Quarter 2082/2083,"51,000.00",51000.0
+SBL,balance,Investment in associates,2nd Quarter 2082/2083,0.00,0.0
+SBL,balance,Investment property,2nd Quarter 2082/2083,"772,035.23",772035.23
+SBL,balance,Property and equipment,2nd Quarter 2082/2083,"3,130,331.86",3130331.86
+SBL,balance,Goodwill and Intangible assets,2nd Quarter 2082/2083,"112,552.46",112552.46
+SBL,balance,Deferred tax assets,2nd Quarter 2082/2083,0.00,0.0
+SBL,balance,Other assets,2nd Quarter 2082/2083,"3,979,740.25",3979740.25
+SBL,balance,Total Assets,2nd Quarter 2082/2083,"349,273,419.82",349273419.82
+SBL,balance,Due to Bank and Financial Institutions,2nd Quarter 2082/2083,"4,148,208.12",4148208.12
+SBL,balance,Due to Nepal Rastra Bank,2nd Quarter 2082/2083,"391,922.79",391922.79
+SBL,balance,Derivative financial instruments,2nd Quarter 2082/2083,"60,905.57",60905.57
+SBL,balance,Deposits from customers,2nd Quarter 2082/2083,"290,470,798.27",290470798.27
+SBL,balance,Borrowing,2nd Quarter 2082/2083,"4,229,680.38",4229680.38
+SBL,balance,Current Tax Liabilities,2nd Quarter 2082/2083,0.00,0.0
+SBL,balance,Provisions,2nd Quarter 2082/2083,0.00,0.0
+SBL,balance,Deferred tax liabilities,2nd Quarter 2082/2083,"365,580.51",365580.51
+SBL,balance,Other liabilities,2nd Quarter 2082/2083,"6,356,437.42",6356437.42
+SBL,balance,Debt securities issued,2nd Quarter 2082/2083,"12,000,000.00",12000000.0
+SBL,balance,Subordinated Liabilities,2nd Quarter 2082/2083,0.00,0.0
+SBL,balance,Total liabilities,2nd Quarter 2082/2083,"318,023,533.04",318023533.04
+SBL,balance,Share capital,2nd Quarter 2082/2083,"14,794,479.20",14794479.2
+SBL,balance,Share premium,2nd Quarter 2082/2083,0.00,0.0
+SBL,balance,Retained earnings,2nd Quarter 2082/2083,"584,501.58",584501.58
+SBL,balance,Reserves,2nd Quarter 2082/2083,"15,870,905.99",15870905.99
+SBL,balance,Total equity,2nd Quarter 2082/2083,"31,249,886.77",31249886.77
+SBL,balance,Total liabilities and equity,2nd Quarter 2082/2083,"349,273,419.82",349273419.82
+SBL,profitloss,Interest income,2nd Quarter 2082/2083,"10,431,270.07",10431270.07
+SBL,profitloss,Interest expense,2nd Quarter 2082/2083,"6,103,257.86",6103257.86
+SBL,profitloss,Net interest income,2nd Quarter 2082/2083,"4,328,012.21",4328012.21
+SBL,profitloss,Fees and commission income,2nd Quarter 2082/2083,"1,199,320.04",1199320.04
+SBL,profitloss,Fees and commission expense,2nd Quarter 2082/2083,"239,788.76",239788.76
+SBL,profitloss,Net fee and commission income,2nd Quarter 2082/2083,"959,531.28",959531.28
+SBL,profitloss,"Net interest, fee and commission income",2nd Quarter 2082/2083,"5,287,543.49",5287543.49
+SBL,profitloss,Net trading income,2nd Quarter 2082/2083,"198,404.69",198404.69
+SBL,profitloss,Other operating income,2nd Quarter 2082/2083,"493,160.04",493160.04
+SBL,profitloss,Total operating income,2nd Quarter 2082/2083,"5,979,108.22",5979108.22
+SBL,profitloss,Impairment charge/(reversal) for loan and other losses,2nd Quarter 2082/2083,"1,452,559.99",1452559.99
+SBL,profitloss,Net operating income,2nd Quarter 2082/2083,"4,526,548.23",4526548.23
+SBL,profitloss,Personnel expense,2nd Quarter 2082/2083,"1,677,259.76",1677259.76
+SBL,profitloss,Other operating expense,2nd Quarter 2082/2083,"756,445.90",756445.9
+SBL,profitloss,Depreciation & Amortisation,2nd Quarter 2082/2083,"124,436.33",124436.33
+SBL,profitloss,Operating Profit,2nd Quarter 2082/2083,"1,968,406.24",1968406.24
+SBL,profitloss,Non operating income,2nd Quarter 2082/2083,470.95,470.95
+SBL,profitloss,Non operating expense,2nd Quarter 2082/2083,"23,066.20",23066.2
+SBL,profitloss,Profit before income tax,2nd Quarter 2082/2083,"1,945,810.99",1945810.99
+SBL,profitloss,Current Tax,2nd Quarter 2082/2083,"619,157.74",619157.74
+SBL,profitloss,Deferred Tax,2nd Quarter 2082/2083,0.00,0.0
+SBL,profitloss,Profit for the period,2nd Quarter 2082/2083,"1,326,653.25",1326653.25
+SBL,profitloss,Gains/(losses) from investments in equity instruments measured at fair value,2nd Quarter 2082/2083,0.00,0.0
+SBL,profitloss,Gains/(losses) on revalution,2nd Quarter 2082/2083,0.00,0.0
+SBL,profitloss,Actuarial gains/(losses) on defined benefit plans,2nd Quarter 2082/2083,0.00,0.0
+SBL,profitloss,Income tax relating to above items,2nd Quarter 2082/2083,0.00,0.0
+SBL,profitloss,Net other comprehsive income that will not be reclassified to profit or loss,2nd Quarter 2082/2083,0.00,0.0
+SBL,profitloss,Gains/(losses) on cash flow hedge,2nd Quarter 2082/2083,0.00,0.0
+SBL,profitloss,Exchange gains/(losses) (arising from translating financial assets of foreign operation),2nd Quarter 2082/2083,0.00,0.0
+SBL,profitloss,Income tax relating to above items,2nd Quarter 2082/2083,0.00,0.0
+SBL,profitloss,Net other comprehsive income that are or may be reclassified to profit or loss,2nd Quarter 2082/2083,0.00,0.0
+SBL,profitloss,"Other Comprehensive Income For The Period, Net Of Income Tax",2nd Quarter 2082/2083,"-263,017.40",-263017.4
+SBL,profitloss,Total Comprehensive Income For The Period,2nd Quarter 2082/2083,"1,063,635.84",1063635.84
+SBL,keymetrics,Basic Earnings Per Share(Annualized EPS),2nd Quarter 2082/2083,17.93,17.93
+SBL,keymetrics,Diluted Earnings Per Share,2nd Quarter 2082/2083,17.93,17.93
+SBL,keymetrics,Capital fund to RWA,2nd Quarter 2082/2083,12.18,12.18
+SBL,keymetrics,Tier I Capital to RWA,2nd Quarter 2082/2083,9.66,9.66
+SBL,keymetrics,CET I Capital to RWA,2nd Quarter 2082/2083,9.66,9.66
+SBL,keymetrics,Non-Performing loan(NPL) to Total Loan,2nd Quarter 2082/2083,3.45,3.45
+SBL,keymetrics,Total Loan loss provision to Total NPL,2nd Quarter 2082/2083,107.58,107.58
+SBL,keymetrics,Cost of Funds,2nd Quarter 2082/2083,3.90,3.9
+SBL,keymetrics,Credit to Deposit Ratio,2nd Quarter 2082/2083,79.05,79.05
+SBL,keymetrics,Base Rate,2nd Quarter 2082/2083,5.60,5.6
+SBL,keymetrics,Interest Spread Rate,2nd Quarter 2082/2083,3.90,3.9
+SBL,keymetrics,Total Shareholder's Equity (in Rs '000'),2nd Quarter 2082/2083,"31,249,886.77",31249886.77
+SBL,keymetrics,No. of Outstanding Shares,2nd Quarter 2082/2083,"147,944,791.99",147944791.99
+SBL,keymetrics,Net Worth Per Share,2nd Quarter 2082/2083,211.23,211.23
+SBL,keymetrics,P/E Ratio,2nd Quarter 2082/2083,21.51,21.51
+SBL,keymetrics,Price to Book (P/B) Ratio,2nd Quarter 2082/2083,1.83,1.83
+SBL,keymetrics,Return on Equity,2nd Quarter 2082/2083,8.49,8.49
+SBL,keymetrics,Return on Assets,2nd Quarter 2082/2083,0.76,0.76

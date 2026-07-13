@@ -1,0 +1,4 @@
+scrip,fiscal_year_bs,announcement_date,bookclose_date,distribution_date,bonus_share_pct,cash_dividend_pct,total_dividend_pct,status
+LSL,2081/2082,2025-11-17,2025-12-16,,10.00,0.53,10.53,1
+LSL,2080/2081,2024-12-01,2025-01-01,,5.00,0.26,5.26,1
+LSL,2079/2080,2023-12-13,2024-01-04,,7.00,0.37,7.37,1

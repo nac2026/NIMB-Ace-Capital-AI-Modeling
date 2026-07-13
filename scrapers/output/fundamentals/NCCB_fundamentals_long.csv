@@ -1,0 +1,87 @@
+scrip,section,metric,period,value_raw,value_num
+NCCB,balance,Cash and cash equivalent,1st Quarter 2079/2080,"10,996,727.29",10996727.29
+NCCB,balance,Due from Nepal Rastra Bank,1st Quarter 2079/2080,"7,224,719.64",7224719.64
+NCCB,balance,Placement with Bank and Financial Institutions,1st Quarter 2079/2080,"165,287.81",165287.81
+NCCB,balance,Derivative financial instruments,1st Quarter 2079/2080,"103,322.85",103322.85
+NCCB,balance,Other trading assets,1st Quarter 2079/2080,0.00,0.0
+NCCB,balance,Loan and advances to B/FIs,1st Quarter 2079/2080,"3,966,617.70",3966617.7
+NCCB,balance,Loans and advances to customers,1st Quarter 2079/2080,"113,397,511.19",113397511.19
+NCCB,balance,Investment securities,1st Quarter 2079/2080,"15,031,095.83",15031095.83
+NCCB,balance,Current tax assets,1st Quarter 2079/2080,0.00,0.0
+NCCB,balance,Investment in subsidiaries,1st Quarter 2079/2080,0.00,0.0
+NCCB,balance,Investment in associates,1st Quarter 2079/2080,"20,000.00",20000.0
+NCCB,balance,Investment property,1st Quarter 2079/2080,"987,753.22",987753.22
+NCCB,balance,Property and equipment,1st Quarter 2079/2080,"1,034,816.34",1034816.34
+NCCB,balance,Goodwill and Intangible assets,1st Quarter 2079/2080,"14,136.23",14136.23
+NCCB,balance,Deferred tax assets,1st Quarter 2079/2080,"31,835.40",31835.4
+NCCB,balance,Other assets,1st Quarter 2079/2080,"4,045,858.75",4045858.75
+NCCB,balance,Total Assets,1st Quarter 2079/2080,"157,019,682.24",157019682.24
+NCCB,balance,Due to Bank and Financial Institutions,1st Quarter 2079/2080,"3,968,079.65",3968079.65
+NCCB,balance,Due to Nepal Rastra Bank,1st Quarter 2079/2080,"2,375,955.33",2375955.33
+NCCB,balance,Derivative financial instruments,1st Quarter 2079/2080,"133,464.51",133464.51
+NCCB,balance,Deposits from customers,1st Quarter 2079/2080,"127,024,282.72",127024282.72
+NCCB,balance,Borrowing,1st Quarter 2079/2080,0.00,0.0
+NCCB,balance,Current Tax Liabilities,1st Quarter 2079/2080,"196,809.29",196809.29
+NCCB,balance,Provisions,1st Quarter 2079/2080,0.00,0.0
+NCCB,balance,Deferred tax liabilities,1st Quarter 2079/2080,0.00,0.0
+NCCB,balance,Other liabilities,1st Quarter 2079/2080,"3,662,660.72",3662660.72
+NCCB,balance,Debt securities issued,1st Quarter 2079/2080,"3,066,543.52",3066543.52
+NCCB,balance,Subordinated Liabilities,1st Quarter 2079/2080,0.00,0.0
+NCCB,balance,Total liabilities,1st Quarter 2079/2080,"140,427,795.74",140427795.74
+NCCB,balance,Share capital,1st Quarter 2079/2080,"11,139,678.01",11139678.01
+NCCB,balance,Share premium,1st Quarter 2079/2080,0.00,0.0
+NCCB,balance,Retained earnings,1st Quarter 2079/2080,"1,007,810.50",1007810.5
+NCCB,balance,Reserves,1st Quarter 2079/2080,"4,444,397.99",4444397.99
+NCCB,balance,Total equity,1st Quarter 2079/2080,"16,591,886.50",16591886.5
+NCCB,balance,Total liabilities and equity,1st Quarter 2079/2080,"157,019,682.24",157019682.24
+NCCB,profitloss,Interest income,1st Quarter 2079/2080,"4,112,393.44",4112393.44
+NCCB,profitloss,Interest expense,1st Quarter 2079/2080,"2,985,361.68",2985361.68
+NCCB,profitloss,Net interest income,1st Quarter 2079/2080,"1,127,031.76",1127031.76
+NCCB,profitloss,Fees and commission income,1st Quarter 2079/2080,"185,194.33",185194.33
+NCCB,profitloss,Fees and commission expense,1st Quarter 2079/2080,"9,160.10",9160.1
+NCCB,profitloss,Net fee and commission income,1st Quarter 2079/2080,"176,034.23",176034.23
+NCCB,profitloss,"Net interest, fee and commission income",1st Quarter 2079/2080,"1,303,065.98",1303065.98
+NCCB,profitloss,Net trading income,1st Quarter 2079/2080,"44,580.22",44580.22
+NCCB,profitloss,Other operating income,1st Quarter 2079/2080,"28,534.92",28534.92
+NCCB,profitloss,Total operating income,1st Quarter 2079/2080,"1,376,181.12",1376181.12
+NCCB,profitloss,Impairment charge/(reversal) for loan and other losses,1st Quarter 2079/2080,"63,602.53",63602.53
+NCCB,profitloss,Net operating income,1st Quarter 2079/2080,"1,312,578.59",1312578.59
+NCCB,profitloss,Personnel expense,1st Quarter 2079/2080,"353,178.59",353178.59
+NCCB,profitloss,Other operating expense,1st Quarter 2079/2080,"157,699.11",157699.11
+NCCB,profitloss,Depreciation & Amortisation,1st Quarter 2079/2080,"83,151.36",83151.36
+NCCB,profitloss,Operating Profit,1st Quarter 2079/2080,"718,549.54",718549.54
+NCCB,profitloss,Non operating income,1st Quarter 2079/2080,75.00,75.0
+NCCB,profitloss,Non operating expense,1st Quarter 2079/2080,0.00,0.0
+NCCB,profitloss,Profit before income tax,1st Quarter 2079/2080,"718,624.54",718624.54
+NCCB,profitloss,Current Tax,1st Quarter 2079/2080,"201,788.37",201788.37
+NCCB,profitloss,Deferred Tax,1st Quarter 2079/2080,0.00,0.0
+NCCB,profitloss,Profit for the period,1st Quarter 2079/2080,"516,836.16",516836.16
+NCCB,profitloss,Gains/(losses) from investments in equity instruments measured at fair value,1st Quarter 2079/2080,0.00,0.0
+NCCB,profitloss,Gains/(losses) on revalution,1st Quarter 2079/2080,0.00,0.0
+NCCB,profitloss,Actuarial gains/(losses) on defined benefit plans,1st Quarter 2079/2080,0.00,0.0
+NCCB,profitloss,Income tax relating to above items,1st Quarter 2079/2080,0.00,0.0
+NCCB,profitloss,Net other comprehsive income that will not be reclassified to profit or loss,1st Quarter 2079/2080,"-48,293.12",-48293.12
+NCCB,profitloss,Gains/(losses) on cash flow hedge,1st Quarter 2079/2080,0.00,0.0
+NCCB,profitloss,Exchange gains/(losses) (arising from translating financial assets of foreign operation),1st Quarter 2079/2080,0.00,0.0
+NCCB,profitloss,Income tax relating to above items,1st Quarter 2079/2080,0.00,0.0
+NCCB,profitloss,Net other comprehsive income that are or may be reclassified to profit or loss,1st Quarter 2079/2080,0.00,0.0
+NCCB,profitloss,"Other Comprehensive Income For The Period, Net Of Income Tax",1st Quarter 2079/2080,0.00,0.0
+NCCB,profitloss,Total Comprehensive Income For The Period,1st Quarter 2079/2080,"468,543.04",468543.04
+NCCB,keymetrics,Basic Earnings Per Share(Annualized EPS),1st Quarter 2079/2080,18.56,18.56
+NCCB,keymetrics,Diluted Earnings Per Share,1st Quarter 2079/2080,18.56,18.56
+NCCB,keymetrics,Capital fund to RWA,1st Quarter 2079/2080,12.00,12.0
+NCCB,keymetrics,Tier I Capital to RWA,1st Quarter 2079/2080,0.00,0.0
+NCCB,keymetrics,CET I Capital to RWA,1st Quarter 2079/2080,0.00,0.0
+NCCB,keymetrics,Non-Performing loan(NPL) to Total Loan,1st Quarter 2079/2080,2.46,2.46
+NCCB,keymetrics,Total Loan loss provision to Total NPL,1st Quarter 2079/2080,134.24,134.24
+NCCB,keymetrics,Cost of Funds,1st Quarter 2079/2080,8.61,8.61
+NCCB,keymetrics,Credit to Deposit Ratio,1st Quarter 2079/2080,87.44,87.44
+NCCB,keymetrics,Base Rate,1st Quarter 2079/2080,10.95,10.95
+NCCB,keymetrics,Interest Spread Rate,1st Quarter 2079/2080,3.85,3.85
+NCCB,keymetrics,Total Shareholder's Equity (in Rs '000'),1st Quarter 2079/2080,"16,591,886.50",16591886.5
+NCCB,keymetrics,No. of Outstanding Shares,1st Quarter 2079/2080,"111,396,780.14",111396780.14
+NCCB,keymetrics,Net Worth Per Share,1st Quarter 2079/2080,148.94,148.94
+NCCB,keymetrics,P/E Ratio,1st Quarter 2079/2080,9.91,9.91
+NCCB,keymetrics,Price to Book (P/B) Ratio,1st Quarter 2079/2080,1.23,1.23
+NCCB,keymetrics,Return on Equity,1st Quarter 2079/2080,12.46,12.46
+NCCB,keymetrics,Return on Assets,1st Quarter 2079/2080,1.32,1.32

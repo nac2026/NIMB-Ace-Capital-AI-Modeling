@@ -1,0 +1,9 @@
+# dbt packages.
+#
+# dbt_utils provides the standard test macros (unique_combination_of_columns,
+# accepted_range, equal_rowcount, ...) and a few SQL helpers (generate_series,
+# safe_cast) we'd otherwise write ourselves. It's maintained by dbt Labs and
+# is the de-facto standard in every dbt project we'd be hired to join.
+packages:
+  - package: dbt-labs/dbt_utils
+    version: [">=1.2.0", "<2.0.0"]

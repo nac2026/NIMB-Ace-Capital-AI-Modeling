@@ -1,0 +1,101 @@
+# NEPSE Research Copilot — local infrastructure.
+# Prototype stack: MinIO (object store), Postgres + pgvector (serving DB), Redis (cache).
+# Compute engine (DuckDB) and scrapers run as Python processes — NOT containers.
+
+services:
+  # -------------------------------------------------------------------- MinIO
+  minio:
+    image: minio/minio:latest
+    container_name: nrc_minio
+    restart: unless-stopped
+    command: server /data --console-address ":9001"
+    ports:
+      - "9000:9000"   # S3 API
+      - "9001:9001"   # Web console
+    volumes:
+      - ./data/minio:/data
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-minioadmin}
+      MINIO_REGION: us-east-1
+    healthcheck:
+      test: ["CMD-SHELL", "mc ready local 2>/dev/null || curl -fsS http://localhost:9000/minio/health/live || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+    deploy:
+      resources:
+        limits:
+          memory: 400M
+
+  # One-shot bucket creator — runs after MinIO is healthy, then exits.
+  minio-setup:
+    image: minio/mc:latest
+    container_name: nrc_minio_setup
+    depends_on:
+      minio:
+        condition: service_healthy
+    restart: "no"
+    environment:
+      MC_HOST_local: http://${MINIO_ROOT_USER:-minioadmin}:${MINIO_ROOT_PASSWORD:-minioadmin}@minio:9000
+    entrypoint: >
+      /bin/sh -c "
+      set -e;
+      mc mb --ignore-existing local/${MINIO_BUCKET_LAKEHOUSE:-nepse-lakehouse};
+      mc mb --ignore-existing local/${MINIO_BUCKET_SNAPSHOTS:-raw-snapshots};
+      mc anonymous set none local/${MINIO_BUCKET_LAKEHOUSE:-nepse-lakehouse};
+      echo '✓ MinIO buckets ready: nepse-lakehouse, raw-snapshots';
+      "
+
+  # ----------------------------------------------------------------- Postgres
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: nrc_postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-nepse}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-nepse}
+      POSTGRES_DB: ${POSTGRES_DB:-nepse}
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+      - ./infra/postgres/init.sql:/docker-entrypoint-initdb.d/10-init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-nepse} -d ${POSTGRES_DB:-nepse}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 5s
+    deploy:
+      resources:
+        limits:
+          memory: 800M
+
+  # -------------------------------------------------------------------- Redis
+  redis:
+    image: redis:7-alpine
+    container_name: nrc_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./data/redis:/data
+    command:
+      - redis-server
+      - --appendonly
+      - "yes"
+      - --maxmemory
+      - 200mb
+      - --maxmemory-policy
+      - allkeys-lru
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    deploy:
+      resources:
+        limits:
+          memory: 200M

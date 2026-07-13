@@ -1,0 +1,5 @@
+scrip,fiscal_year_bs,announcement_date,bookclose_date,distribution_date,bonus_share_pct,cash_dividend_pct,total_dividend_pct,status
+NBL,2078/2079,2022-12-16,2022-12-29,,2.00,10.00,12.00,1
+NBL,2077/2078,2021-10-25,2021-12-07,,14.00,3.00,17.00,1
+NBL,2076/2077,2020-12-17,2020-12-31,,12.00,4.00,16.00,1
+NBL,2075/2076,2020-07-29,2019-12-29,2020-01-10,15.00,10.00,25.00,1

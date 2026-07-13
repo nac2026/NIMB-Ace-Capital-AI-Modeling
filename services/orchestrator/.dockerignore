@@ -1,0 +1,13 @@
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+**/.ruff_cache
+**/.mypy_cache
+.git
+.venv
+data
+scrapers/output
+tests
+.env
+*.log
+.DS_Store

@@ -1,0 +1,87 @@
+scrip,section,metric,period,value_raw,value_num
+BOKL,balance,Cash and cash equivalent,1st Quarter 2079/2080,"4,859,926.55",4859926.55
+BOKL,balance,Due from Nepal Rastra Bank,1st Quarter 2079/2080,"5,833,867.38",5833867.38
+BOKL,balance,Placement with Bank and Financial Institutions,1st Quarter 2079/2080,"3,239,631.14",3239631.14
+BOKL,balance,Derivative financial instruments,1st Quarter 2079/2080,0.00,0.0
+BOKL,balance,Other trading assets,1st Quarter 2079/2080,"116,977.07",116977.07
+BOKL,balance,Loan and advances to B/FIs,1st Quarter 2079/2080,"3,141,348.45",3141348.45
+BOKL,balance,Loans and advances to customers,1st Quarter 2079/2080,"101,682,770.52",101682770.52
+BOKL,balance,Investment securities,1st Quarter 2079/2080,"18,896,401.62",18896401.62
+BOKL,balance,Current tax assets,1st Quarter 2079/2080,0.00,0.0
+BOKL,balance,Investment in subsidiaries,1st Quarter 2079/2080,"140,000.00",140000.0
+BOKL,balance,Investment in associates,1st Quarter 2079/2080,0.00,0.0
+BOKL,balance,Investment property,1st Quarter 2079/2080,"24,658.43",24658.43
+BOKL,balance,Property and equipment,1st Quarter 2079/2080,"1,330,885.97",1330885.97
+BOKL,balance,Goodwill and Intangible assets,1st Quarter 2079/2080,"27,435.08",27435.08
+BOKL,balance,Deferred tax assets,1st Quarter 2079/2080,0.00,0.0
+BOKL,balance,Other assets,1st Quarter 2079/2080,"1,691,128.45",1691128.45
+BOKL,balance,Total Assets,1st Quarter 2079/2080,"140,985,030.66",140985030.66
+BOKL,balance,Due to Bank and Financial Institutions,1st Quarter 2079/2080,"716,858.86",716858.86
+BOKL,balance,Due to Nepal Rastra Bank,1st Quarter 2079/2080,"3,786,594.98",3786594.98
+BOKL,balance,Derivative financial instruments,1st Quarter 2079/2080,"3,263.76",3263.76
+BOKL,balance,Deposits from customers,1st Quarter 2079/2080,"109,401,751.91",109401751.91
+BOKL,balance,Borrowing,1st Quarter 2079/2080,"3,324,048.12",3324048.12
+BOKL,balance,Current Tax Liabilities,1st Quarter 2079/2080,"55,636.37",55636.37
+BOKL,balance,Provisions,1st Quarter 2079/2080,"14,802.38",14802.38
+BOKL,balance,Deferred tax liabilities,1st Quarter 2079/2080,"434,066.52",434066.52
+BOKL,balance,Other liabilities,1st Quarter 2079/2080,"1,934,454.17",1934454.17
+BOKL,balance,Debt securities issued,1st Quarter 2079/2080,"2,745,909.58",2745909.58
+BOKL,balance,Subordinated Liabilities,1st Quarter 2079/2080,0.00,0.0
+BOKL,balance,Total liabilities,1st Quarter 2079/2080,"122,417,386.65",122417386.65
+BOKL,balance,Share capital,1st Quarter 2079/2080,"10,623,994.07",10623994.07
+BOKL,balance,Share premium,1st Quarter 2079/2080,0.00,0.0
+BOKL,balance,Retained earnings,1st Quarter 2079/2080,"1,444,774.51",1444774.51
+BOKL,balance,Reserves,1st Quarter 2079/2080,"6,498,875.42",6498875.42
+BOKL,balance,Total equity,1st Quarter 2079/2080,"18,567,644.00",18567644.0
+BOKL,balance,Total liabilities and equity,1st Quarter 2079/2080,"140,985,030.66",140985030.66
+BOKL,profitloss,Interest income,1st Quarter 2079/2080,"3,630,354.68",3630354.68
+BOKL,profitloss,Interest expense,1st Quarter 2079/2080,"2,404,533.00",2404533.0
+BOKL,profitloss,Net interest income,1st Quarter 2079/2080,"1,225,821.69",1225821.69
+BOKL,profitloss,Fees and commission income,1st Quarter 2079/2080,"162,146.08",162146.08
+BOKL,profitloss,Fees and commission expense,1st Quarter 2079/2080,"36,648.67",36648.67
+BOKL,profitloss,Net fee and commission income,1st Quarter 2079/2080,"125,497.41",125497.41
+BOKL,profitloss,"Net interest, fee and commission income",1st Quarter 2079/2080,"1,351,319.10",1351319.1
+BOKL,profitloss,Net trading income,1st Quarter 2079/2080,"29,517.38",29517.38
+BOKL,profitloss,Other operating income,1st Quarter 2079/2080,"9,474.92",9474.92
+BOKL,profitloss,Total operating income,1st Quarter 2079/2080,"1,390,311.40",1390311.4
+BOKL,profitloss,Impairment charge/(reversal) for loan and other losses,1st Quarter 2079/2080,"393,639.98",393639.98
+BOKL,profitloss,Net operating income,1st Quarter 2079/2080,"996,671.42",996671.42
+BOKL,profitloss,Personnel expense,1st Quarter 2079/2080,"350,829.27",350829.27
+BOKL,profitloss,Other operating expense,1st Quarter 2079/2080,"174,149.47",174149.47
+BOKL,profitloss,Depreciation & Amortisation,1st Quarter 2079/2080,"56,941.67",56941.67
+BOKL,profitloss,Operating Profit,1st Quarter 2079/2080,"414,751.01",414751.01
+BOKL,profitloss,Non operating income,1st Quarter 2079/2080,"1,001.00",1001.0
+BOKL,profitloss,Non operating expense,1st Quarter 2079/2080,"14,873.00",14873.0
+BOKL,profitloss,Profit before income tax,1st Quarter 2079/2080,"400,879.01",400879.01
+BOKL,profitloss,Current Tax,1st Quarter 2079/2080,"120,263.70",120263.7
+BOKL,profitloss,Deferred Tax,1st Quarter 2079/2080,0.00,0.0
+BOKL,profitloss,Profit for the period,1st Quarter 2079/2080,"280,615.31",280615.31
+BOKL,profitloss,Gains/(losses) from investments in equity instruments measured at fair value,1st Quarter 2079/2080,0.00,0.0
+BOKL,profitloss,Gains/(losses) on revalution,1st Quarter 2079/2080,0.00,0.0
+BOKL,profitloss,Actuarial gains/(losses) on defined benefit plans,1st Quarter 2079/2080,0.00,0.0
+BOKL,profitloss,Income tax relating to above items,1st Quarter 2079/2080,0.00,0.0
+BOKL,profitloss,Net other comprehsive income that will not be reclassified to profit or loss,1st Quarter 2079/2080,"-55,365.56",-55365.56
+BOKL,profitloss,Gains/(losses) on cash flow hedge,1st Quarter 2079/2080,0.00,0.0
+BOKL,profitloss,Exchange gains/(losses) (arising from translating financial assets of foreign operation),1st Quarter 2079/2080,0.00,0.0
+BOKL,profitloss,Income tax relating to above items,1st Quarter 2079/2080,0.00,0.0
+BOKL,profitloss,Net other comprehsive income that are or may be reclassified to profit or loss,1st Quarter 2079/2080,0.00,0.0
+BOKL,profitloss,"Other Comprehensive Income For The Period, Net Of Income Tax",1st Quarter 2079/2080,0.00,0.0
+BOKL,profitloss,Total Comprehensive Income For The Period,1st Quarter 2079/2080,"225,249.75",225249.75
+BOKL,keymetrics,Basic Earnings Per Share(Annualized EPS),1st Quarter 2079/2080,10.57,10.57
+BOKL,keymetrics,Diluted Earnings Per Share,1st Quarter 2079/2080,10.57,10.57
+BOKL,keymetrics,Capital fund to RWA,1st Quarter 2079/2080,14.02,14.02
+BOKL,keymetrics,Tier I Capital to RWA,1st Quarter 2079/2080,0.00,0.0
+BOKL,keymetrics,CET I Capital to RWA,1st Quarter 2079/2080,0.00,0.0
+BOKL,keymetrics,Non-Performing loan(NPL) to Total Loan,1st Quarter 2079/2080,2.46,2.46
+BOKL,keymetrics,Total Loan loss provision to Total NPL,1st Quarter 2079/2080,107.19,107.19
+BOKL,keymetrics,Cost of Funds,1st Quarter 2079/2080,8.34,8.34
+BOKL,keymetrics,Credit to Deposit Ratio,1st Quarter 2079/2080,88.96,88.96
+BOKL,keymetrics,Base Rate,1st Quarter 2079/2080,10.87,10.87
+BOKL,keymetrics,Interest Spread Rate,1st Quarter 2079/2080,4.24,4.24
+BOKL,keymetrics,Total Shareholder's Equity (in Rs '000'),1st Quarter 2079/2080,"18,567,644.00",18567644.0
+BOKL,keymetrics,No. of Outstanding Shares,1st Quarter 2079/2080,"106,239,940.72",106239940.72
+BOKL,keymetrics,Net Worth Per Share,1st Quarter 2079/2080,174.77,174.77
+BOKL,keymetrics,P/E Ratio,1st Quarter 2079/2080,21.49,21.49
+BOKL,keymetrics,Price to Book (P/B) Ratio,1st Quarter 2079/2080,1.30,1.3
+BOKL,keymetrics,Return on Equity,1st Quarter 2079/2080,6.05,6.05
+BOKL,keymetrics,Return on Assets,1st Quarter 2079/2080,0.80,0.8

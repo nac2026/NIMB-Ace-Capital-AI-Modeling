@@ -1,0 +1,30 @@
+scrip,company_name,sector,sub_sector,listed_shares,paid_up_value,paid_up_capital,market_cap,registered_date,phone,email,address,website,latest_close,last_close_date,latest_bonus_pct,latest_cash_div_pct,latest_bookclose_date,company_id
+ADBL,Agricultural Development Bank Limited,Commercial Bank,,"143,055,192.00",100.00,"14,305,519,200.00",,1968-01-21,01- 4262885,info@adbl.gov.np,"Ramshah Path , ktm",,10.25,,3.25,9.75,2025-11-30,24
+BOKL,Bank of Kathmandu Limited,Merged,,"112,614,336.00",100.00,"11,261,433,600.00",,2016-09-01,"01-4414541, 01-4437106",info@bok.com.np,"Kamalpokhari, Kathmandu",,10.25,,6.00,14.95,2022-11-25,634
+CCBL,Century Commercial Bank Limited,Merged,,"100,077,200.00",100.00,"10,007,720,000.00",,2011-03-10,01 - 4412579 / 4428392,welcome@centurybank.com.np,"Putalisadak, ktm",,10.25,,4.75,0.25,2022-12-19,335
+CZBIL,Citizens Bank International Limited,Commercial Bank,,"155,074,638.00",100.00,"15,507,463,800.00",,2007-04-20,01-4527842/43/24,info@ctznbank.com,"Kamaladi , ktm",,10.25,,5.00,0.263,2025-11-03,18
+CBL,Civil Bank Limited,Merged,,"95,296,364.00",100.00,"9,529,636,400.00",,2014-04-14,"01- 4169040, 4169030, Fax No: 4169038",customercare@civilbank.com.np,"Kamaladi, ktm",,10.25,,5.00,0.26,2023-01-03,325
+EBL,Everest Bank Limited,Commercial Bank,,"137,213,760.00",100.00,"13,721,376,000.00",,1994-10-18,01-4443377,ebl@mos.com.np,"EBL House, Lazimpat, P.O.Box 13384 Kathmandu, Nepal",,10.25,,6.00,14.00,2025-10-10,10
+GBIME,Global IME Bank Limited,Commercial Bank,,"381,158,528.00",100.00,"38,115,852,800.00",,2014-04-09,"01- 4242764, 4249242",info@gibl.com.np,"Anamnagar, Ktm",,10.25,,0.00,8.00,2025-11-02,404
+HBL,Himalayan Bank Limited,Commercial Bank,,"225,816,627.00",100.00,"22,581,662,700.00",,1993-01-18,"01-4227749, 01-4246218, 01-4246219, 01-4250201",,"Kamaladi , ktm",,10.25,,8.00,11.11,2023-01-02,13
+JBNL,Janata Bank Nepal Limited,Merged,,"80,007,859.00",100.00,"8,000,785,900.00",,2019-12-20,01- 4786100,info@janatabank.com.np,"New Baneshwor, ktm",,10.25,,6.00,6.00,2019-10-31,331
+KBL,Kumari Bank Limited,Commercial Bank,,"262,258,613.00",100.00,"26,225,861,300.00",,2001-04-03,"01-4232112, 4232113",info@kbl.com.np,"Durbar Marg , ktm",,10.25,,0.00,12.5,2022-10-31,5
+LBL,Laxmi Bank Limited,Merged,,"115,513,448.00",100.00,"11,551,344,800.00",,2002-04-03,01 - 526195/ 530394/ 530823,bishal.thapa@laxmibank.com,"Adharsha Nagar, ktm",,10.25,,8.00,3.5,2021-12-10,6
+MBL,Machhapuchchhre Bank Limited,Commercial Bank,,"120,862,116.00",100.00,"12,086,211,600.00",,2012-07-09,01 - 530900,jay@mbl.com.np,"prithwichowk, pokhara",,10.25,,4.00,4.00,2025-09-12,7
+MEGA,Mega Bank Nepal Limited,Merged,,"167,652,800.00",100.00,"16,765,280,000.00",,2010-07-23,01- 4266599 / 4257711,info@megabank.com.np,"Kantipath, Kathmandu",,10.25,,4.00,3.79,2022-12-09,301
+NABIL,Nabil Bank Limited,Commercial Bank,,"270,569,984.00",100.00,"27,056,998,400.00",,1984-07-12,"01-4221718 , 01-4227181",info@nabilbank.com,"Beena Marga , ktm",,10.25,,0.00,12.5,2025-12-31,16
+NBB,Nepal Bangladesh Bank Limited,Merged,,"100,854,000.00",100.00,"10,085,400,000.00",,1994-06-06,01- 4233780/ 81/ 82/ 83/ 84/ 85,nbblho@nbbl.com.np,"Kamladi,ktm",,10.25,,12.00,3.5,2021-11-01,11
+NBL,Nepal Bank Limited,Commercial Bank,,"146,940,230.00",100.00,"14,694,023,000.00",,1937-11-15,"01-4247999, 01-4239888",info@nepalbank.com.np,"Dharmapath, ktm",,10.25,,2.00,10.00,2022-12-29,341
+NCCB,Nepal Credit and Commerce Bank Limited,Merged,,"111,396,784.00",100.00,"11,139,678,400.00",,2017-01-01,,corporate@nccbank.com.np,Bagbazar,,10.25,,3.3663,7.6337,2022-11-01,3
+NIB,Nepal Investment Bank Limited,Merged,,"190,398,432.00",100.00,"19,039,843,200.00",,1986-03-09,01- 4228229,info@nibl.com.np,"Durbar Marg , ktm",,10.25,,4.00,7.00,2022-12-07,15
+SBI,Nepal SBI Bank Limited,Commercial Bank,,"113,351,244.00",100.00,"11,335,124,400.00",,1993-07-07,,corporate@nsbl.com.np,"kesharmahal , ktm",,10.25,,4.00,5.00,2025-12-19,12
+NICA,NIC Asia Bank Limited,Commercial Bank,,"149,175,670.00",100.00,"14,917,567,000.00",,2013-06-30,Toll fee - 1660-01-77771,info@nicasiabank.com,"biratnagar, morang",,10.25,,29.00,1.52,2023-10-03,446
+NMB,NMB Bank Limited,Commercial Bank,,"192,850,413.00",100.00,"19,285,041,300.00",,2015-10-18,01- 4246160,pramod.dahal@nmb.com.np,"Babarmahal, Kathmandu",,10.25,,5.00,5.00,2025-12-24,1
+PRVU,Prabhu Bank Limited,Commercial Bank,,"235,424,899.00",100.00,"23,542,489,900.00",,2014-09-15,01- 4788500,info@prabhubank.com,"Babarmahal,ktm",,10.25,,6.5,1.5,2022-12-16,509
+PCBL,Prime Commercial Bank Limited,Commercial Bank,,"209,547,820.00",100.00,"20,954,782,000.00",,2007-09-24,01 - 4233388,info@pcbl.com.np,"New Road, ktm",,10.25,,8.00,0.421,2026-01-05,22
+SANIMA,Sanima Bank Limited,Commercial Bank,,"135,815,256.00",100.00,"13,581,525,600.00",,2012-02-15,"01- 4428977, 4428979, 4428980",sanima@sanimabank.com,"nagpokhari, ktm",,10.25,,0.00,7.3685,2025-10-13,166
+SBL,Siddhartha Bank Limited,Commercial Bank,,"147,944,792.00",100.00,"14,794,479,200.00",,2002-12-24,"01-4442919, 01-4442920",sbl@siddharthabank.com,"Hattisar, Kathmandu",,10.25,,5.00,5.53,2025-11-03,2
+SCB,Standard Chartered Bank Nepal Limited,Commercial Bank,,"100,423,684.00",100.00,"10,042,368,400.00",,1987-02-28,01-4781800,Clientcarecentre.Nepal@sc.com,"nayabaneshwor , ktm",,10.25,,0.00,19.00,2025-12-02,14
+SRBL,Sunrise Bank Limited,Merged,,"101,188,928.00",100.00,"10,118,892,800.00",,2007-10-12,"01 - 4004560, 4004561, 4004562",info@sunrisebank.com.np,"Gairidhara Crossing, ktm",,10.25,,6.65,0.35,2021-12-19,23
+NIMB,Nepal Investment Mega Bank Limited,Commercial Bank,,"341,285,949.00",100.00,"34,128,594,900.00",,,,,,-,10.25,,,,,1192
+LSL,Laxmi Sunrise Bank Limited,Commercial Bank,,"267,811,635.00",100.00,"26,781,163,500.00",,,01-5970684,info@laxmisunrise.com,"Laxmi Complex, Hattisar Kathmandu Metro – 1, Kathmandu, Nepal",,10.25,,10.00,0.53,2025-12-16,1280

@@ -1,0 +1,87 @@
+scrip,section,metric,period,value_raw,value_num
+CCBL,balance,Cash and cash equivalent,1st Quarter 2079/2080,"6,655,162.00",6655162.0
+CCBL,balance,Due from Nepal Rastra Bank,1st Quarter 2079/2080,"4,632,865.00",4632865.0
+CCBL,balance,Placement with Bank and Financial Institutions,1st Quarter 2079/2080,"65,967.00",65967.0
+CCBL,balance,Derivative financial instruments,1st Quarter 2079/2080,0.00,0.0
+CCBL,balance,Other trading assets,1st Quarter 2079/2080,0.00,0.0
+CCBL,balance,Loan and advances to B/FIs,1st Quarter 2079/2080,"2,123,811.00",2123811.0
+CCBL,balance,Loans and advances to customers,1st Quarter 2079/2080,"85,013,938.00",85013938.0
+CCBL,balance,Investment securities,1st Quarter 2079/2080,"13,661,184.00",13661184.0
+CCBL,balance,Current tax assets,1st Quarter 2079/2080,0.00,0.0
+CCBL,balance,Investment in subsidiaries,1st Quarter 2079/2080,"171,500.00",171500.0
+CCBL,balance,Investment in associates,1st Quarter 2079/2080,"27,500.00",27500.0
+CCBL,balance,Investment property,1st Quarter 2079/2080,"17,656.00",17656.0
+CCBL,balance,Property and equipment,1st Quarter 2079/2080,"769,043.00",769043.0
+CCBL,balance,Goodwill and Intangible assets,1st Quarter 2079/2080,"9,612.00",9612.0
+CCBL,balance,Deferred tax assets,1st Quarter 2079/2080,"94,201.00",94201.0
+CCBL,balance,Other assets,1st Quarter 2079/2080,"3,060,263.00",3060263.0
+CCBL,balance,Total Assets,1st Quarter 2079/2080,"116,302,702.00",116302702.0
+CCBL,balance,Due to Bank and Financial Institutions,1st Quarter 2079/2080,"2,020,122.00",2020122.0
+CCBL,balance,Due to Nepal Rastra Bank,1st Quarter 2079/2080,"2,436,639.00",2436639.0
+CCBL,balance,Derivative financial instruments,1st Quarter 2079/2080,0.00,0.0
+CCBL,balance,Deposits from customers,1st Quarter 2079/2080,"95,275,404.00",95275404.0
+CCBL,balance,Borrowing,1st Quarter 2079/2080,0.00,0.0
+CCBL,balance,Current Tax Liabilities,1st Quarter 2079/2080,"23,529.00",23529.0
+CCBL,balance,Provisions,1st Quarter 2079/2080,"84,861.00",84861.0
+CCBL,balance,Deferred tax liabilities,1st Quarter 2079/2080,0.00,0.0
+CCBL,balance,Other liabilities,1st Quarter 2079/2080,"1,792,167.00",1792167.0
+CCBL,balance,Debt securities issued,1st Quarter 2079/2080,"2,200,000.00",2200000.0
+CCBL,balance,Subordinated Liabilities,1st Quarter 2079/2080,0.00,0.0
+CCBL,balance,Total liabilities,1st Quarter 2079/2080,"103,832,722.00",103832722.0
+CCBL,balance,Share capital,1st Quarter 2079/2080,"9,553,909.00",9553909.0
+CCBL,balance,Share premium,1st Quarter 2079/2080,0.00,0.0
+CCBL,balance,Retained earnings,1st Quarter 2079/2080,"547,188.00",547188.0
+CCBL,balance,Reserves,1st Quarter 2079/2080,"2,368,883.00",2368883.0
+CCBL,balance,Total equity,1st Quarter 2079/2080,"12,469,980.00",12469980.0
+CCBL,balance,Total liabilities and equity,1st Quarter 2079/2080,"116,302,702.00",116302702.0
+CCBL,profitloss,Interest income,1st Quarter 2079/2080,"3,306,941.00",3306941.0
+CCBL,profitloss,Interest expense,1st Quarter 2079/2080,"2,230,700.00",2230700.0
+CCBL,profitloss,Net interest income,1st Quarter 2079/2080,"1,076,241.00",1076241.0
+CCBL,profitloss,Fees and commission income,1st Quarter 2079/2080,"134,364.00",134364.0
+CCBL,profitloss,Fees and commission expense,1st Quarter 2079/2080,"14,035.00",14035.0
+CCBL,profitloss,Net fee and commission income,1st Quarter 2079/2080,"120,329.00",120329.0
+CCBL,profitloss,"Net interest, fee and commission income",1st Quarter 2079/2080,"1,196,570.00",1196570.0
+CCBL,profitloss,Net trading income,1st Quarter 2079/2080,"4,974.00",4974.0
+CCBL,profitloss,Other operating income,1st Quarter 2079/2080,"22,196.00",22196.0
+CCBL,profitloss,Total operating income,1st Quarter 2079/2080,"1,223,740.00",1223740.0
+CCBL,profitloss,Impairment charge/(reversal) for loan and other losses,1st Quarter 2079/2080,"233,739.00",233739.0
+CCBL,profitloss,Net operating income,1st Quarter 2079/2080,"990,001.00",990001.0
+CCBL,profitloss,Personnel expense,1st Quarter 2079/2080,"344,609.00",344609.0
+CCBL,profitloss,Other operating expense,1st Quarter 2079/2080,"161,227.00",161227.0
+CCBL,profitloss,Depreciation & Amortisation,1st Quarter 2079/2080,"44,663.00",44663.0
+CCBL,profitloss,Operating Profit,1st Quarter 2079/2080,"439,502.00",439502.0
+CCBL,profitloss,Non operating income,1st Quarter 2079/2080,"17,440.00",17440.0
+CCBL,profitloss,Non operating expense,1st Quarter 2079/2080,"1,922.00",1922.0
+CCBL,profitloss,Profit before income tax,1st Quarter 2079/2080,"455,020.00",455020.0
+CCBL,profitloss,Current Tax,1st Quarter 2079/2080,"136,505.00",136505.0
+CCBL,profitloss,Deferred Tax,1st Quarter 2079/2080,0.00,0.0
+CCBL,profitloss,Profit for the period,1st Quarter 2079/2080,"318,515.00",318515.0
+CCBL,profitloss,Gains/(losses) from investments in equity instruments measured at fair value,1st Quarter 2079/2080,0.00,0.0
+CCBL,profitloss,Gains/(losses) on revalution,1st Quarter 2079/2080,0.00,0.0
+CCBL,profitloss,Actuarial gains/(losses) on defined benefit plans,1st Quarter 2079/2080,0.00,0.0
+CCBL,profitloss,Income tax relating to above items,1st Quarter 2079/2080,0.00,0.0
+CCBL,profitloss,Net other comprehsive income that will not be reclassified to profit or loss,1st Quarter 2079/2080,"-42,942.00",-42942.0
+CCBL,profitloss,Gains/(losses) on cash flow hedge,1st Quarter 2079/2080,0.00,0.0
+CCBL,profitloss,Exchange gains/(losses) (arising from translating financial assets of foreign operation),1st Quarter 2079/2080,0.00,0.0
+CCBL,profitloss,Income tax relating to above items,1st Quarter 2079/2080,0.00,0.0
+CCBL,profitloss,Net other comprehsive income that are or may be reclassified to profit or loss,1st Quarter 2079/2080,0.00,0.0
+CCBL,profitloss,"Other Comprehensive Income For The Period, Net Of Income Tax",1st Quarter 2079/2080,0.00,0.0
+CCBL,profitloss,Total Comprehensive Income For The Period,1st Quarter 2079/2080,"275,573.00",275573.0
+CCBL,keymetrics,Basic Earnings Per Share(Annualized EPS),1st Quarter 2079/2080,13.34,13.34
+CCBL,keymetrics,Diluted Earnings Per Share,1st Quarter 2079/2080,13.34,13.34
+CCBL,keymetrics,Capital fund to RWA,1st Quarter 2079/2080,13.18,13.18
+CCBL,keymetrics,Tier I Capital to RWA,1st Quarter 2079/2080,0.00,0.0
+CCBL,keymetrics,CET I Capital to RWA,1st Quarter 2079/2080,0.00,0.0
+CCBL,keymetrics,Non-Performing loan(NPL) to Total Loan,1st Quarter 2079/2080,1.88,1.88
+CCBL,keymetrics,Total Loan loss provision to Total NPL,1st Quarter 2079/2080,151.81,151.81
+CCBL,keymetrics,Cost of Funds,1st Quarter 2079/2080,8.73,8.73
+CCBL,keymetrics,Credit to Deposit Ratio,1st Quarter 2079/2080,88.40,88.4
+CCBL,keymetrics,Base Rate,1st Quarter 2079/2080,10.76,10.76
+CCBL,keymetrics,Interest Spread Rate,1st Quarter 2079/2080,3.72,3.72
+CCBL,keymetrics,Total Shareholder's Equity (in Rs '000'),1st Quarter 2079/2080,"12,469,980.00",12469980.0
+CCBL,keymetrics,No. of Outstanding Shares,1st Quarter 2079/2080,"95,539,090.00",95539090.0
+CCBL,keymetrics,Net Worth Per Share,1st Quarter 2079/2080,130.52,130.52
+CCBL,keymetrics,P/E Ratio,1st Quarter 2079/2080,14.47,14.47
+CCBL,keymetrics,Price to Book (P/B) Ratio,1st Quarter 2079/2080,1.48,1.48
+CCBL,keymetrics,Return on Equity,1st Quarter 2079/2080,10.22,10.22
+CCBL,keymetrics,Return on Assets,1st Quarter 2079/2080,1.10,1.1

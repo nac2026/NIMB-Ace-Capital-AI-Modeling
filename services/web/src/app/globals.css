@@ -1,0 +1,283 @@
+@import "tailwindcss";
+/* Fonts are loaded via <link> in app/layout.tsx (Tailwind v4 inlines its own
+   @import, which would push a CSS @import after rules and break parsing). */
+
+/* ============================================================
+   NEPSE Intelligence Portal — "Dark Intelligence Terminal"
+   Design system ported from Claude Design handoff.
+   Dark is the default; light is a toggle. Variable NAMES kept
+   from the prior theme so every component re-skins at once;
+   only the VALUES changed to the gold/cyan terminal palette.
+   ============================================================ */
+
+/* ─── DARK (default) ─────────────────────────────────────────── */
+:root, :root[data-theme="dark"] {
+  /* accents (brand) */
+  --accent:        #d8a64a;   /* premium gold */
+  --accent-2:      #38c6cf;   /* data cyan */
+  --brand:         #d8a64a;
+  --brand-hover:   #e6bd6e;
+  --brand-soft:    color-mix(in oklab, #d8a64a 14%, transparent);
+
+  /* surfaces */
+  --bg:            #0a0d12;
+  --bg-grad-1:     #0c1118;
+  --bg-grad-2:     #090b10;
+  --bg-subtle:     #161c26;
+  --bg-panel:      #12171f;
+  --bg-hover:      #1e2735;
+  --panel:         #12171f;
+  --panel-2:       #161c26;
+  --panel-3:       #1b2230;
+  --hover:         #1e2735;
+
+  /* lines */
+  --border:        #232c3a;
+  --border-subtle: #1a212c;
+  --line:          #232c3a;
+  --line-soft:     #1a212c;
+
+  /* ink */
+  --fg:            #eef2f7;
+  --fg-muted:      #aab4c2;
+  --fg-dim:        #6f7d8f;
+  --ink:           #eef2f7;
+  --ink-2:         #aab4c2;
+  --ink-3:         #6f7d8f;
+  --ink-4:         #4b566a;
+
+  /* semantics */
+  --ok:    #36b37e;  --pos:  #36b37e;
+  --warn:  #e6a93b;
+  --err:   #e5575c;  --neg:  #e5575c;
+  --info:  #4f9bf0;
+
+  --chip-bg:   rgba(255,255,255,.04);
+  --grid-line: rgba(255,255,255,.035);
+  --scrim:     rgba(6,8,12,.72);
+
+  --shadow:    0 18px 50px -18px rgba(0,0,0,.7);
+  --shadow-sm: 0 2px 10px -4px rgba(0,0,0,.5);
+  --shadow-md: 0 10px 28px -12px rgba(0,0,0,.6);
+  --shadow-lg: 0 18px 50px -18px rgba(0,0,0,.7);
+  color-scheme: dark;
+}
+
+/* ─── LIGHT (toggle) ─────────────────────────────────────────── */
+:root[data-theme="light"] {
+  --accent:        #b8862f;
+  --accent-2:      #1f9aa3;
+  --brand:         #b8862f;
+  --brand-hover:   #9a6f25;
+  --brand-soft:    color-mix(in oklab, #b8862f 12%, transparent);
+
+  --bg:            #eef1f5;
+  --bg-grad-1:     #f4f6f9;
+  --bg-grad-2:     #e7ebf1;
+  --bg-subtle:     #eef2f7;
+  --bg-panel:      #ffffff;
+  --bg-hover:      #eef2f7;
+  --panel:         #ffffff;
+  --panel-2:       #f7f9fc;
+  --panel-3:       #eef2f7;
+  --hover:         #eef2f7;
+
+  --border:        #dde3ec;
+  --border-subtle: #e8edf3;
+  --line:          #dde3ec;
+  --line-soft:     #e8edf3;
+
+  --fg:            #131922;
+  --fg-muted:      #475164;
+  --fg-dim:        #7a8597;
+  --ink:           #131922;
+  --ink-2:         #475164;
+  --ink-3:         #7a8597;
+  --ink-4:         #9aa5b5;
+
+  --ok:    #1a9e54;  --pos:  #1a9e54;
+  --warn:  #b9791f;
+  --err:   #cc2c39;  --neg:  #cc2c39;
+  --info:  #2e6bb6;
+
+  --chip-bg:   rgba(10,20,40,.04);
+  --grid-line: rgba(10,20,40,.05);
+  --scrim:     rgba(225,230,238,.7);
+
+  --shadow:    0 18px 44px -22px rgba(20,30,50,.28);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.06);
+  --shadow-md: 0 4px 12px 0 rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+  --shadow-lg: 0 8px 24px 0 rgb(0 0 0 / 0.10), 0 4px 8px -4px rgb(0 0 0 / 0.08);
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-bg:            var(--bg);
+  --color-bg-subtle:     var(--bg-subtle);
+  --color-bg-panel:      var(--bg-panel);
+  --color-bg-hover:      var(--bg-hover);
+  --color-panel:         var(--panel);
+  --color-panel-2:       var(--panel-2);
+  --color-panel-3:       var(--panel-3);
+  --color-border:        var(--border);
+  --color-border-subtle: var(--border-subtle);
+  --color-line:          var(--line);
+  --color-fg:            var(--fg);
+  --color-fg-muted:      var(--fg-muted);
+  --color-fg-dim:        var(--fg-dim);
+  --color-ink:           var(--ink);
+  --color-ink-2:         var(--ink-2);
+  --color-ink-3:         var(--ink-3);
+  --color-ok:            var(--ok);
+  --color-pos:           var(--pos);
+  --color-warn:          var(--warn);
+  --color-err:           var(--err);
+  --color-neg:           var(--neg);
+  --color-info:          var(--info);
+  --color-accent:        var(--accent);
+  --color-accent-2:      var(--accent-2);
+  --color-brand:         var(--brand);
+  --color-brand-hover:   var(--brand-hover);
+  --color-brand-soft:    var(--brand-soft);
+
+  --font-sans:    "IBM Plex Sans", "Archivo", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-mono:    "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-serif:   "Newsreader", Georgia, serif;
+
+  --radius:   14px;
+  --ease:     cubic-bezier(.22,.61,.36,1);
+  --gap:      16px;
+}
+
+/* keep these usable as plain CSS vars too (design uses them inline) */
+:root { --font-display: "Space Grotesk", system-ui, sans-serif; --font-ui: "IBM Plex Sans", system-ui, sans-serif; --font-serif: "Newsreader", Georgia, serif; --radius: 14px; --ease: cubic-bezier(.22,.61,.36,1); }
+
+/* ─── Base ───────────────────────────────────────────────────────── */
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "IBM Plex Sans", "Archivo", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after { box-sizing: border-box; }
+
+/* ─── Atmospheric backdrop (gold/cyan glows + grid) ──────────────── */
+.app-bg {
+  position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(1200px 700px at 82% -8%, color-mix(in oklab, var(--accent) 14%, transparent), transparent 60%),
+    radial-gradient(1100px 800px at -6% 12%, color-mix(in oklab, var(--accent-2) 10%, transparent), transparent 55%),
+    linear-gradient(180deg, var(--bg-grad-1), var(--bg-grad-2));
+}
+.app-bg::after {
+  content: ""; position: absolute; inset: 0;
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 46px 46px;
+  mask-image: radial-gradient(120% 120% at 50% 0%, #000 30%, transparent 78%);
+}
+
+/* ─── Scrollbar ──────────────────────────────────────────────────── */
+::-webkit-scrollbar        { width: 10px; height: 10px; }
+::-webkit-scrollbar-track  { background: transparent; }
+::-webkit-scrollbar-thumb  { background: var(--line); border-radius: 20px; border: 3px solid transparent; background-clip: padding-box; }
+::-webkit-scrollbar-thumb:hover { background: var(--ink-4); background-clip: padding-box; }
+
+/* ─── Type primitives ────────────────────────────────────────────── */
+.mono { font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace; font-feature-settings: "tnum" 1; font-optical-sizing: auto; }
+.display { font-family: var(--font-display); letter-spacing: -.01em; }
+.serif { font-family: var(--font-serif); }
+.num, .tnum { font-variant-numeric: tabular-nums; }
+.pos { color: var(--pos); } .neg { color: var(--neg); } .warn { color: var(--warn); }
+.muted { color: var(--ink-3); } .muted2 { color: var(--ink-2); }
+.eyebrow { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-3); }
+.divider { height: 1px; background: var(--line); border: 0; margin: 0; }
+:focus-visible { outline: 2px solid color-mix(in oklab, var(--accent) 70%, transparent); outline-offset: 2px; }
+
+/* ─── Animations ─────────────────────────────────────────────────── */
+@keyframes pulse-soft { 0%,100%{opacity:.5} 50%{opacity:1} }
+@keyframes rise { from { opacity:0; transform: translateY(10px);} to {opacity:1; transform:none;} }
+@keyframes sheen { from { background-position: -200% 0; } to { background-position: 200% 0; } }
+@keyframes msgIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+.msg-enter { animation: msgIn 0.22s ease-out both; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+.animate-fade-in { animation: fadeIn 0.35s ease-out both; }
+.rise { animation: rise .2s var(--ease) both; }
+@keyframes dotPulse { 0%,60%,100% { opacity: 0.2; transform: scale(1); } 30% { opacity: 1; transform: scale(1.3); } }
+.thinking-dot { display:inline-block; width:5px; height:5px; border-radius:50%; background: var(--fg-muted); animation: dotPulse 1.4s ease-in-out infinite; flex-shrink:0; }
+@keyframes panelIn { from { opacity:0; transform: translateX(16px);} to { opacity:1; transform: translateX(0);} }
+.panel-enter { animation: panelIn 0.28s ease-out both; }
+.skel { background: linear-gradient(90deg, var(--panel-2) 25%, var(--hover) 37%, var(--panel-2) 63%); background-size: 200% 100%; animation: sheen 1.4s linear infinite; border-radius: 6px; }
+
+.statusdot { display: inline-block; width: 6px; height: 6px; border-radius: 999px; }
+
+/* ─── Panels / tables / labels ───────────────────────────────────── */
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.panel-2 { background: var(--panel-2); }
+.label {
+  font-size: 11px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.07em; color: var(--fg-muted);
+}
+.tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
+.tbl th {
+  padding: 9px 14px; font-size: 10.5px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--ink-3); background: var(--panel-2);
+  border-bottom: 1px solid var(--line); white-space: nowrap; font-family: var(--font-mono);
+}
+.tbl td { padding: 11px 14px; border-bottom: 1px solid var(--line-soft); color: var(--fg); vertical-align: middle; }
+.tbl tbody tr:last-child td { border-bottom: none; }
+.tbl tbody tr:hover td { background: var(--hover); transition: background 0.12s; }
+.panel-table table { width: max-content; min-width: 100%; }
+
+/* ─── Markdown (assistant replies) ──────────────────────────────── */
+.markdown { line-height: 1.85; font-size: 15px; color: var(--fg); }
+.markdown > *:first-child { margin-top: 0 !important; }
+.markdown > *:last-child  { margin-bottom: 0 !important; }
+.markdown h1, .markdown h2, .markdown h3, .markdown h4 {
+  font-family: var(--font-display); font-weight: 600; color: var(--fg);
+  line-height: 1.3; letter-spacing: -0.02em; margin: 1.6em 0 0.5em;
+}
+.markdown h1 { font-size: 20px; }
+.markdown h2 { font-size: 17px; border-bottom: 1px solid var(--line-soft); padding-bottom: 0.3em; }
+.markdown h3 { font-size: 15px; }
+.markdown h4 { font-size: 14px; color: var(--fg-muted); font-weight: 600; }
+.markdown p { margin: 0.9em 0; }
+.markdown ul, .markdown ol { margin: 0.7em 0; padding-left: 1.7em; }
+.markdown li { margin: 0.4em 0; line-height: 1.75; }
+.markdown li > p { margin: 0.3em 0; }
+.markdown strong { font-weight: 600; color: var(--fg); }
+.markdown em { font-style: italic; color: var(--fg-muted); }
+.markdown :not(pre) > code {
+  background: color-mix(in srgb, var(--accent) 10%, var(--panel-2));
+  border: 1px solid color-mix(in srgb, var(--accent) 22%, var(--line-soft));
+  border-radius: 5px; padding: 0.13em 0.44em;
+  font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.82em; font-weight: 500;
+  color: color-mix(in srgb, var(--accent) 60%, var(--fg));
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.markdown pre {
+  background: var(--panel-2); border: 1px solid var(--line-soft); border-radius: 10px;
+  padding: 14px 18px; overflow-x: auto; margin: 1em 0; box-shadow: var(--shadow-sm);
+}
+.markdown pre code { background: transparent; border: 0; padding: 0; font-size: 13px; color: var(--fg); }
+.markdown a { color: var(--accent); text-decoration: underline; text-decoration-color: color-mix(in oklab, var(--accent) 40%, transparent); text-underline-offset: 3px; transition: text-decoration-color 0.15s; }
+.markdown a:hover { text-decoration-color: var(--accent); }
+.markdown table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 13.5px; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-sm); }
+.markdown th, .markdown td { border: 1px solid var(--line-soft); padding: 9px 14px; text-align: left; }
+.markdown th { background: var(--panel-2); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--fg-muted); }
+.markdown td { background: var(--panel); font-variant-numeric: tabular-nums; }
+.markdown tr:hover td { background: var(--hover); }
+.markdown blockquote { border-left: 3px solid var(--accent); margin: 1em 0; padding: 0.25em 0 0.25em 1em; color: var(--fg-muted); }
+.markdown blockquote p { margin: 0.3em 0; }

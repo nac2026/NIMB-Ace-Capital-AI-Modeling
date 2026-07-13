@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual envs
+.venv/
+venv/
+env/
+.probe/
+
+# uv
+.uv/
+
+# Node
+node_modules/
+.next/
+out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Secrets + local env
+.env
+.env.local
+*.pem
+*.key
+
+# Local data (too large / not source code)
+data/
+scrapers/output/raw_html/
+scrapers/dom_dumps/
+scrapers/screenshots/
+scrapers/api_log/
+scrapers/logs/
+
+# Built artifacts
+dist/
+build/
+*.egg
+
+# Dagster ephemeral home dirs (created by `dagster dev` in CWD)
+.tmp_dagster_home_*/

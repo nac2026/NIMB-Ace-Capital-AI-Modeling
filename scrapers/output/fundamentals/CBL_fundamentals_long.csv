@@ -1,0 +1,87 @@
+scrip,section,metric,period,value_raw,value_num
+CBL,balance,Cash and cash equivalent,2nd Quarter 2079/2080,"3,365,616.00",3365616.0
+CBL,balance,Due from Nepal Rastra Bank,2nd Quarter 2079/2080,"5,726,717.00",5726717.0
+CBL,balance,Placement with Bank and Financial Institutions,2nd Quarter 2079/2080,"65,818.00",65818.0
+CBL,balance,Derivative financial instruments,2nd Quarter 2079/2080,"35,960.00",35960.0
+CBL,balance,Other trading assets,2nd Quarter 2079/2080,0.00,0.0
+CBL,balance,Loan and advances to B/FIs,2nd Quarter 2079/2080,"4,485,097.00",4485097.0
+CBL,balance,Loans and advances to customers,2nd Quarter 2079/2080,"84,081,763.00",84081763.0
+CBL,balance,Investment securities,2nd Quarter 2079/2080,"17,968,118.00",17968118.0
+CBL,balance,Current tax assets,2nd Quarter 2079/2080,"234,821.00",234821.0
+CBL,balance,Investment in subsidiaries,2nd Quarter 2079/2080,"260,063.00",260063.0
+CBL,balance,Investment in associates,2nd Quarter 2079/2080,0.00,0.0
+CBL,balance,Investment property,2nd Quarter 2079/2080,"89,053.00",89053.0
+CBL,balance,Property and equipment,2nd Quarter 2079/2080,"1,382,100.00",1382100.0
+CBL,balance,Goodwill and Intangible assets,2nd Quarter 2079/2080,"23,048.00",23048.0
+CBL,balance,Deferred tax assets,2nd Quarter 2079/2080,0.00,0.0
+CBL,balance,Other assets,2nd Quarter 2079/2080,"1,692,777.00",1692777.0
+CBL,balance,Total Assets,2nd Quarter 2079/2080,"119,410,951.00",119410951.0
+CBL,balance,Due to Bank and Financial Institutions,2nd Quarter 2079/2080,"1,703,823.00",1703823.0
+CBL,balance,Due to Nepal Rastra Bank,2nd Quarter 2079/2080,"2,186,671.00",2186671.0
+CBL,balance,Derivative financial instruments,2nd Quarter 2079/2080,"35,745.00",35745.0
+CBL,balance,Deposits from customers,2nd Quarter 2079/2080,"94,710,053.00",94710053.0
+CBL,balance,Borrowing,2nd Quarter 2079/2080,0.00,0.0
+CBL,balance,Current Tax Liabilities,2nd Quarter 2079/2080,0.00,0.0
+CBL,balance,Provisions,2nd Quarter 2079/2080,0.00,0.0
+CBL,balance,Deferred tax liabilities,2nd Quarter 2079/2080,"51,394.00",51394.0
+CBL,balance,Other liabilities,2nd Quarter 2079/2080,"5,399,378.00",5399378.0
+CBL,balance,Debt securities issued,2nd Quarter 2079/2080,"2,984,314.00",2984314.0
+CBL,balance,Subordinated Liabilities,2nd Quarter 2079/2080,0.00,0.0
+CBL,balance,Total liabilities,2nd Quarter 2079/2080,"107,071,378.00",107071378.0
+CBL,balance,Share capital,2nd Quarter 2079/2080,"9,075,844.00",9075844.0
+CBL,balance,Share premium,2nd Quarter 2079/2080,0.00,0.0
+CBL,balance,Retained earnings,2nd Quarter 2079/2080,"439,757.00",439757.0
+CBL,balance,Reserves,2nd Quarter 2079/2080,"2,823,974.00",2823974.0
+CBL,balance,Total equity,2nd Quarter 2079/2080,"12,339,575.00",12339575.0
+CBL,balance,Total liabilities and equity,2nd Quarter 2079/2080,"119,410,953.00",119410953.0
+CBL,profitloss,Interest income,2nd Quarter 2079/2080,"6,819,261.00",6819261.0
+CBL,profitloss,Interest expense,2nd Quarter 2079/2080,"4,560,887.00",4560887.0
+CBL,profitloss,Net interest income,2nd Quarter 2079/2080,"2,258,374.00",2258374.0
+CBL,profitloss,Fees and commission income,2nd Quarter 2079/2080,"204,896.00",204896.0
+CBL,profitloss,Fees and commission expense,2nd Quarter 2079/2080,"20,639.00",20639.0
+CBL,profitloss,Net fee and commission income,2nd Quarter 2079/2080,"184,257.00",184257.0
+CBL,profitloss,"Net interest, fee and commission income",2nd Quarter 2079/2080,"2,442,631.00",2442631.0
+CBL,profitloss,Net trading income,2nd Quarter 2079/2080,"31,439.00",31439.0
+CBL,profitloss,Other operating income,2nd Quarter 2079/2080,"51,212.00",51212.0
+CBL,profitloss,Total operating income,2nd Quarter 2079/2080,"2,525,282.00",2525282.0
+CBL,profitloss,Impairment charge/(reversal) for loan and other losses,2nd Quarter 2079/2080,"452,357.00",452357.0
+CBL,profitloss,Net operating income,2nd Quarter 2079/2080,"2,072,925.00",2072925.0
+CBL,profitloss,Personnel expense,2nd Quarter 2079/2080,"785,960.00",785960.0
+CBL,profitloss,Other operating expense,2nd Quarter 2079/2080,"329,788.00",329788.0
+CBL,profitloss,Depreciation & Amortisation,2nd Quarter 2079/2080,"52,179.00",52179.0
+CBL,profitloss,Operating Profit,2nd Quarter 2079/2080,"904,998.00",904998.0
+CBL,profitloss,Non operating income,2nd Quarter 2079/2080,"6,687.00",6687.0
+CBL,profitloss,Non operating expense,2nd Quarter 2079/2080,792.00,792.0
+CBL,profitloss,Profit before income tax,2nd Quarter 2079/2080,"910,893.00",910893.0
+CBL,profitloss,Current Tax,2nd Quarter 2079/2080,"273,268.00",273268.0
+CBL,profitloss,Deferred Tax,2nd Quarter 2079/2080,602.00,602.0
+CBL,profitloss,Profit for the period,2nd Quarter 2079/2080,"637,023.00",637023.0
+CBL,profitloss,Gains/(losses) from investments in equity instruments measured at fair value,2nd Quarter 2079/2080,0.00,0.0
+CBL,profitloss,Gains/(losses) on revalution,2nd Quarter 2079/2080,0.00,0.0
+CBL,profitloss,Actuarial gains/(losses) on defined benefit plans,2nd Quarter 2079/2080,0.00,0.0
+CBL,profitloss,Income tax relating to above items,2nd Quarter 2079/2080,0.00,0.0
+CBL,profitloss,Net other comprehsive income that will not be reclassified to profit or loss,2nd Quarter 2079/2080,"1,634.00",1634.0
+CBL,profitloss,Gains/(losses) on cash flow hedge,2nd Quarter 2079/2080,0.00,0.0
+CBL,profitloss,Exchange gains/(losses) (arising from translating financial assets of foreign operation),2nd Quarter 2079/2080,0.00,0.0
+CBL,profitloss,Income tax relating to above items,2nd Quarter 2079/2080,0.00,0.0
+CBL,profitloss,Net other comprehsive income that are or may be reclassified to profit or loss,2nd Quarter 2079/2080,0.00,0.0
+CBL,profitloss,"Other Comprehensive Income For The Period, Net Of Income Tax",2nd Quarter 2079/2080,0.00,0.0
+CBL,profitloss,Total Comprehensive Income For The Period,2nd Quarter 2079/2080,"638,657.00",638657.0
+CBL,keymetrics,Basic Earnings Per Share(Annualized EPS),2nd Quarter 2079/2080,14.04,14.04
+CBL,keymetrics,Diluted Earnings Per Share,2nd Quarter 2079/2080,14.04,14.04
+CBL,keymetrics,Capital fund to RWA,2nd Quarter 2079/2080,16.08,16.08
+CBL,keymetrics,Tier I Capital to RWA,2nd Quarter 2079/2080,0.00,0.0
+CBL,keymetrics,CET I Capital to RWA,2nd Quarter 2079/2080,0.00,0.0
+CBL,keymetrics,Non-Performing loan(NPL) to Total Loan,2nd Quarter 2079/2080,2.41,2.41
+CBL,keymetrics,Total Loan loss provision to Total NPL,2nd Quarter 2079/2080,127.28,127.28
+CBL,keymetrics,Cost of Funds,2nd Quarter 2079/2080,9.49,9.49
+CBL,keymetrics,Credit to Deposit Ratio,2nd Quarter 2079/2080,87.05,87.05
+CBL,keymetrics,Base Rate,2nd Quarter 2079/2080,11.73,11.73
+CBL,keymetrics,Interest Spread Rate,2nd Quarter 2079/2080,4.00,4.0
+CBL,keymetrics,Total Shareholder's Equity (in Rs '000'),2nd Quarter 2079/2080,"12,339,575.00",12339575.0
+CBL,keymetrics,No. of Outstanding Shares,2nd Quarter 2079/2080,"90,758,440.00",90758440.0
+CBL,keymetrics,Net Worth Per Share,2nd Quarter 2079/2080,135.96,135.96
+CBL,keymetrics,P/E Ratio,2nd Quarter 2079/2080,16.67,16.67
+CBL,keymetrics,Price to Book (P/B) Ratio,2nd Quarter 2079/2080,1.72,1.72
+CBL,keymetrics,Return on Equity,2nd Quarter 2079/2080,10.32,10.32
+CBL,keymetrics,Return on Assets,2nd Quarter 2079/2080,1.07,1.07

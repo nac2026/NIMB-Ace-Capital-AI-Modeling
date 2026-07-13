@@ -1,0 +1,87 @@
+scrip,section,metric,period,value_raw,value_num
+JBNL,balance,Cash and cash equivalent,1st Quarter 2076/2077,"4,022,689.25",4022689.25
+JBNL,balance,Due from Nepal Rastra Bank,1st Quarter 2076/2077,"5,346,128.00",5346128.0
+JBNL,balance,Placement with Bank and Financial Institutions,1st Quarter 2076/2077,"4,905,130.00",4905130.0
+JBNL,balance,Derivative financial instruments,1st Quarter 2076/2077,"4,280,861.50",4280861.5
+JBNL,balance,Other trading assets,1st Quarter 2076/2077,"5,030.00",5030.0
+JBNL,balance,Loan and advances to B/FIs,1st Quarter 2076/2077,"2,352,700.00",2352700.0
+JBNL,balance,Loans and advances to customers,1st Quarter 2076/2077,"68,598,840.00",68598840.0
+JBNL,balance,Investment securities,1st Quarter 2076/2077,"8,936,783.00",8936783.0
+JBNL,balance,Current tax assets,1st Quarter 2076/2077,"69,153.00",69153.0
+JBNL,balance,Investment in subsidiaries,1st Quarter 2076/2077,"200,000.00",200000.0
+JBNL,balance,Investment in associates,1st Quarter 2076/2077,"66,644.70",66644.7
+JBNL,balance,Investment property,1st Quarter 2076/2077,"169,402.11",169402.11
+JBNL,balance,Property and equipment,1st Quarter 2076/2077,"1,318,863.38",1318863.38
+JBNL,balance,Goodwill and Intangible assets,1st Quarter 2076/2077,"104,713.18",104713.18
+JBNL,balance,Deferred tax assets,1st Quarter 2076/2077,"51,054.10",51054.1
+JBNL,balance,Other assets,1st Quarter 2076/2077,"1,196,619.00",1196619.0
+JBNL,balance,Total Assets,1st Quarter 2076/2077,"101,624,616.00",101624616.0
+JBNL,balance,Due to Bank and Financial Institutions,1st Quarter 2076/2077,"6,942,244.50",6942244.5
+JBNL,balance,Due to Nepal Rastra Bank,1st Quarter 2076/2077,"2,118,004.25",2118004.25
+JBNL,balance,Derivative financial instruments,1st Quarter 2076/2077,"4,267,529.00",4267529.0
+JBNL,balance,Deposits from customers,1st Quarter 2076/2077,"75,039,048.00",75039048.0
+JBNL,balance,Borrowing,1st Quarter 2076/2077,0.00,0.0
+JBNL,balance,Current Tax Liabilities,1st Quarter 2076/2077,"157,251.97",157251.97
+JBNL,balance,Provisions,1st Quarter 2076/2077,0.00,0.0
+JBNL,balance,Deferred tax liabilities,1st Quarter 2076/2077,0.00,0.0
+JBNL,balance,Other liabilities,1st Quarter 2076/2077,"2,099,417.75",2099417.75
+JBNL,balance,Debt securities issued,1st Quarter 2076/2077,0.00,0.0
+JBNL,balance,Subordinated Liabilities,1st Quarter 2076/2077,0.00,0.0
+JBNL,balance,Total liabilities,1st Quarter 2076/2077,"90,623,496.00",90623496.0
+JBNL,balance,Share capital,1st Quarter 2076/2077,"8,000,786.00",8000786.0
+JBNL,balance,Share premium,1st Quarter 2076/2077,0.00,0.0
+JBNL,balance,Retained earnings,1st Quarter 2076/2077,"1,145,760.88",1145760.88
+JBNL,balance,Reserves,1st Quarter 2076/2077,"1,854,568.75",1854568.75
+JBNL,balance,Total equity,1st Quarter 2076/2077,"11,001,115.00",11001115.0
+JBNL,balance,Total liabilities and equity,1st Quarter 2076/2077,"101,624,616.00",101624616.0
+JBNL,profitloss,Interest income,1st Quarter 2076/2077,"2,414,732.25",2414732.25
+JBNL,profitloss,Interest expense,1st Quarter 2076/2077,"1,417,172.50",1417172.5
+JBNL,profitloss,Net interest income,1st Quarter 2076/2077,"997,559.69",997559.69
+JBNL,profitloss,Fees and commission income,1st Quarter 2076/2077,"136,975.75",136975.75
+JBNL,profitloss,Fees and commission expense,1st Quarter 2076/2077,"9,423.91",9423.91
+JBNL,profitloss,Net fee and commission income,1st Quarter 2076/2077,"127,551.84",127551.84
+JBNL,profitloss,"Net interest, fee and commission income",1st Quarter 2076/2077,"1,125,111.50",1125111.5
+JBNL,profitloss,Net trading income,1st Quarter 2076/2077,"60,480.17",60480.17
+JBNL,profitloss,Other operating income,1st Quarter 2076/2077,"1,887.82",1887.82
+JBNL,profitloss,Total operating income,1st Quarter 2076/2077,"1,187,479.50",1187479.5
+JBNL,profitloss,Impairment charge/(reversal) for loan and other losses,1st Quarter 2076/2077,"143,625.66",143625.66
+JBNL,profitloss,Net operating income,1st Quarter 2076/2077,"1,043,853.88",1043853.88
+JBNL,profitloss,Personnel expense,1st Quarter 2076/2077,"323,154.38",323154.38
+JBNL,profitloss,Other operating expense,1st Quarter 2076/2077,"155,417.34",155417.34
+JBNL,profitloss,Depreciation & Amortisation,1st Quarter 2076/2077,"45,058.11",45058.11
+JBNL,profitloss,Operating Profit,1st Quarter 2076/2077,"520,224.00",520224.0
+JBNL,profitloss,Non operating income,1st Quarter 2076/2077,"3,949.21",3949.21
+JBNL,profitloss,Non operating expense,1st Quarter 2076/2077,0.00,0.0
+JBNL,profitloss,Profit before income tax,1st Quarter 2076/2077,"524,173.22",524173.22
+JBNL,profitloss,Current Tax,1st Quarter 2076/2077,"157,251.97",157251.97
+JBNL,profitloss,Deferred Tax,1st Quarter 2076/2077,0.00,0.0
+JBNL,profitloss,Profit for the period,1st Quarter 2076/2077,"366,921.25",366921.25
+JBNL,profitloss,Gains/(losses) from investments in equity instruments measured at fair value,1st Quarter 2076/2077,0.00,0.0
+JBNL,profitloss,Gains/(losses) on revalution,1st Quarter 2076/2077,0.00,0.0
+JBNL,profitloss,Actuarial gains/(losses) on defined benefit plans,1st Quarter 2076/2077,0.00,0.0
+JBNL,profitloss,Income tax relating to above items,1st Quarter 2076/2077,0.00,0.0
+JBNL,profitloss,Net other comprehsive income that will not be reclassified to profit or loss,1st Quarter 2076/2077,"-19,053.01",-19053.01
+JBNL,profitloss,Gains/(losses) on cash flow hedge,1st Quarter 2076/2077,0.00,0.0
+JBNL,profitloss,Exchange gains/(losses) (arising from translating financial assets of foreign operation),1st Quarter 2076/2077,0.00,0.0
+JBNL,profitloss,Income tax relating to above items,1st Quarter 2076/2077,0.00,0.0
+JBNL,profitloss,Net other comprehsive income that are or may be reclassified to profit or loss,1st Quarter 2076/2077,0.00,0.0
+JBNL,profitloss,"Other Comprehensive Income For The Period, Net Of Income Tax",1st Quarter 2076/2077,0.00,0.0
+JBNL,profitloss,Total Comprehensive Income For The Period,1st Quarter 2076/2077,"347,868.25",347868.25
+JBNL,keymetrics,Basic Earnings Per Share(Annualized EPS),1st Quarter 2076/2077,18.34,18.34
+JBNL,keymetrics,Diluted Earnings Per Share,1st Quarter 2076/2077,18.34,18.34
+JBNL,keymetrics,Capital fund to RWA,1st Quarter 2076/2077,13.06,13.06
+JBNL,keymetrics,Tier I Capital to RWA,1st Quarter 2076/2077,0.00,0.0
+JBNL,keymetrics,CET I Capital to RWA,1st Quarter 2076/2077,0.00,0.0
+JBNL,keymetrics,Non-Performing loan(NPL) to Total Loan,1st Quarter 2076/2077,1.33,1.33
+JBNL,keymetrics,Total Loan loss provision to Total NPL,1st Quarter 2076/2077,154.00,154.0
+JBNL,keymetrics,Cost of Funds,1st Quarter 2076/2077,7.53,7.53
+JBNL,keymetrics,Credit to Deposit Ratio,1st Quarter 2076/2077,79.94,79.94
+JBNL,keymetrics,Base Rate,1st Quarter 2076/2077,10.13,10.13
+JBNL,keymetrics,Interest Spread Rate,1st Quarter 2076/2077,4.95,4.95
+JBNL,keymetrics,Total Shareholder's Equity (in Rs '000'),1st Quarter 2076/2077,"11,001,115.00",11001115.0
+JBNL,keymetrics,No. of Outstanding Shares,1st Quarter 2076/2077,"80,007,856.00",80007856.0
+JBNL,keymetrics,Net Worth Per Share,1st Quarter 2076/2077,137.50,137.5
+JBNL,keymetrics,P/E Ratio,1st Quarter 2076/2077,11.67,11.67
+JBNL,keymetrics,Price to Book (P/B) Ratio,1st Quarter 2076/2077,1.56,1.56
+JBNL,keymetrics,Return on Equity,1st Quarter 2076/2077,13.34,13.34
+JBNL,keymetrics,Return on Assets,1st Quarter 2076/2077,1.44,1.44

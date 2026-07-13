@@ -1,0 +1,52 @@
+# dbt connection profile. Kept in-repo (not in ~/.dbt/) so `DBT_PROFILES_DIR`
+# can point at this file in CI, local dev, and the dagster-dbt orchestration
+# path without needing per-engineer setup. All secrets come from env vars —
+# nothing sensitive lives in this file.
+#
+# `type: duckdb` = the dbt-duckdb adapter. Lightweight, in-process, reads
+# Silver Delta tables straight off MinIO via DuckDB's httpfs + delta
+# extensions. When the stack migrates to Spark on DGX later, swap this
+# profile for `type: spark` and models port over with zero rewrites.
+
+nrc_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      # File-based DuckDB catalog under target/. Each `dbt run` writes the
+      # model's Parquet to MinIO AND registers a view pointing at it in
+      # this catalog, so subsequent `dbt test` / `dbt docs` invocations
+      # can query the view without re-running models. External Parquet
+      # remains the source of truth; the .duckdb file is a disposable
+      # catalog — delete it to force a fresh view registry.
+      path: "target/dbt_catalog.duckdb"
+
+      # Extensions loaded at session start. httpfs enables s3:// reads;
+      # delta enables Delta Lake reads from Silver sources and Delta
+      # writes via the delta plugin.
+      extensions:
+        - httpfs
+        - delta
+
+      # S3 credentials via DuckDB's CREATE SECRET API — this is what the
+      # Delta extension reads (the old `SET s3_*` settings don't propagate
+      # to delta_scan() calls on recent DuckDB versions). URL style is
+      # `path` because MinIO doesn't support virtual-host style; use_ssl
+      # is false for local http MinIO.
+      secrets:
+        - type: s3
+          key_id: "{{ env_var('MINIO_ROOT_USER', 'minioadmin') }}"
+          secret: "{{ env_var('MINIO_ROOT_PASSWORD', 'minioadmin') }}"
+          endpoint: "{{ env_var('MINIO_ENDPOINT_HOST', 'localhost:9000') }}"
+          url_style: "path"
+          use_ssl: "false"
+          region: "{{ env_var('MINIO_REGION', 'us-east-1') }}"
+
+      # No write plugins configured — Gold models materialize as Parquet
+      # via dbt-duckdb's default external materialization (DuckDB COPY TO
+      # 's3://...' FORMAT PARQUET). We considered the delta write plugin
+      # but its `store` method isn't implemented in dbt-duckdb 1.9.x, so
+      # we sidestep it. Silver stays Delta (Python-written, full ACID /
+      # time travel). Gold as Parquet is fine: it's read-mostly, rebuilt
+      # whole on every run, and DuckDB reads both formats transparently
+      # when Postgres sync runs.

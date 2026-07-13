@@ -1,0 +1,87 @@
+scrip,section,metric,period,value_raw,value_num
+GBIME,balance,Cash and cash equivalent,2nd Quarter 2082/2083,"54,554,050.00",54554050.0
+GBIME,balance,Due from Nepal Rastra Bank,2nd Quarter 2082/2083,"51,819,551.00",51819551.0
+GBIME,balance,Placement with Bank and Financial Institutions,2nd Quarter 2082/2083,0.00,0.0
+GBIME,balance,Derivative financial instruments,2nd Quarter 2082/2083,"13,343,077.00",13343077.0
+GBIME,balance,Other trading assets,2nd Quarter 2082/2083,0.00,0.0
+GBIME,balance,Loan and advances to B/FIs,2nd Quarter 2082/2083,"16,169,007.00",16169007.0
+GBIME,balance,Loans and advances to customers,2nd Quarter 2082/2083,"432,967,256.00",432967256.0
+GBIME,balance,Investment securities,2nd Quarter 2082/2083,"153,407,414.00",153407414.0
+GBIME,balance,Current tax assets,2nd Quarter 2082/2083,"1,353,860.00",1353860.0
+GBIME,balance,Investment in subsidiaries,2nd Quarter 2082/2083,"728,395.00",728395.0
+GBIME,balance,Investment in associates,2nd Quarter 2082/2083,"1,395,771.00",1395771.0
+GBIME,balance,Investment property,2nd Quarter 2082/2083,"5,998,786.00",5998786.0
+GBIME,balance,Property and equipment,2nd Quarter 2082/2083,"7,975,923.00",7975923.0
+GBIME,balance,Goodwill and Intangible assets,2nd Quarter 2082/2083,"853,158.00",853158.0
+GBIME,balance,Deferred tax assets,2nd Quarter 2082/2083,"1,167,329.00",1167329.0
+GBIME,balance,Other assets,2nd Quarter 2082/2083,"6,563,015.00",6563015.0
+GBIME,balance,Total Assets,2nd Quarter 2082/2083,"748,296,592.00",748296592.0
+GBIME,balance,Due to Bank and Financial Institutions,2nd Quarter 2082/2083,"29,679,515.00",29679515.0
+GBIME,balance,Due to Nepal Rastra Bank,2nd Quarter 2082/2083,"311,103.00",311103.0
+GBIME,balance,Derivative financial instruments,2nd Quarter 2082/2083,"13,400,251.00",13400251.0
+GBIME,balance,Deposits from customers,2nd Quarter 2082/2083,"605,880,278.00",605880278.0
+GBIME,balance,Borrowing,2nd Quarter 2082/2083,"10,331,991.00",10331991.0
+GBIME,balance,Current Tax Liabilities,2nd Quarter 2082/2083,"1,769,982.00",1769982.0
+GBIME,balance,Provisions,2nd Quarter 2082/2083,0.00,0.0
+GBIME,balance,Deferred tax liabilities,2nd Quarter 2082/2083,"839,857.00",839857.0
+GBIME,balance,Other liabilities,2nd Quarter 2082/2083,"8,581,492.00",8581492.0
+GBIME,balance,Debt securities issued,2nd Quarter 2082/2083,"10,688,748.00",10688748.0
+GBIME,balance,Subordinated Liabilities,2nd Quarter 2082/2083,0.00,0.0
+GBIME,balance,Total liabilities,2nd Quarter 2082/2083,"681,483,217.00",681483217.0
+GBIME,balance,Share capital,2nd Quarter 2082/2083,"38,115,853.00",38115853.0
+GBIME,balance,Share premium,2nd Quarter 2082/2083,0.00,0.0
+GBIME,balance,Retained earnings,2nd Quarter 2082/2083,"2,426,675.00",2426675.0
+GBIME,balance,Reserves,2nd Quarter 2082/2083,"26,270,848.00",26270848.0
+GBIME,balance,Total equity,2nd Quarter 2082/2083,"66,813,376.00",66813376.0
+GBIME,balance,Total liabilities and equity,2nd Quarter 2082/2083,"748,296,593.00",748296593.0
+GBIME,profitloss,Interest income,2nd Quarter 2082/2083,"20,087,055.00",20087055.0
+GBIME,profitloss,Interest expense,2nd Quarter 2082/2083,"12,064,738.00",12064738.0
+GBIME,profitloss,Net interest income,2nd Quarter 2082/2083,"8,022,317.00",8022317.0
+GBIME,profitloss,Fees and commission income,2nd Quarter 2082/2083,"2,237,261.00",2237261.0
+GBIME,profitloss,Fees and commission expense,2nd Quarter 2082/2083,"481,006.00",481006.0
+GBIME,profitloss,Net fee and commission income,2nd Quarter 2082/2083,"1,756,255.00",1756255.0
+GBIME,profitloss,"Net interest, fee and commission income",2nd Quarter 2082/2083,"9,778,572.00",9778572.0
+GBIME,profitloss,Net trading income,2nd Quarter 2082/2083,"552,488.00",552488.0
+GBIME,profitloss,Other operating income,2nd Quarter 2082/2083,"539,872.00",539872.0
+GBIME,profitloss,Total operating income,2nd Quarter 2082/2083,"10,870,932.00",10870932.0
+GBIME,profitloss,Impairment charge/(reversal) for loan and other losses,2nd Quarter 2082/2083,"2,430,170.00",2430170.0
+GBIME,profitloss,Net operating income,2nd Quarter 2082/2083,"8,440,762.00",8440762.0
+GBIME,profitloss,Personnel expense,2nd Quarter 2082/2083,"2,541,022.00",2541022.0
+GBIME,profitloss,Other operating expense,2nd Quarter 2082/2083,"1,194,596.00",1194596.0
+GBIME,profitloss,Depreciation & Amortisation,2nd Quarter 2082/2083,"428,817.00",428817.0
+GBIME,profitloss,Operating Profit,2nd Quarter 2082/2083,"4,276,327.00",4276327.0
+GBIME,profitloss,Non operating income,2nd Quarter 2082/2083,"118,741.00",118741.0
+GBIME,profitloss,Non operating expense,2nd Quarter 2082/2083,"5,540.00",5540.0
+GBIME,profitloss,Profit before income tax,2nd Quarter 2082/2083,"4,389,528.00",4389528.0
+GBIME,profitloss,Current Tax,2nd Quarter 2082/2083,"1,581,940.00",1581940.0
+GBIME,profitloss,Deferred Tax,2nd Quarter 2082/2083,"-444,528.00",-444528.0
+GBIME,profitloss,Profit for the period,2nd Quarter 2082/2083,"3,252,116.00",3252116.0
+GBIME,profitloss,Gains/(losses) from investments in equity instruments measured at fair value,2nd Quarter 2082/2083,0.00,0.0
+GBIME,profitloss,Gains/(losses) on revalution,2nd Quarter 2082/2083,0.00,0.0
+GBIME,profitloss,Actuarial gains/(losses) on defined benefit plans,2nd Quarter 2082/2083,0.00,0.0
+GBIME,profitloss,Income tax relating to above items,2nd Quarter 2082/2083,0.00,0.0
+GBIME,profitloss,Net other comprehsive income that will not be reclassified to profit or loss,2nd Quarter 2082/2083,0.00,0.0
+GBIME,profitloss,Gains/(losses) on cash flow hedge,2nd Quarter 2082/2083,0.00,0.0
+GBIME,profitloss,Exchange gains/(losses) (arising from translating financial assets of foreign operation),2nd Quarter 2082/2083,0.00,0.0
+GBIME,profitloss,Income tax relating to above items,2nd Quarter 2082/2083,0.00,0.0
+GBIME,profitloss,Net other comprehsive income that are or may be reclassified to profit or loss,2nd Quarter 2082/2083,0.00,0.0
+GBIME,profitloss,"Other Comprehensive Income For The Period, Net Of Income Tax",2nd Quarter 2082/2083,"-16,039.00",-16039.0
+GBIME,profitloss,Total Comprehensive Income For The Period,2nd Quarter 2082/2083,"3,236,077.00",3236077.0
+GBIME,keymetrics,Basic Earnings Per Share(Annualized EPS),2nd Quarter 2082/2083,17.06,17.06
+GBIME,keymetrics,Diluted Earnings Per Share,2nd Quarter 2082/2083,17.06,17.06
+GBIME,keymetrics,Capital fund to RWA,2nd Quarter 2082/2083,12.17,12.17
+GBIME,keymetrics,Tier I Capital to RWA,2nd Quarter 2082/2083,9.71,9.71
+GBIME,keymetrics,CET I Capital to RWA,2nd Quarter 2082/2083,9.71,9.71
+GBIME,keymetrics,Non-Performing loan(NPL) to Total Loan,2nd Quarter 2082/2083,4.91,4.91
+GBIME,keymetrics,Total Loan loss provision to Total NPL,2nd Quarter 2082/2083,114.12,114.12
+GBIME,keymetrics,Cost of Funds,2nd Quarter 2082/2083,3.73,3.73
+GBIME,keymetrics,Credit to Deposit Ratio,2nd Quarter 2082/2083,71.55,71.55
+GBIME,keymetrics,Base Rate,2nd Quarter 2082/2083,5.16,5.16
+GBIME,keymetrics,Interest Spread Rate,2nd Quarter 2082/2083,3.43,3.43
+GBIME,keymetrics,Total Shareholder's Equity (in Rs '000'),2nd Quarter 2082/2083,"66,813,376.00",66813376.0
+GBIME,keymetrics,No. of Outstanding Shares,2nd Quarter 2082/2083,"381,158,530.00",381158530.0
+GBIME,keymetrics,Net Worth Per Share,2nd Quarter 2082/2083,175.29,175.29
+GBIME,keymetrics,P/E Ratio,2nd Quarter 2082/2083,13.24,13.24
+GBIME,keymetrics,Price to Book (P/B) Ratio,2nd Quarter 2082/2083,1.29,1.29
+GBIME,keymetrics,Return on Equity,2nd Quarter 2082/2083,9.73,9.73
+GBIME,keymetrics,Return on Assets,2nd Quarter 2082/2083,0.87,0.87

@@ -1,0 +1,705 @@
+# Column-level documentation + data quality tests for Gold models.
+# `dbt test` runs these after every `dbt run` and dagster-dbt surfaces
+# failures as Dagster AssetCheck events in the UI.
+
+version: 2
+
+models:
+  - name: peer_rankings_quarterly
+    description: >
+      Per-metric quarterly peer rankings within NEPSE sectors. For every
+      (sector, fiscal_year_bs, quarter, metric_name) combination, gives
+      every scrip's rank + percentile + sector median + sector mean.
+      Rank 1 = best performer, percentile 1.0 = best, direction is
+      automatic (NPL flips — lower is better).
+    columns:
+      - name: scrip
+        description: Canonical NEPSE ticker.
+        data_tests:
+          - not_null
+      - name: sector
+        description: NEPSE sector label (Commercial Bank, Hydro Power, etc.).
+        data_tests:
+          - not_null
+      - name: fiscal_year_bs
+        description: BS fiscal year start.
+        data_tests:
+          - not_null
+      - name: quarter
+        description: 1..4 within the BS fiscal year.
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4]
+      - name: metric_name
+        description: Canonical metric slug — see nrc_processing._metric_map.
+        data_tests:
+          - not_null
+      - name: value
+        description: Raw metric value (NPR '000s for money, decimal for ratio).
+      - name: rank_in_sector
+        description: 1-indexed rank within the (sector, fy, q, metric) group.
+        data_tests:
+          - not_null
+      - name: percentile_in_sector
+        description: (n_peers - rank + 1) / n_peers. Range [1/n, 1.0].
+        data_tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 1
+              inclusive: true
+      - name: sector_median
+        description: Median value across peers in the same sector/quarter/metric.
+      - name: sector_mean
+        description: Arithmetic mean across peers.
+      - name: computed_at
+        description: UTC timestamp of the dbt run that produced this row.
+
+    # Row-level composite-key uniqueness — the 4 columns together must be
+    # unique. If two rows share this key, the ranking logic broke.
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - scrip
+            - fiscal_year_bs
+            - quarter
+            - metric_name
+
+  - name: indicators_daily
+    description: >
+      Daily technical indicator panel per (scrip, date). Every indicator
+      is NULL until its lookback window is full (e.g. sma_200 stays NULL
+      for the first 199 trading days of a scrip's history). ema_12 /
+      ema_26 are weighted-moving-average approximations — good for
+      crossover detection, not exact. adx_14 is deliberately NULL for now.
+    columns:
+      - name: scrip
+        data_tests: [not_null]
+      - name: date
+        data_tests: [not_null]
+      - name: close
+        description: Close price copied from silver.prices.
+        data_tests: [not_null]
+      - name: rsi_14
+        description: Relative Strength Index, 14-day. Range [0, 100] when set.
+        data_tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 100
+              inclusive: true
+      - name: sma_20
+        description: 20-day simple moving average of close.
+      - name: sma_50
+      - name: sma_200
+      - name: ema_12
+      - name: ema_26
+      - name: macd
+      - name: macd_signal
+      - name: macd_histogram
+      - name: bollinger_upper
+      - name: bollinger_middle
+      - name: bollinger_lower
+      - name: atr_14
+        description: Average true range, 14-day.
+      - name: adx_14
+        description: Placeholder — always NULL until ADX is implemented.
+      - name: volume_sma_20
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [scrip, date]
+
+  - name: stage1_screen_results
+    description: >
+      Sector-relative Stage-1 composite screen. Three z-score components
+      (profitability, revenue growth, return ratio) averaged into
+      composite_score. `passed` = True for scrips in the top 50% of
+      composite_score in their sector/quarter.
+    columns:
+      - name: scrip
+        data_tests: [not_null]
+      - name: sector
+        data_tests: [not_null]
+      - name: fiscal_year_bs
+        data_tests: [not_null]
+      - name: quarter
+        data_tests:
+          - not_null
+          - accepted_values: { values: [1, 2, 3, 4] }
+      - name: composite_score
+        data_tests: [not_null]
+      - name: passed
+        description: True if composite_score is in the top 50% of the sector/quarter cohort.
+        data_tests:
+          - not_null
+          - accepted_values: { values: [true, false] }
+      - name: rank
+        description: Sector-relative rank on composite_score, 1 = best-in-sector.
+        data_tests: [not_null]
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [scrip, fiscal_year_bs, quarter]
+
+  - name: stage2_bank_screen
+    description: >
+      Sector-aware deep screen covering ALL sectors (legacy "bank" name kept
+      to avoid churning the serving table / API / agent tool). Each scrip is
+      percentile-ranked WITHIN its own sector per fiscal quarter. BFI sectors
+      (Commercial Bank, Development Bank, Finance, Microfinance) score on ROE,
+      NPL, CAR, CD; all other sectors score on ROE, ROA, net margin. Flags
+      fire on absolute (decimal-scale) thresholds regardless of peer rank.
+    columns:
+      - name: scrip
+        data_tests: [not_null]
+      - name: sector
+        data_tests: [not_null]
+      - name: fiscal_year_bs
+        data_tests: [not_null]
+      - name: quarter
+        data_tests:
+          - not_null
+          - accepted_values: { values: [1, 2, 3, 4] }
+      - name: roe_percentile
+        description: Percentile rank on ROE within the scrip's sector cohort.
+        data_tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 1
+              inclusive: true
+      - name: roa_percentile
+        description: Percentile rank on ROA within the scrip's sector cohort.
+        data_tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 1
+              inclusive: true
+      - name: net_margin_percentile
+        description: Percentile rank on net margin (net_profit/total_revenue) within sector.
+        data_tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 1
+              inclusive: true
+      - name: npl_percentile
+        description: 1 - raw percentile (flipped because lower NPL is better). NULL for non-BFI sectors.
+        data_tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 1
+              inclusive: true
+      - name: car_percentile
+        description: Percentile rank on CAR within sector. NULL for non-BFI sectors.
+        data_tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 1
+              inclusive: true
+      - name: cd_percentile
+        description: 1 - raw percentile (flipped because lower CD is preferred). NULL for non-BFI sectors.
+        data_tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 1
+              inclusive: true
+      - name: composite_score
+        description: Mean of the family-relevant percentiles (4 for BFIs, 3 otherwise).
+        data_tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 1
+              inclusive: true
+      - name: flags
+        description: |
+          Array of absolute-threshold flags. Empty array when all thresholds
+          are clear. BFI: NPL_HIGH, CAR_LOW, CD_HIGH, ROE_LOW. Other sectors:
+          LOSS, ROE_LOW, THIN_MARGIN.
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [scrip, fiscal_year_bs, quarter]
+
+  - name: valuation
+    description: >
+      One row per active scrip with the latest fundamental snapshot +
+      latest closing price, compared against sector peer medians. Drives
+      the `get_valuation` tool.
+    columns:
+      - name: scrip
+        data_tests:
+          - not_null
+          - unique                       # one snapshot per scrip
+      - name: date
+        description: Latest trading date with a close observation.
+        data_tests: [not_null]
+      - name: pe_trailing
+      - name: pb
+      - name: peer_pe_median
+      - name: peer_pb_median
+      - name: pe_vs_peer_pct
+        description: (pe_trailing - peer_pe_median) / peer_pe_median. Signed.
+      - name: fair_value_forward_eps
+        description: NULL until we integrate a forward-EPS estimate source.
+      - name: upside_pct
+        description: Peer-multiple-implied upside vs today's close.
+
+  # =====================================================================
+  # Phase-I Gold expansions — bank financial analytics (SOW M3 + research Qs)
+  # =====================================================================
+
+  - name: ttm_fundamentals
+    description: >
+      Trailing-12-month sums for flow metrics (income, expense, profit)
+      and point-in-time balance-sheet stocks. Only emits rows where all
+      4 quarters of the TTM window are present. Feeds growth models +
+      TTM ratios used throughout the LLM tool layer.
+    columns:
+      - name: scrip
+        data_tests: [not_null]
+      - name: fiscal_year_bs
+        data_tests: [not_null]
+      - name: quarter
+        data_tests:
+          - not_null
+          - accepted_values: { values: [1, 2, 3, 4] }
+      - name: ttm_net_profit
+      - name: ttm_total_operating_income
+      - name: ttm_roe
+      - name: ttm_roa
+      - name: ttm_nim
+      - name: n_quarters_in_window
+        description: Always 4 — rows with fewer are dropped by the QUALIFY.
+        data_tests:
+          - accepted_values: { values: [4] }
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [scrip, fiscal_year_bs, quarter]
+
+  - name: quarterly_growth
+    description: >
+      Per-quarter YoY / QoQ / 3-year growth rates on every canonical
+      flow + stock metric. NULL when the prior-period denominator is 0
+      or absent.
+    columns:
+      - name: scrip
+        data_tests: [not_null]
+      - name: fiscal_year_bs
+        data_tests: [not_null]
+      - name: quarter
+        data_tests:
+          - not_null
+          - accepted_values: { values: [1, 2, 3, 4] }
+      - name: net_profit_yoy_pct
+        description: YoY net profit growth. Signed — negative = contraction.
+      - name: total_operating_income_yoy_pct
+      - name: total_loans_yoy_pct
+      - name: total_deposits_yoy_pct
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [scrip, fiscal_year_bs, quarter]
+
+  - name: dupont_decomposition
+    description: >
+      Bank-adapted DuPont — 2, 3, and 5-step ROE decomposition. The
+      five-step form separates tax burden × interest burden × operating
+      margin × asset turnover × leverage so analysts can attribute
+      quarter-over-quarter ROE changes to the right driver.
+    columns:
+      - name: scrip
+        data_tests: [not_null]
+      - name: fiscal_year_bs
+        data_tests: [not_null]
+      - name: quarter
+        data_tests:
+          - not_null
+          - accepted_values: { values: [1, 2, 3, 4] }
+      - name: roe_computed
+        description: net_profit / shareholders_equity — should ≈ silver.fundamentals_snapshots.roe.
+      - name: roa
+      - name: equity_multiplier
+      - name: net_profit_margin
+      - name: asset_turnover
+      - name: tax_burden
+        description: net_profit / profit_before_tax. Range typically [0.6, 1.0].
+      - name: operating_margin
+      - name: nim
+        description: Net Interest Margin = net_interest_income / total_assets.
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [scrip, fiscal_year_bs, quarter]
+
+  - name: cost_efficiency
+    description: >
+      Cost-to-income ratio plus its staff / opex / depreciation
+      component breakdown. CIR is the single most-cited bank efficiency
+      metric — lower is better.
+    columns:
+      - name: scrip
+        data_tests: [not_null]
+      - name: fiscal_year_bs
+        data_tests: [not_null]
+      - name: cost_to_income_ratio
+        description: Total opex / total operating income. Good banks are 0.40–0.55.
+      - name: staff_cost_ratio
+      - name: operating_margin
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [scrip, fiscal_year_bs, quarter]
+
+  - name: revenue_quality
+    description: >
+      Income composition — NII / fees / trading / other shares — plus
+      earnings stability (coefficient of variation over trailing 8
+      quarters). High-quality banks are NII-heavy and low-CV.
+    columns:
+      - name: scrip
+        data_tests: [not_null]
+      - name: nii_share
+        data_tests:
+          - dbt_utils.accepted_range: { min_value: -1, max_value: 2 }
+      - name: revenue_diversification_score
+        description: Herfindahl-complement across segments. 0 = one source, 1 = perfectly equal.
+        data_tests:
+          - dbt_utils.accepted_range: { min_value: 0, max_value: 1, inclusive: true }
+      - name: earnings_cv_8q
+        description: CV of net profit over trailing 8 quarters. Higher = more volatile earnings.
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [scrip, fiscal_year_bs, quarter]
+
+  - name: asset_quality_trends
+    description: >
+      NPL ratio + LLP coverage + TTM credit-loss rate, with YoY / QoQ
+      deltas and a bucketed asset_quality_tier.
+    columns:
+      - name: scrip
+        data_tests: [not_null]
+      - name: npl_ratio
+      - name: asset_quality_tier
+        data_tests:
+          - accepted_values: { values: [STRONG, MODERATE, WEAK] }
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [scrip, fiscal_year_bs, quarter]
+
+  - name: capital_strength
+    description: >
+      Capital adequacy over time with Tier 1/Tier 2 composition and
+      buffer vs the NRB 11% minimum.
+    columns:
+      - name: scrip
+        data_tests: [not_null]
+      - name: car
+      - name: car_buffer
+        description: car - 0.11. Positive = headroom above NRB minimum.
+      - name: capital_tier
+        data_tests:
+          - accepted_values: { values: [STRONG, ADEQUATE, TIGHT, BELOW_MIN] }
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [scrip, fiscal_year_bs, quarter]
+
+  - name: dividend_yield
+    description: >
+      Annual cash + bonus dividend yield per scrip / fiscal year,
+      benchmarked against FD rates via the yield_tier bucket.
+    columns:
+      - name: scrip
+        data_tests: [not_null]
+      - name: fiscal_year_bs
+        data_tests: [not_null]
+      - name: cash_dividend_yield
+      - name: total_dividend_yield
+      - name: yield_tier
+        data_tests:
+          - accepted_values: { values: [ABOVE_FD_RATE, MODERATE, LOW] }
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [scrip, fiscal_year_bs]
+
+  - name: piotroski_f_score
+    description: >
+      Bank-adapted Piotroski F-Score (0–9). 4 profitability + 3 balance
+      sheet + 2 efficiency signals. 7+ = strong quality; 0–3 = weak.
+    columns:
+      - name: scrip
+        data_tests: [not_null]
+      - name: f_score
+        data_tests:
+          - dbt_utils.accepted_range: { min_value: 0, max_value: 9, inclusive: true }
+      - name: n_signals_available
+        description: How many of the 9 signals had enough data to evaluate.
+        data_tests:
+          - dbt_utils.accepted_range: { min_value: 0, max_value: 9, inclusive: true }
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [scrip, fiscal_year_bs, quarter]
+
+  - name: price_returns
+    description: >
+      Latest-snapshot trailing returns (1m/3m/6m/1y/3y/5y) + drawdown
+      + 20-day realized vol per scrip.
+    columns:
+      - name: scrip
+        data_tests:
+          - not_null
+          - unique
+      - name: as_of
+        data_tests: [not_null]
+      - name: close
+        data_tests: [not_null]
+      - name: realized_vol_20d
+      - name: drawdown_from_peak
+        description: (close - running_peak) / running_peak. Always ≤ 0.
+        data_tests:
+          - dbt_utils.accepted_range: { max_value: 0, inclusive: true }
+      - name: position_in_20d_range
+        data_tests:
+          - dbt_utils.accepted_range: { min_value: 0, max_value: 1, inclusive: true }
+
+  - name: fundamental_quality_composite
+    description: >
+      0-100 fundamental quality composite, peer-relative within sector.
+      Weighted blend of profitability (25%), asset quality (20%),
+      growth (20%), capital (15%), efficiency (10%), Piotroski (10%).
+      This is the SOW M3 deliverable for "fundamental quality composite
+      with QoQ trend".
+    columns:
+      - name: scrip
+        data_tests: [not_null]
+      - name: quality_score_0_100
+        data_tests:
+          - not_null
+          - dbt_utils.accepted_range: { min_value: 0, max_value: 100, inclusive: true }
+      - name: quality_tier
+        data_tests:
+          - accepted_values: { values: [TOP_DECILE, STRONG, AVERAGE, WEAK] }
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [scrip, fiscal_year_bs, quarter]
+
+  - name: quality_momentum_matrix
+    description: >
+      2×2 quadrant classification per active scrip — quality (sector-
+      relative) × 6-month price momentum. The quadrant column is what
+      a screener UI groups banks on.
+    columns:
+      - name: scrip
+        data_tests:
+          - not_null
+          - unique               # one quadrant per scrip
+      - name: quadrant
+        data_tests:
+          - accepted_values:
+              values: [QUALITY_LEADER, CONTRARIAN_BET, MOMENTUM_TRAP, AVOID, UNCLASSIFIED]
+      - name: quality_score_0_100
+      - name: return_6m
+
+  # =====================================================================
+  # Phase-J Gold expansions — valuation self-history, leverage, market
+  # risk, TSR, technical signal, sector rotation, scorecard
+  # =====================================================================
+
+  - name: valuation_history
+    description: >
+      P/E and P/B percentile vs scrip's own 5-year and all-history
+      distribution. Answers "is this cheap vs its own past?" — a
+      complement to gold.valuation which handles peer-relative comparison.
+    columns:
+      - name: scrip
+        data_tests: [not_null]
+      - name: fiscal_year_bs
+        data_tests: [not_null]
+      - name: pe_self_pct_5y
+        description: 0 = cheapest in 5-yr window, 1 = most expensive.
+        data_tests:
+          - dbt_utils.accepted_range: { min_value: 0, max_value: 1, inclusive: true }
+      - name: pb_self_pct_5y
+        data_tests:
+          - dbt_utils.accepted_range: { min_value: 0, max_value: 1, inclusive: true }
+      - name: self_valuation_tier
+        data_tests:
+          - accepted_values:
+              values: [VERY_CHEAP, CHEAP, FAIR, EXPENSIVE, VERY_EXPENSIVE]
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [scrip, fiscal_year_bs, quarter]
+
+  - name: operating_leverage
+    description: >
+      Revenue elasticity of operating profit — how much operating
+      profit amplifies a 1% change in revenue. 4-quarter smoothed
+      because single-quarter values are noise-prone.
+    columns:
+      - name: scrip
+        data_tests: [not_null]
+      - name: op_leverage_tier
+        data_tests:
+          - accepted_values: { values: [HIGH, MODERATE, LOW] }
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [scrip, fiscal_year_bs, quarter]
+
+  - name: market_cap_metrics
+    description: >
+      Size + valuation snapshot per scrip — market cap, paid-up
+      capital, price-to-face ratio, computed P/B. One row per scrip.
+    columns:
+      - name: scrip
+        data_tests:
+          - not_null
+          - unique
+      - name: market_cap_npr
+        description: Full NPR — not thousands. Range 10bn-300bn typical.
+      - name: market_cap_tier
+        data_tests:
+          - accepted_values: { values: [LARGE, MID, SMALL, MICRO] }
+      - name: price_to_face_value
+        description: close / 100. "How far above face value is the stock trading?"
+
+  - name: beta_and_volatility
+    description: >
+      NEPSE-regressed beta, alpha, R², annualized vol, Sharpe. 2-year
+      window. Emits zero rows if the scraper hasn't populated
+      silver.index_snapshots yet.
+    columns:
+      - name: scrip
+        data_tests:
+          - not_null
+          - unique
+      - name: beta
+        description: Slope vs NEPSE. >1 amplifies, <1 dampens, <0 counter-cyclical.
+      - name: r_squared
+        description: How much of scrip variance the index explains.
+        data_tests:
+          - dbt_utils.accepted_range: { min_value: 0, max_value: 1, inclusive: true }
+      - name: sharpe_ratio_2y
+      - name: annualized_vol
+
+  - name: total_shareholder_return
+    description: >
+      Capital appreciation + cumulative cash dividends / starting price
+      over 1/3/5 year horizons. Diverges from price_returns for
+      dividend-paying banks.
+    columns:
+      - name: scrip
+        data_tests:
+          - not_null
+          - unique
+      - name: tsr_1y
+      - name: tsr_3y
+      - name: tsr_5y
+
+  - name: technical_signal_summary
+    description: >
+      Rules-based BUY/HOLD/SELL per scrip synthesizing 5 technical
+      indicators (trend, MA alignment, RSI, MACD, Bollinger). Each
+      rule's vote is exposed so the LLM can explain the verdict.
+    columns:
+      - name: scrip
+        data_tests:
+          - not_null
+          - unique
+      - name: signal_sum
+        description: Sum of r1..r5 votes. Range [-5, 5].
+        data_tests:
+          - dbt_utils.accepted_range: { min_value: -5, max_value: 5, inclusive: true }
+      - name: technical_signal
+        data_tests:
+          - accepted_values:
+              values: [STRONG_BUY, BUY, HOLD, SELL, STRONG_SELL]
+
+  - name: sector_momentum
+    description: >
+      Per-sector momentum aggregation — avg 3m/6m/1y return, within-
+      sector dispersion, rank. One row per sector. With only Commercial
+      Bank in the prototype, this is a single-row table today but
+      scales naturally when other sectors are added.
+    columns:
+      - name: sector
+        data_tests:
+          - not_null
+          - unique
+      - name: n_scrips
+        data_tests: [not_null]
+      - name: momentum_tier
+        data_tests:
+          - accepted_values: { values: [HOT, WARM, NEUTRAL, COOL, COLD] }
+
+  - name: investment_scorecard
+    description: >
+      The analyst-facing composite. 0-100 scorecard blending 30%
+      quality + 25% valuation + 20% momentum + 15% risk + 10% income,
+      with a BUY/HOLD/SELL recommendation. One row per active scrip.
+      Designed to be the LLM tool layer's answer to "should I buy X?"
+    columns:
+      - name: scrip
+        data_tests:
+          - not_null
+          - unique
+      - name: scorecard_0_100
+        data_tests:
+          - not_null
+          - dbt_utils.accepted_range: { min_value: 0, max_value: 100, inclusive: true }
+      - name: recommendation
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [STRONG_BUY, BUY, HOLD, REDUCE, SELL]
+      - name: quality_pct
+        data_tests:
+          - dbt_utils.accepted_range: { min_value: 0, max_value: 100, inclusive: true }
+      - name: valuation_pct
+        data_tests:
+          - dbt_utils.accepted_range: { min_value: 0, max_value: 100, inclusive: true }
+      - name: momentum_pct
+        data_tests:
+          - dbt_utils.accepted_range: { min_value: 0, max_value: 100, inclusive: true }
+      - name: risk_pct
+        data_tests:
+          - dbt_utils.accepted_range: { min_value: 0, max_value: 100, inclusive: true }
+      - name: income_pct
+        data_tests:
+          - dbt_utils.accepted_range: { min_value: 0, max_value: 100, inclusive: true }
+
+  - name: internal_trade_enriched
+    description: >
+      The firm's own fills joined to the public floor sheet (by contract_number)
+      to recover the broker the fund used (our_broker) and the counterparty
+      broker, plus that day's VWAP and price range. Surveillance spine — one row
+      per internal fill.
+    columns:
+      - name: contract_number
+        description: NEPSE contract id — joins silver.floorsheet.
+        data_tests:
+          - not_null
+      - name: scrip
+        description: Canonical NEPSE ticker.
+        data_tests:
+          - not_null
+      - name: side
+        description: "'B' = fund bought, 'S' = fund sold."
+        data_tests:
+          - accepted_values:
+              values: ['B', 'S']
+      - name: matched_floorsheet
+        description: Whether the contract_number was found in the floor sheet (broker recovered).
+
+  - name: internal_trade_surveillance
+    description: >
+      One scored row per internal fill — 0-100 surveillance score + tier +
+      human-readable flag_reasons. Increment 1 covers execution quality and
+      trading-into-manipulation; counterparty / cross / timing signals follow.
+      A flag for review, not a verdict.
+    columns:
+      - name: contract_number
+        description: NEPSE contract id (one row per internal fill).
+        data_tests:
+          - not_null
+      - name: surveillance_score
+        description: 0-100 composite; higher = more suspicious.
+        data_tests:
+          - dbt_utils.accepted_range: { min_value: 0, max_value: 100, inclusive: true }
+      - name: surveillance_tier
+        description: HIGH / ELEVATED / MODERATE / LOW.
+        data_tests:
+          - accepted_values:
+              values: [HIGH, ELEVATED, MODERATE, LOW]

@@ -1,0 +1,6 @@
+scrip,fiscal_year_bs,announcement_date,bookclose_date,distribution_date,bonus_share_pct,cash_dividend_pct,total_dividend_pct,status
+PRVU,2078/2079,2022-11-18,2022-12-16,,6.5,1.5,8.00,1
+PRVU,2077/2078,2021-11-11,2021-12-19,,12.00,0.63,12.63,1
+PRVU,2076/2077,2020-12-07,2020-12-25,,10.00,0.5263,10.52,1
+PRVU,2075/2076,2019-11-03,2019-11-12,,16.00,0.84,16.84,1
+PRVU,2074/2075,2019-02-10,2019-02-18,,8.00,0.42,8.42,1

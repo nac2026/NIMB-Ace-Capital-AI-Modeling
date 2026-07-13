@@ -1,0 +1,87 @@
+scrip,section,metric,period,value_raw,value_num
+LBL,balance,Cash and cash equivalent,3rd Quarter 2079/2080,"11,439,081.00",11439081.0
+LBL,balance,Due from Nepal Rastra Bank,3rd Quarter 2079/2080,"6,898,494.00",6898494.0
+LBL,balance,Placement with Bank and Financial Institutions,3rd Quarter 2079/2080,0.00,0.0
+LBL,balance,Derivative financial instruments,3rd Quarter 2079/2080,"131,582.00",131582.0
+LBL,balance,Other trading assets,3rd Quarter 2079/2080,"19,490.00",19490.0
+LBL,balance,Loan and advances to B/FIs,3rd Quarter 2079/2080,"5,190,350.00",5190350.0
+LBL,balance,Loans and advances to customers,3rd Quarter 2079/2080,"131,465,144.00",131465144.0
+LBL,balance,Investment securities,3rd Quarter 2079/2080,"20,028,937.00",20028937.0
+LBL,balance,Current tax assets,3rd Quarter 2079/2080,"150,329.00",150329.0
+LBL,balance,Investment in subsidiaries,3rd Quarter 2079/2080,"417,000.00",417000.0
+LBL,balance,Investment in associates,3rd Quarter 2079/2080,"1,147,032.00",1147032.0
+LBL,balance,Investment property,3rd Quarter 2079/2080,"70,536.00",70536.0
+LBL,balance,Property and equipment,3rd Quarter 2079/2080,"2,471,982.00",2471982.0
+LBL,balance,Goodwill and Intangible assets,3rd Quarter 2079/2080,"58,595.00",58595.0
+LBL,balance,Deferred tax assets,3rd Quarter 2079/2080,0.00,0.0
+LBL,balance,Other assets,3rd Quarter 2079/2080,"1,835,373.00",1835373.0
+LBL,balance,Total Assets,3rd Quarter 2079/2080,"181,323,925.00",181323925.0
+LBL,balance,Due to Bank and Financial Institutions,3rd Quarter 2079/2080,"1,109,341.00",1109341.0
+LBL,balance,Due to Nepal Rastra Bank,3rd Quarter 2079/2080,0.00,0.0
+LBL,balance,Derivative financial instruments,3rd Quarter 2079/2080,"131,587.00",131587.0
+LBL,balance,Deposits from customers,3rd Quarter 2079/2080,"150,135,389.00",150135389.0
+LBL,balance,Borrowing,3rd Quarter 2079/2080,"5,400,711.00",5400711.0
+LBL,balance,Current Tax Liabilities,3rd Quarter 2079/2080,0.00,0.0
+LBL,balance,Provisions,3rd Quarter 2079/2080,0.00,0.0
+LBL,balance,Deferred tax liabilities,3rd Quarter 2079/2080,"171,602.00",171602.0
+LBL,balance,Other liabilities,3rd Quarter 2079/2080,"2,210,530.00",2210530.0
+LBL,balance,Debt securities issued,3rd Quarter 2079/2080,"4,104,411.00",4104411.0
+LBL,balance,Subordinated Liabilities,3rd Quarter 2079/2080,0.00,0.0
+LBL,balance,Total liabilities,3rd Quarter 2079/2080,"163,263,571.00",163263571.0
+LBL,balance,Share capital,3rd Quarter 2079/2080,"11,551,345.00",11551345.0
+LBL,balance,Share premium,3rd Quarter 2079/2080,0.00,0.0
+LBL,balance,Retained earnings,3rd Quarter 2079/2080,"1,335,875.00",1335875.0
+LBL,balance,Reserves,3rd Quarter 2079/2080,"5,173,134.00",5173134.0
+LBL,balance,Total equity,3rd Quarter 2079/2080,"18,060,354.00",18060354.0
+LBL,balance,Total liabilities and equity,3rd Quarter 2079/2080,"181,323,925.00",181323925.0
+LBL,profitloss,Interest income,3rd Quarter 2079/2080,"13,917,182.00",13917182.0
+LBL,profitloss,Interest expense,3rd Quarter 2079/2080,"9,723,935.00",9723935.0
+LBL,profitloss,Net interest income,3rd Quarter 2079/2080,"4,193,247.00",4193247.0
+LBL,profitloss,Fees and commission income,3rd Quarter 2079/2080,"848,344.00",848344.0
+LBL,profitloss,Fees and commission expense,3rd Quarter 2079/2080,"173,293.00",173293.0
+LBL,profitloss,Net fee and commission income,3rd Quarter 2079/2080,"675,051.00",675051.0
+LBL,profitloss,"Net interest, fee and commission income",3rd Quarter 2079/2080,"4,868,298.00",4868298.0
+LBL,profitloss,Net trading income,3rd Quarter 2079/2080,"136,880.00",136880.0
+LBL,profitloss,Other operating income,3rd Quarter 2079/2080,"158,106.00",158106.0
+LBL,profitloss,Total operating income,3rd Quarter 2079/2080,"5,163,284.00",5163284.0
+LBL,profitloss,Impairment charge/(reversal) for loan and other losses,3rd Quarter 2079/2080,"1,095,026.00",1095026.0
+LBL,profitloss,Net operating income,3rd Quarter 2079/2080,"4,068,258.00",4068258.0
+LBL,profitloss,Personnel expense,3rd Quarter 2079/2080,"1,265,509.00",1265509.0
+LBL,profitloss,Other operating expense,3rd Quarter 2079/2080,"644,614.00",644614.0
+LBL,profitloss,Depreciation & Amortisation,3rd Quarter 2079/2080,"161,621.00",161621.0
+LBL,profitloss,Operating Profit,3rd Quarter 2079/2080,"1,996,514.00",1996514.0
+LBL,profitloss,Non operating income,3rd Quarter 2079/2080,"6,413.00",6413.0
+LBL,profitloss,Non operating expense,3rd Quarter 2079/2080,"240,567.00",240567.0
+LBL,profitloss,Profit before income tax,3rd Quarter 2079/2080,"1,762,360.00",1762360.0
+LBL,profitloss,Current Tax,3rd Quarter 2079/2080,"497,015.00",497015.0
+LBL,profitloss,Deferred Tax,3rd Quarter 2079/2080,0.00,0.0
+LBL,profitloss,Profit for the period,3rd Quarter 2079/2080,"1,265,345.00",1265345.0
+LBL,profitloss,Gains/(losses) from investments in equity instruments measured at fair value,3rd Quarter 2079/2080,0.00,0.0
+LBL,profitloss,Gains/(losses) on revalution,3rd Quarter 2079/2080,0.00,0.0
+LBL,profitloss,Actuarial gains/(losses) on defined benefit plans,3rd Quarter 2079/2080,0.00,0.0
+LBL,profitloss,Income tax relating to above items,3rd Quarter 2079/2080,0.00,0.0
+LBL,profitloss,Net other comprehsive income that will not be reclassified to profit or loss,3rd Quarter 2079/2080,0.00,0.0
+LBL,profitloss,Gains/(losses) on cash flow hedge,3rd Quarter 2079/2080,0.00,0.0
+LBL,profitloss,Exchange gains/(losses) (arising from translating financial assets of foreign operation),3rd Quarter 2079/2080,0.00,0.0
+LBL,profitloss,Income tax relating to above items,3rd Quarter 2079/2080,0.00,0.0
+LBL,profitloss,Net other comprehsive income that are or may be reclassified to profit or loss,3rd Quarter 2079/2080,0.00,0.0
+LBL,profitloss,"Other Comprehensive Income For The Period, Net Of Income Tax",3rd Quarter 2079/2080,"-146,009.00",-146009.0
+LBL,profitloss,Total Comprehensive Income For The Period,3rd Quarter 2079/2080,"1,119,336.00",1119336.0
+LBL,keymetrics,Basic Earnings Per Share(Annualized EPS),3rd Quarter 2079/2080,14.61,14.61
+LBL,keymetrics,Diluted Earnings Per Share,3rd Quarter 2079/2080,14.61,14.61
+LBL,keymetrics,Capital fund to RWA,3rd Quarter 2079/2080,13.14,13.14
+LBL,keymetrics,Tier I Capital to RWA,3rd Quarter 2079/2080,0.00,0.0
+LBL,keymetrics,CET I Capital to RWA,3rd Quarter 2079/2080,0.00,0.0
+LBL,keymetrics,Non-Performing loan(NPL) to Total Loan,3rd Quarter 2079/2080,1.82,1.82
+LBL,keymetrics,Total Loan loss provision to Total NPL,3rd Quarter 2079/2080,157.83,157.83
+LBL,keymetrics,Cost of Funds,3rd Quarter 2079/2080,8.51,8.51
+LBL,keymetrics,Credit to Deposit Ratio,3rd Quarter 2079/2080,85.36,85.36
+LBL,keymetrics,Base Rate,3rd Quarter 2079/2080,11.09,11.09
+LBL,keymetrics,Interest Spread Rate,3rd Quarter 2079/2080,4.19,4.19
+LBL,keymetrics,Total Shareholder's Equity (in Rs '000'),3rd Quarter 2079/2080,"18,060,354.00",18060354.0
+LBL,keymetrics,No. of Outstanding Shares,3rd Quarter 2079/2080,"115,513,450.00",115513450.0
+LBL,keymetrics,Net Worth Per Share,3rd Quarter 2079/2080,156.35,156.35
+LBL,keymetrics,P/E Ratio,3rd Quarter 2079/2080,12.94,12.94
+LBL,keymetrics,Price to Book (P/B) Ratio,3rd Quarter 2079/2080,1.21,1.21
+LBL,keymetrics,Return on Equity,3rd Quarter 2079/2080,9.34,9.34
+LBL,keymetrics,Return on Assets,3rd Quarter 2079/2080,0.93,0.93

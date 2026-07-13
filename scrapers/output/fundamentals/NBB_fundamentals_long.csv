@@ -1,0 +1,87 @@
+scrip,section,metric,period,value_raw,value_num
+NBB,balance,Cash and cash equivalent,3rd Quarter 2078/2079,"4,374,375.65",4374375.65
+NBB,balance,Due from Nepal Rastra Bank,3rd Quarter 2078/2079,"3,671,201.98",3671201.98
+NBB,balance,Placement with Bank and Financial Institutions,3rd Quarter 2078/2079,"763,407.00",763407.0
+NBB,balance,Derivative financial instruments,3rd Quarter 2078/2079,0.00,0.0
+NBB,balance,Other trading assets,3rd Quarter 2078/2079,"41,698.12",41698.12
+NBB,balance,Loan and advances to B/FIs,3rd Quarter 2078/2079,"2,905,307.86",2905307.86
+NBB,balance,Loans and advances to customers,3rd Quarter 2078/2079,"76,209,215.88",76209215.88
+NBB,balance,Investment securities,3rd Quarter 2078/2079,"13,463,616.37",13463616.37
+NBB,balance,Current tax assets,3rd Quarter 2078/2079,"128,026.24",128026.24
+NBB,balance,Investment in subsidiaries,3rd Quarter 2078/2079,"220,000.00",220000.0
+NBB,balance,Investment in associates,3rd Quarter 2078/2079,0.00,0.0
+NBB,balance,Investment property,3rd Quarter 2078/2079,"535,090.84",535090.84
+NBB,balance,Property and equipment,3rd Quarter 2078/2079,"1,416,488.62",1416488.62
+NBB,balance,Goodwill and Intangible assets,3rd Quarter 2078/2079,"26,862.16",26862.16
+NBB,balance,Deferred tax assets,3rd Quarter 2078/2079,0.00,0.0
+NBB,balance,Other assets,3rd Quarter 2078/2079,"716,137.57",716137.57
+NBB,balance,Total Assets,3rd Quarter 2078/2079,"104,471,428.29",104471428.29
+NBB,balance,Due to Bank and Financial Institutions,3rd Quarter 2078/2079,"1,476,211.90",1476211.9
+NBB,balance,Due to Nepal Rastra Bank,3rd Quarter 2078/2079,"1,192,482.19",1192482.19
+NBB,balance,Derivative financial instruments,3rd Quarter 2078/2079,0.00,0.0
+NBB,balance,Deposits from customers,3rd Quarter 2078/2079,"82,021,517.15",82021517.15
+NBB,balance,Borrowing,3rd Quarter 2078/2079,0.00,0.0
+NBB,balance,Current Tax Liabilities,3rd Quarter 2078/2079,0.00,0.0
+NBB,balance,Provisions,3rd Quarter 2078/2079,0.00,0.0
+NBB,balance,Deferred tax liabilities,3rd Quarter 2078/2079,"30,947.19",30947.19
+NBB,balance,Other liabilities,3rd Quarter 2078/2079,"1,593,325.89",1593325.89
+NBB,balance,Debt securities issued,3rd Quarter 2078/2079,"1,994,381.33",1994381.33
+NBB,balance,Subordinated Liabilities,3rd Quarter 2078/2079,0.00,0.0
+NBB,balance,Total liabilities,3rd Quarter 2078/2079,"88,308,865.64",88308865.64
+NBB,balance,Share capital,3rd Quarter 2078/2079,"10,085,399.74",10085399.74
+NBB,balance,Share premium,3rd Quarter 2078/2079,101.56,101.56
+NBB,balance,Retained earnings,3rd Quarter 2078/2079,"566,469.98",566469.98
+NBB,balance,Reserves,3rd Quarter 2078/2079,"5,510,591.38",5510591.38
+NBB,balance,Total equity,3rd Quarter 2078/2079,"16,162,562.64",16162562.64
+NBB,balance,Total liabilities and equity,3rd Quarter 2078/2079,"104,471,428.29",104471428.29
+NBB,profitloss,Interest income,3rd Quarter 2078/2079,"5,953,510.22",5953510.22
+NBB,profitloss,Interest expense,3rd Quarter 2078/2079,"4,014,398.77",4014398.77
+NBB,profitloss,Net interest income,3rd Quarter 2078/2079,"1,939,111.45",1939111.45
+NBB,profitloss,Fees and commission income,3rd Quarter 2078/2079,"935,648.60",935648.6
+NBB,profitloss,Fees and commission expense,3rd Quarter 2078/2079,"49,876.00",49876.0
+NBB,profitloss,Net fee and commission income,3rd Quarter 2078/2079,"885,772.60",885772.6
+NBB,profitloss,"Net interest, fee and commission income",3rd Quarter 2078/2079,"2,824,884.05",2824884.05
+NBB,profitloss,Net trading income,3rd Quarter 2078/2079,"116,449.75",116449.75
+NBB,profitloss,Other operating income,3rd Quarter 2078/2079,"291,746.19",291746.19
+NBB,profitloss,Total operating income,3rd Quarter 2078/2079,"3,233,079.99",3233079.99
+NBB,profitloss,Impairment charge/(reversal) for loan and other losses,3rd Quarter 2078/2079,"489,621.37",489621.37
+NBB,profitloss,Net operating income,3rd Quarter 2078/2079,"2,743,458.62",2743458.62
+NBB,profitloss,Personnel expense,3rd Quarter 2078/2079,"918,420.29",918420.29
+NBB,profitloss,Other operating expense,3rd Quarter 2078/2079,"329,737.53",329737.53
+NBB,profitloss,Depreciation & Amortisation,3rd Quarter 2078/2079,"101,072.22",101072.22
+NBB,profitloss,Operating Profit,3rd Quarter 2078/2079,"1,394,228.58",1394228.58
+NBB,profitloss,Non operating income,3rd Quarter 2078/2079,"70,783.57",70783.57
+NBB,profitloss,Non operating expense,3rd Quarter 2078/2079,-123.73,-123.73
+NBB,profitloss,Profit before income tax,3rd Quarter 2078/2079,"1,465,135.88",1465135.88
+NBB,profitloss,Current Tax,3rd Quarter 2078/2079,"353,998.70",353998.7
+NBB,profitloss,Deferred Tax,3rd Quarter 2078/2079,0.00,0.0
+NBB,profitloss,Profit for the period,3rd Quarter 2078/2079,"1,111,137.18",1111137.18
+NBB,profitloss,Gains/(losses) from investments in equity instruments measured at fair value,3rd Quarter 2078/2079,0.00,0.0
+NBB,profitloss,Gains/(losses) on revalution,3rd Quarter 2078/2079,0.00,0.0
+NBB,profitloss,Actuarial gains/(losses) on defined benefit plans,3rd Quarter 2078/2079,0.00,0.0
+NBB,profitloss,Income tax relating to above items,3rd Quarter 2078/2079,0.00,0.0
+NBB,profitloss,Net other comprehsive income that will not be reclassified to profit or loss,3rd Quarter 2078/2079,"-62,635.80",-62635.8
+NBB,profitloss,Gains/(losses) on cash flow hedge,3rd Quarter 2078/2079,0.00,0.0
+NBB,profitloss,Exchange gains/(losses) (arising from translating financial assets of foreign operation),3rd Quarter 2078/2079,0.00,0.0
+NBB,profitloss,Income tax relating to above items,3rd Quarter 2078/2079,0.00,0.0
+NBB,profitloss,Net other comprehsive income that are or may be reclassified to profit or loss,3rd Quarter 2078/2079,0.00,0.0
+NBB,profitloss,"Other Comprehensive Income For The Period, Net Of Income Tax",3rd Quarter 2078/2079,0.00,0.0
+NBB,profitloss,Total Comprehensive Income For The Period,3rd Quarter 2078/2079,"1,048,501.38",1048501.38
+NBB,keymetrics,Basic Earnings Per Share(Annualized EPS),3rd Quarter 2078/2079,14.69,14.69
+NBB,keymetrics,Diluted Earnings Per Share,3rd Quarter 2078/2079,14.69,14.69
+NBB,keymetrics,Capital fund to RWA,3rd Quarter 2078/2079,13.85,13.85
+NBB,keymetrics,Tier I Capital to RWA,3rd Quarter 2078/2079,0.00,0.0
+NBB,keymetrics,CET I Capital to RWA,3rd Quarter 2078/2079,0.00,0.0
+NBB,keymetrics,Non-Performing loan(NPL) to Total Loan,3rd Quarter 2078/2079,2.30,2.3
+NBB,keymetrics,Total Loan loss provision to Total NPL,3rd Quarter 2078/2079,122.14,122.14
+NBB,keymetrics,Cost of Funds,3rd Quarter 2078/2079,6.90,6.9
+NBB,keymetrics,Credit to Deposit Ratio,3rd Quarter 2078/2079,91.39,91.39
+NBB,keymetrics,Base Rate,3rd Quarter 2078/2079,9.10,9.1
+NBB,keymetrics,Interest Spread Rate,3rd Quarter 2078/2079,3.05,3.05
+NBB,keymetrics,Total Shareholder's Equity (in Rs '000'),3rd Quarter 2078/2079,"16,162,562.64",16162562.64
+NBB,keymetrics,No. of Outstanding Shares,3rd Quarter 2078/2079,"100,853,997.38",100853997.38
+NBB,keymetrics,Net Worth Per Share,3rd Quarter 2078/2079,160.26,160.26
+NBB,keymetrics,P/E Ratio,3rd Quarter 2078/2079,27.16,27.16
+NBB,keymetrics,Price to Book (P/B) Ratio,3rd Quarter 2078/2079,2.49,2.49
+NBB,keymetrics,Return on Equity,3rd Quarter 2078/2079,9.17,9.17
+NBB,keymetrics,Return on Assets,3rd Quarter 2078/2079,1.42,1.42

@@ -1,0 +1,87 @@
+scrip,section,metric,period,value_raw,value_num
+NICA,balance,Cash and cash equivalent,2nd Quarter 2082/2083,"18,514,822.90",18514822.9
+NICA,balance,Due from Nepal Rastra Bank,2nd Quarter 2082/2083,"72,546,441.90",72546441.9
+NICA,balance,Placement with Bank and Financial Institutions,2nd Quarter 2082/2083,0.00,0.0
+NICA,balance,Derivative financial instruments,2nd Quarter 2082/2083,"5,670,885.22",5670885.22
+NICA,balance,Other trading assets,2nd Quarter 2082/2083,"142,800.00",142800.0
+NICA,balance,Loan and advances to B/FIs,2nd Quarter 2082/2083,"9,634,556.53",9634556.53
+NICA,balance,Loans and advances to customers,2nd Quarter 2082/2083,"209,311,286.79",209311286.79
+NICA,balance,Investment securities,2nd Quarter 2082/2083,"55,844,546.75",55844546.75
+NICA,balance,Current tax assets,2nd Quarter 2082/2083,"608,044.26",608044.26
+NICA,balance,Investment in subsidiaries,2nd Quarter 2082/2083,"1,184,500.00",1184500.0
+NICA,balance,Investment in associates,2nd Quarter 2082/2083,0.00,0.0
+NICA,balance,Investment property,2nd Quarter 2082/2083,"4,317,432.63",4317432.63
+NICA,balance,Property and equipment,2nd Quarter 2082/2083,"4,172,291.13",4172291.13
+NICA,balance,Goodwill and Intangible assets,2nd Quarter 2082/2083,"135,974.14",135974.14
+NICA,balance,Deferred tax assets,2nd Quarter 2082/2083,"928,808.68",928808.68
+NICA,balance,Other assets,2nd Quarter 2082/2083,"4,107,195.23",4107195.23
+NICA,balance,Total Assets,2nd Quarter 2082/2083,"387,119,586.17",387119586.17
+NICA,balance,Due to Bank and Financial Institutions,2nd Quarter 2082/2083,"9,739,990.12",9739990.12
+NICA,balance,Due to Nepal Rastra Bank,2nd Quarter 2082/2083,0.00,0.0
+NICA,balance,Derivative financial instruments,2nd Quarter 2082/2083,"5,666,178.68",5666178.68
+NICA,balance,Deposits from customers,2nd Quarter 2082/2083,"327,501,412.35",327501412.35
+NICA,balance,Borrowing,2nd Quarter 2082/2083,0.00,0.0
+NICA,balance,Current Tax Liabilities,2nd Quarter 2082/2083,0.00,0.0
+NICA,balance,Provisions,2nd Quarter 2082/2083,0.00,0.0
+NICA,balance,Deferred tax liabilities,2nd Quarter 2082/2083,0.00,0.0
+NICA,balance,Other liabilities,2nd Quarter 2082/2083,"3,720,540.11",3720540.11
+NICA,balance,Debt securities issued,2nd Quarter 2082/2083,"10,905,257.77",10905257.77
+NICA,balance,Subordinated Liabilities,2nd Quarter 2082/2083,0.00,0.0
+NICA,balance,Total liabilities,2nd Quarter 2082/2083,"357,533,379.04",357533379.04
+NICA,balance,Share capital,2nd Quarter 2082/2083,"14,917,566.92",14917566.92
+NICA,balance,Share premium,2nd Quarter 2082/2083,0.00,0.0
+NICA,balance,Retained earnings,2nd Quarter 2082/2083,"-7,399,536.34",-7399536.34
+NICA,balance,Reserves,2nd Quarter 2082/2083,"22,068,176.55",22068176.55
+NICA,balance,Total equity,2nd Quarter 2082/2083,"29,586,207.13",29586207.13
+NICA,balance,Total liabilities and equity,2nd Quarter 2082/2083,"387,119,586.17",387119586.17
+NICA,profitloss,Interest income,2nd Quarter 2082/2083,"12,033,063.16",12033063.16
+NICA,profitloss,Interest expense,2nd Quarter 2082/2083,"7,669,179.29",7669179.29
+NICA,profitloss,Net interest income,2nd Quarter 2082/2083,"4,363,883.87",4363883.87
+NICA,profitloss,Fees and commission income,2nd Quarter 2082/2083,"816,704.61",816704.61
+NICA,profitloss,Fees and commission expense,2nd Quarter 2082/2083,"114,567.27",114567.27
+NICA,profitloss,Net fee and commission income,2nd Quarter 2082/2083,"702,137.34",702137.34
+NICA,profitloss,"Net interest, fee and commission income",2nd Quarter 2082/2083,"5,066,021.21",5066021.21
+NICA,profitloss,Net trading income,2nd Quarter 2082/2083,"114,066.88",114066.88
+NICA,profitloss,Other operating income,2nd Quarter 2082/2083,"159,069.63",159069.63
+NICA,profitloss,Total operating income,2nd Quarter 2082/2083,"5,339,157.72",5339157.72
+NICA,profitloss,Impairment charge/(reversal) for loan and other losses,2nd Quarter 2082/2083,"2,433,071.50",2433071.5
+NICA,profitloss,Net operating income,2nd Quarter 2082/2083,"2,906,086.22",2906086.22
+NICA,profitloss,Personnel expense,2nd Quarter 2082/2083,"1,583,188.79",1583188.79
+NICA,profitloss,Other operating expense,2nd Quarter 2082/2083,"732,873.51",732873.51
+NICA,profitloss,Depreciation & Amortisation,2nd Quarter 2082/2083,"392,246.38",392246.38
+NICA,profitloss,Operating Profit,2nd Quarter 2082/2083,"197,777.54",197777.54
+NICA,profitloss,Non operating income,2nd Quarter 2082/2083,"10,625.89",10625.89
+NICA,profitloss,Non operating expense,2nd Quarter 2082/2083,"20,986.76",20986.76
+NICA,profitloss,Profit before income tax,2nd Quarter 2082/2083,"187,416.68",187416.68
+NICA,profitloss,Current Tax,2nd Quarter 2082/2083,"240,522.69",240522.69
+NICA,profitloss,Deferred Tax,2nd Quarter 2082/2083,"-184,297.69",-184297.69
+NICA,profitloss,Profit for the period,2nd Quarter 2082/2083,"131,191.67",131191.67
+NICA,profitloss,Gains/(losses) from investments in equity instruments measured at fair value,2nd Quarter 2082/2083,0.00,0.0
+NICA,profitloss,Gains/(losses) on revalution,2nd Quarter 2082/2083,0.00,0.0
+NICA,profitloss,Actuarial gains/(losses) on defined benefit plans,2nd Quarter 2082/2083,0.00,0.0
+NICA,profitloss,Income tax relating to above items,2nd Quarter 2082/2083,0.00,0.0
+NICA,profitloss,Net other comprehsive income that will not be reclassified to profit or loss,2nd Quarter 2082/2083,0.00,0.0
+NICA,profitloss,Gains/(losses) on cash flow hedge,2nd Quarter 2082/2083,0.00,0.0
+NICA,profitloss,Exchange gains/(losses) (arising from translating financial assets of foreign operation),2nd Quarter 2082/2083,0.00,0.0
+NICA,profitloss,Income tax relating to above items,2nd Quarter 2082/2083,0.00,0.0
+NICA,profitloss,Net other comprehsive income that are or may be reclassified to profit or loss,2nd Quarter 2082/2083,0.00,0.0
+NICA,profitloss,"Other Comprehensive Income For The Period, Net Of Income Tax",2nd Quarter 2082/2083,"-66,742.04",-66742.04
+NICA,profitloss,Total Comprehensive Income For The Period,2nd Quarter 2082/2083,"64,449.63",64449.63
+NICA,keymetrics,Basic Earnings Per Share(Annualized EPS),2nd Quarter 2082/2083,1.76,1.76
+NICA,keymetrics,Diluted Earnings Per Share,2nd Quarter 2082/2083,1.76,1.76
+NICA,keymetrics,Capital fund to RWA,2nd Quarter 2082/2083,14.07,14.07
+NICA,keymetrics,Tier I Capital to RWA,2nd Quarter 2082/2083,8.74,8.74
+NICA,keymetrics,CET I Capital to RWA,2nd Quarter 2082/2083,8.74,8.74
+NICA,keymetrics,Non-Performing loan(NPL) to Total Loan,2nd Quarter 2082/2083,7.47,7.47
+NICA,keymetrics,Total Loan loss provision to Total NPL,2nd Quarter 2082/2083,97.21,97.21
+NICA,keymetrics,Cost of Funds,2nd Quarter 2082/2083,4.36,4.36
+NICA,keymetrics,Credit to Deposit Ratio,2nd Quarter 2082/2083,67.10,67.1
+NICA,keymetrics,Base Rate,2nd Quarter 2082/2083,6.41,6.41
+NICA,keymetrics,Interest Spread Rate,2nd Quarter 2082/2083,3.85,3.85
+NICA,keymetrics,Total Shareholder's Equity (in Rs '000'),2nd Quarter 2082/2083,"29,586,207.13",29586207.13
+NICA,keymetrics,No. of Outstanding Shares,2nd Quarter 2082/2083,"149,175,669.22",149175669.22
+NICA,keymetrics,Net Worth Per Share,2nd Quarter 2082/2083,198.33,198.33
+NICA,keymetrics,P/E Ratio,2nd Quarter 2082/2083,190.01,190.01
+NICA,keymetrics,Price to Book (P/B) Ratio,2nd Quarter 2082/2083,1.69,1.69
+NICA,keymetrics,Return on Equity,2nd Quarter 2082/2083,0.89,0.89
+NICA,keymetrics,Return on Assets,2nd Quarter 2082/2083,0.07,0.07

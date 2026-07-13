@@ -1,0 +1,545 @@
+{
+  "scrip": "NBB",
+  "tabs": {
+    "balance": {
+      "columns": [
+        "Particulars (Rs. in '000)",
+        "3rd Quarter 2078/2079"
+      ],
+      "rows": [
+        {
+          "metric": "Cash and cash equivalent",
+          "values": [
+            "4,374,375.65"
+          ]
+        },
+        {
+          "metric": "Due from Nepal Rastra Bank",
+          "values": [
+            "3,671,201.98"
+          ]
+        },
+        {
+          "metric": "Placement with Bank and Financial Institutions",
+          "values": [
+            "763,407.00"
+          ]
+        },
+        {
+          "metric": "Derivative financial instruments",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Other trading assets",
+          "values": [
+            "41,698.12"
+          ]
+        },
+        {
+          "metric": "Loan and advances to B/FIs",
+          "values": [
+            "2,905,307.86"
+          ]
+        },
+        {
+          "metric": "Loans and advances to customers",
+          "values": [
+            "76,209,215.88"
+          ]
+        },
+        {
+          "metric": "Investment securities",
+          "values": [
+            "13,463,616.37"
+          ]
+        },
+        {
+          "metric": "Current tax assets",
+          "values": [
+            "128,026.24"
+          ]
+        },
+        {
+          "metric": "Investment in subsidiaries",
+          "values": [
+            "220,000.00"
+          ]
+        },
+        {
+          "metric": "Investment in associates",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Investment property",
+          "values": [
+            "535,090.84"
+          ]
+        },
+        {
+          "metric": "Property and equipment",
+          "values": [
+            "1,416,488.62"
+          ]
+        },
+        {
+          "metric": "Goodwill and Intangible assets",
+          "values": [
+            "26,862.16"
+          ]
+        },
+        {
+          "metric": "Deferred tax assets",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Other assets",
+          "values": [
+            "716,137.57"
+          ]
+        },
+        {
+          "metric": "Total Assets",
+          "values": [
+            "104,471,428.29"
+          ]
+        },
+        {
+          "metric": "Due to Bank and Financial Institutions",
+          "values": [
+            "1,476,211.90"
+          ]
+        },
+        {
+          "metric": "Due to Nepal Rastra Bank",
+          "values": [
+            "1,192,482.19"
+          ]
+        },
+        {
+          "metric": "Derivative financial instruments",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Deposits from customers",
+          "values": [
+            "82,021,517.15"
+          ]
+        },
+        {
+          "metric": "Borrowing",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Current Tax Liabilities",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Provisions",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Deferred tax liabilities",
+          "values": [
+            "30,947.19"
+          ]
+        },
+        {
+          "metric": "Other liabilities",
+          "values": [
+            "1,593,325.89"
+          ]
+        },
+        {
+          "metric": "Debt securities issued",
+          "values": [
+            "1,994,381.33"
+          ]
+        },
+        {
+          "metric": "Subordinated Liabilities",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Total liabilities",
+          "values": [
+            "88,308,865.64"
+          ]
+        },
+        {
+          "metric": "Share capital",
+          "values": [
+            "10,085,399.74"
+          ]
+        },
+        {
+          "metric": "Share premium",
+          "values": [
+            "101.56"
+          ]
+        },
+        {
+          "metric": "Retained earnings",
+          "values": [
+            "566,469.98"
+          ]
+        },
+        {
+          "metric": "Reserves",
+          "values": [
+            "5,510,591.38"
+          ]
+        },
+        {
+          "metric": "Total equity",
+          "values": [
+            "16,162,562.64"
+          ]
+        },
+        {
+          "metric": "Total liabilities and equity",
+          "values": [
+            "104,471,428.29"
+          ]
+        }
+      ]
+    },
+    "profitloss": {
+      "columns": [
+        "Particulars (Rs. in '000)",
+        "3rd Quarter 2078/2079"
+      ],
+      "rows": [
+        {
+          "metric": "Interest income",
+          "values": [
+            "5,953,510.22"
+          ]
+        },
+        {
+          "metric": "Interest expense",
+          "values": [
+            "4,014,398.77"
+          ]
+        },
+        {
+          "metric": "Net interest income",
+          "values": [
+            "1,939,111.45"
+          ]
+        },
+        {
+          "metric": "Fees and commission income",
+          "values": [
+            "935,648.60"
+          ]
+        },
+        {
+          "metric": "Fees and commission expense",
+          "values": [
+            "49,876.00"
+          ]
+        },
+        {
+          "metric": "Net fee and commission income",
+          "values": [
+            "885,772.60"
+          ]
+        },
+        {
+          "metric": "Net interest, fee and commission income",
+          "values": [
+            "2,824,884.05"
+          ]
+        },
+        {
+          "metric": "Net trading income",
+          "values": [
+            "116,449.75"
+          ]
+        },
+        {
+          "metric": "Other operating income",
+          "values": [
+            "291,746.19"
+          ]
+        },
+        {
+          "metric": "Total operating income",
+          "values": [
+            "3,233,079.99"
+          ]
+        },
+        {
+          "metric": "Impairment charge/(reversal) for loan and other losses",
+          "values": [
+            "489,621.37"
+          ]
+        },
+        {
+          "metric": "Net operating income",
+          "values": [
+            "2,743,458.62"
+          ]
+        },
+        {
+          "metric": "Personnel expense",
+          "values": [
+            "918,420.29"
+          ]
+        },
+        {
+          "metric": "Other operating expense",
+          "values": [
+            "329,737.53"
+          ]
+        },
+        {
+          "metric": "Depreciation & Amortisation",
+          "values": [
+            "101,072.22"
+          ]
+        },
+        {
+          "metric": "Operating Profit",
+          "values": [
+            "1,394,228.58"
+          ]
+        },
+        {
+          "metric": "Non operating income",
+          "values": [
+            "70,783.57"
+          ]
+        },
+        {
+          "metric": "Non operating expense",
+          "values": [
+            "-123.73"
+          ]
+        },
+        {
+          "metric": "Profit before income tax",
+          "values": [
+            "1,465,135.88"
+          ]
+        },
+        {
+          "metric": "Current Tax",
+          "values": [
+            "353,998.70"
+          ]
+        },
+        {
+          "metric": "Deferred Tax",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Profit for the period",
+          "values": [
+            "1,111,137.18"
+          ]
+        },
+        {
+          "metric": "Gains/(losses) from investments in equity instruments measured at fair value",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Gains/(losses) on revalution",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Actuarial gains/(losses) on defined benefit plans",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Income tax relating to above items",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Net other comprehsive income that will not be reclassified to profit or loss",
+          "values": [
+            "-62,635.80"
+          ]
+        },
+        {
+          "metric": "Gains/(losses) on cash flow hedge",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Exchange gains/(losses) (arising from translating financial assets of foreign operation)",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Income tax relating to above items",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Net other comprehsive income that are or may be reclassified to profit or loss",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Other Comprehensive Income For The Period, Net Of Income Tax",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Total Comprehensive Income For The Period",
+          "values": [
+            "1,048,501.38"
+          ]
+        }
+      ]
+    },
+    "keymetrics": {
+      "columns": [
+        "Particulars",
+        "3rd Quarter 2078/2079"
+      ],
+      "rows": [
+        {
+          "metric": "Basic Earnings Per Share(Annualized EPS)",
+          "values": [
+            "14.69"
+          ]
+        },
+        {
+          "metric": "Diluted Earnings Per Share",
+          "values": [
+            "14.69"
+          ]
+        },
+        {
+          "metric": "Capital fund to RWA",
+          "values": [
+            "13.85"
+          ]
+        },
+        {
+          "metric": "Tier I Capital to RWA",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "CET I Capital to RWA",
+          "values": [
+            "0.00"
+          ]
+        },
+        {
+          "metric": "Non-Performing loan(NPL) to Total Loan",
+          "values": [
+            "2.30"
+          ]
+        },
+        {
+          "metric": "Total Loan loss provision to Total NPL",
+          "values": [
+            "122.14"
+          ]
+        },
+        {
+          "metric": "Cost of Funds",
+          "values": [
+            "6.90"
+          ]
+        },
+        {
+          "metric": "Credit to Deposit Ratio",
+          "values": [
+            "91.39"
+          ]
+        },
+        {
+          "metric": "Base Rate",
+          "values": [
+            "9.10"
+          ]
+        },
+        {
+          "metric": "Interest Spread Rate",
+          "values": [
+            "3.05"
+          ]
+        },
+        {
+          "metric": "Total Shareholder's Equity (in Rs '000')",
+          "values": [
+            "16,162,562.64"
+          ]
+        },
+        {
+          "metric": "No. of Outstanding Shares",
+          "values": [
+            "100,853,997.38"
+          ]
+        },
+        {
+          "metric": "Net Worth Per Share",
+          "values": [
+            "160.26"
+          ]
+        },
+        {
+          "metric": "P/E Ratio",
+          "values": [
+            "27.16"
+          ]
+        },
+        {
+          "metric": "Price to Book (P/B) Ratio",
+          "values": [
+            "2.49"
+          ]
+        },
+        {
+          "metric": "Return on Equity",
+          "values": [
+            "9.17"
+          ]
+        },
+        {
+          "metric": "Return on Assets",
+          "values": [
+            "1.42"
+          ]
+        }
+      ]
+    }
+  }
+}

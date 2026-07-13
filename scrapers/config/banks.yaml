@@ -1,0 +1,30 @@
+# 27 NEPSE commercial banks — prototype scope
+# Source: sharesansar companies_with_details.csv + extracted/archive
+banks:
+  - ADBL       # Agricultural Development Bank Ltd
+  - BOKL       # Bank of Kathmandu
+  - CCBL       # Century Commercial Bank
+  - CZBIL      # Citizens Bank International
+  - CBL        # Civil Bank
+  - EBL        # Everest Bank
+  - GBIME      # Global IME Bank
+  - HBL        # Himalayan Bank
+  - JBNL       # Janata Bank Nepal
+  - KBL        # Kumari Bank
+  - LBL        # Laxmi Bank
+  - MBL        # Machhapuchhre Bank
+  - MEGA       # Mega Bank Nepal
+  - NABIL      # Nabil Bank
+  - NBB        # Nepal Bangladesh Bank
+  - NBL        # Nepal Bank
+  - NCCB       # Nepal Credit & Commercial Bank
+  - NIB        # Nepal Investment Bank
+  - SBI        # Nepal SBI Bank
+  - NICA       # NIC Asia Bank
+  - NMB        # NMB Bank
+  - PRVU       # Prabhu Bank
+  - PCBL       # Prime Commercial Bank
+  - SANIMA     # Sanima Bank
+  - SBL        # Siddhartha Bank
+  - SCB        # Standard Chartered Bank Nepal
+  - SRBL       # Sunrise Bank

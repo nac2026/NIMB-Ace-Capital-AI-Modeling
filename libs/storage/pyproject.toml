@@ -1,0 +1,22 @@
+[project]
+name = "nrc-storage"
+version = "0.1.0"
+description = "Storage clients — MinIO, Delta (via delta-rs), Postgres, Redis"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "nrc-contracts",
+  "pydantic>=2.7",
+  "pydantic-settings>=2.3",
+  "boto3>=1.34",
+  "deltalake>=0.17,<1.0",
+  "pyarrow>=15",
+  "psycopg[binary,pool]>=3.1",
+  "redis>=5.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["nrc_storage"]

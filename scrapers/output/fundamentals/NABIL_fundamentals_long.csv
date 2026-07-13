@@ -1,0 +1,87 @@
+scrip,section,metric,period,value_raw,value_num
+NABIL,balance,Cash and cash equivalent,2nd Quarter 2082/2083,"9,189,774.00",9189774.0
+NABIL,balance,Due from Nepal Rastra Bank,2nd Quarter 2082/2083,"27,182,990.00",27182990.0
+NABIL,balance,Placement with Bank and Financial Institutions,2nd Quarter 2082/2083,"35,833,027.00",35833027.0
+NABIL,balance,Derivative financial instruments,2nd Quarter 2082/2083,"25,072,604.00",25072604.0
+NABIL,balance,Other trading assets,2nd Quarter 2082/2083,0.00,0.0
+NABIL,balance,Loan and advances to B/FIs,2nd Quarter 2082/2083,"15,895,783.00",15895783.0
+NABIL,balance,Loans and advances to customers,2nd Quarter 2082/2083,"434,738,445.00",434738445.0
+NABIL,balance,Investment securities,2nd Quarter 2082/2083,"129,389,795.00",129389795.0
+NABIL,balance,Current tax assets,2nd Quarter 2082/2083,"576,893.00",576893.0
+NABIL,balance,Investment in subsidiaries,2nd Quarter 2082/2083,"1,798,000.00",1798000.0
+NABIL,balance,Investment in associates,2nd Quarter 2082/2083,"80,000.00",80000.0
+NABIL,balance,Investment property,2nd Quarter 2082/2083,"3,726,173.00",3726173.0
+NABIL,balance,Property and equipment,2nd Quarter 2082/2083,"4,319,784.00",4319784.0
+NABIL,balance,Goodwill and Intangible assets,2nd Quarter 2082/2083,"269,322.00",269322.0
+NABIL,balance,Deferred tax assets,2nd Quarter 2082/2083,0.00,0.0
+NABIL,balance,Other assets,2nd Quarter 2082/2083,"8,953,035.00",8953035.0
+NABIL,balance,Total Assets,2nd Quarter 2082/2083,"697,025,625.00",697025625.0
+NABIL,balance,Due to Bank and Financial Institutions,2nd Quarter 2082/2083,"9,537,803.00",9537803.0
+NABIL,balance,Due to Nepal Rastra Bank,2nd Quarter 2082/2083,0.00,0.0
+NABIL,balance,Derivative financial instruments,2nd Quarter 2082/2083,"25,309,631.00",25309631.0
+NABIL,balance,Deposits from customers,2nd Quarter 2082/2083,"566,059,414.00",566059414.0
+NABIL,balance,Borrowing,2nd Quarter 2082/2083,0.00,0.0
+NABIL,balance,Current Tax Liabilities,2nd Quarter 2082/2083,0.00,0.0
+NABIL,balance,Provisions,2nd Quarter 2082/2083,0.00,0.0
+NABIL,balance,Deferred tax liabilities,2nd Quarter 2082/2083,"1,649,128.00",1649128.0
+NABIL,balance,Other liabilities,2nd Quarter 2082/2083,"12,987,837.00",12987837.0
+NABIL,balance,Debt securities issued,2nd Quarter 2082/2083,"12,723,727.00",12723727.0
+NABIL,balance,Subordinated Liabilities,2nd Quarter 2082/2083,0.00,0.0
+NABIL,balance,Total liabilities,2nd Quarter 2082/2083,"628,267,540.00",628267540.0
+NABIL,balance,Share capital,2nd Quarter 2082/2083,"32,056,997.00",32056997.0
+NABIL,balance,Share premium,2nd Quarter 2082/2083,0.00,0.0
+NABIL,balance,Retained earnings,2nd Quarter 2082/2083,"3,273,032.00",3273032.0
+NABIL,balance,Reserves,2nd Quarter 2082/2083,"33,428,056.00",33428056.0
+NABIL,balance,Total equity,2nd Quarter 2082/2083,"68,758,085.00",68758085.0
+NABIL,balance,Total liabilities and equity,2nd Quarter 2082/2083,"697,025,625.00",697025625.0
+NABIL,profitloss,Interest income,2nd Quarter 2082/2083,"19,200,838.00",19200838.0
+NABIL,profitloss,Interest expense,2nd Quarter 2082/2083,"11,113,550.00",11113550.0
+NABIL,profitloss,Net interest income,2nd Quarter 2082/2083,"8,087,288.00",8087288.0
+NABIL,profitloss,Fees and commission income,2nd Quarter 2082/2083,"2,113,714.00",2113714.0
+NABIL,profitloss,Fees and commission expense,2nd Quarter 2082/2083,"502,387.00",502387.0
+NABIL,profitloss,Net fee and commission income,2nd Quarter 2082/2083,"1,611,327.00",1611327.0
+NABIL,profitloss,"Net interest, fee and commission income",2nd Quarter 2082/2083,"9,698,615.00",9698615.0
+NABIL,profitloss,Net trading income,2nd Quarter 2082/2083,"464,320.00",464320.0
+NABIL,profitloss,Other operating income,2nd Quarter 2082/2083,"468,794.00",468794.0
+NABIL,profitloss,Total operating income,2nd Quarter 2082/2083,"10,631,729.00",10631729.0
+NABIL,profitloss,Impairment charge/(reversal) for loan and other losses,2nd Quarter 2082/2083,"-48,826.00",-48826.0
+NABIL,profitloss,Net operating income,2nd Quarter 2082/2083,"10,680,555.00",10680555.0
+NABIL,profitloss,Personnel expense,2nd Quarter 2082/2083,"2,875,087.00",2875087.0
+NABIL,profitloss,Other operating expense,2nd Quarter 2082/2083,"876,062.00",876062.0
+NABIL,profitloss,Depreciation & Amortisation,2nd Quarter 2082/2083,"356,707.00",356707.0
+NABIL,profitloss,Operating Profit,2nd Quarter 2082/2083,"6,572,699.00",6572699.0
+NABIL,profitloss,Non operating income,2nd Quarter 2082/2083,"143,302.00",143302.0
+NABIL,profitloss,Non operating expense,2nd Quarter 2082/2083,"105,959.00",105959.0
+NABIL,profitloss,Profit before income tax,2nd Quarter 2082/2083,"6,610,042.00",6610042.0
+NABIL,profitloss,Current Tax,2nd Quarter 2082/2083,"1,850,400.00",1850400.0
+NABIL,profitloss,Deferred Tax,2nd Quarter 2082/2083,0.00,0.0
+NABIL,profitloss,Profit for the period,2nd Quarter 2082/2083,"4,759,642.00",4759642.0
+NABIL,profitloss,Gains/(losses) from investments in equity instruments measured at fair value,2nd Quarter 2082/2083,0.00,0.0
+NABIL,profitloss,Gains/(losses) on revalution,2nd Quarter 2082/2083,0.00,0.0
+NABIL,profitloss,Actuarial gains/(losses) on defined benefit plans,2nd Quarter 2082/2083,0.00,0.0
+NABIL,profitloss,Income tax relating to above items,2nd Quarter 2082/2083,0.00,0.0
+NABIL,profitloss,Net other comprehsive income that will not be reclassified to profit or loss,2nd Quarter 2082/2083,0.00,0.0
+NABIL,profitloss,Gains/(losses) on cash flow hedge,2nd Quarter 2082/2083,0.00,0.0
+NABIL,profitloss,Exchange gains/(losses) (arising from translating financial assets of foreign operation),2nd Quarter 2082/2083,0.00,0.0
+NABIL,profitloss,Income tax relating to above items,2nd Quarter 2082/2083,0.00,0.0
+NABIL,profitloss,Net other comprehsive income that are or may be reclassified to profit or loss,2nd Quarter 2082/2083,0.00,0.0
+NABIL,profitloss,"Other Comprehensive Income For The Period, Net Of Income Tax",2nd Quarter 2082/2083,"-100,478.00",-100478.0
+NABIL,profitloss,Total Comprehensive Income For The Period,2nd Quarter 2082/2083,"4,659,164.00",4659164.0
+NABIL,keymetrics,Basic Earnings Per Share(Annualized EPS),2nd Quarter 2082/2083,35.18,35.18
+NABIL,keymetrics,Diluted Earnings Per Share,2nd Quarter 2082/2083,35.18,35.18
+NABIL,keymetrics,Capital fund to RWA,2nd Quarter 2082/2083,12.77,12.77
+NABIL,keymetrics,Tier I Capital to RWA,2nd Quarter 2082/2083,9.76,9.76
+NABIL,keymetrics,CET I Capital to RWA,2nd Quarter 2082/2083,8.89,8.89
+NABIL,keymetrics,Non-Performing loan(NPL) to Total Loan,2nd Quarter 2082/2083,4.25,4.25
+NABIL,keymetrics,Total Loan loss provision to Total NPL,2nd Quarter 2082/2083,111.97,111.97
+NABIL,keymetrics,Cost of Funds,2nd Quarter 2082/2083,3.62,3.62
+NABIL,keymetrics,Credit to Deposit Ratio,2nd Quarter 2082/2083,78.12,78.12
+NABIL,keymetrics,Base Rate,2nd Quarter 2082/2083,5.04,5.04
+NABIL,keymetrics,Interest Spread Rate,2nd Quarter 2082/2083,3.54,3.54
+NABIL,keymetrics,Total Shareholder's Equity (in Rs '000'),2nd Quarter 2082/2083,"68,758,085.00",68758085.0
+NABIL,keymetrics,No. of Outstanding Shares,2nd Quarter 2082/2083,"270,569,970.00",270569970.0
+NABIL,keymetrics,Net Worth Per Share,2nd Quarter 2082/2083,235.64,235.64
+NABIL,keymetrics,P/E Ratio,2nd Quarter 2082/2083,13.86,13.86
+NABIL,keymetrics,Price to Book (P/B) Ratio,2nd Quarter 2082/2083,2.07,2.07
+NABIL,keymetrics,Return on Equity,2nd Quarter 2082/2083,14.93,14.93
+NABIL,keymetrics,Return on Assets,2nd Quarter 2082/2083,1.37,1.37

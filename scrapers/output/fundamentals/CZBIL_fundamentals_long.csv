@@ -1,0 +1,87 @@
+scrip,section,metric,period,value_raw,value_num
+CZBIL,balance,Cash and cash equivalent,2nd Quarter 2082/2083,"12,877,456.89",12877456.89
+CZBIL,balance,Due from Nepal Rastra Bank,2nd Quarter 2082/2083,"8,411,509.58",8411509.58
+CZBIL,balance,Placement with Bank and Financial Institutions,2nd Quarter 2082/2083,"2,165,194.20",2165194.2
+CZBIL,balance,Derivative financial instruments,2nd Quarter 2082/2083,"43,649.13",43649.13
+CZBIL,balance,Other trading assets,2nd Quarter 2082/2083,"540,697.69",540697.69
+CZBIL,balance,Loan and advances to B/FIs,2nd Quarter 2082/2083,"606,328.24",606328.24
+CZBIL,balance,Loans and advances to customers,2nd Quarter 2082/2083,"168,210,202.69",168210202.69
+CZBIL,balance,Investment securities,2nd Quarter 2082/2083,"41,821,077.11",41821077.11
+CZBIL,balance,Current tax assets,2nd Quarter 2082/2083,"11,611.93",11611.93
+CZBIL,balance,Investment in subsidiaries,2nd Quarter 2082/2083,"317,204.20",317204.2
+CZBIL,balance,Investment in associates,2nd Quarter 2082/2083,"474,251.00",474251.0
+CZBIL,balance,Investment property,2nd Quarter 2082/2083,"1,275,001.60",1275001.6
+CZBIL,balance,Property and equipment,2nd Quarter 2082/2083,"4,097,281.70",4097281.7
+CZBIL,balance,Goodwill and Intangible assets,2nd Quarter 2082/2083,"161,719.58",161719.58
+CZBIL,balance,Deferred tax assets,2nd Quarter 2082/2083,"797,484.99",797484.99
+CZBIL,balance,Other assets,2nd Quarter 2082/2083,"3,842,821.17",3842821.17
+CZBIL,balance,Total Assets,2nd Quarter 2082/2083,"245,653,491.69",245653491.69
+CZBIL,balance,Due to Bank and Financial Institutions,2nd Quarter 2082/2083,"3,951,583.94",3951583.94
+CZBIL,balance,Due to Nepal Rastra Bank,2nd Quarter 2082/2083,"41,439.07",41439.07
+CZBIL,balance,Derivative financial instruments,2nd Quarter 2082/2083,0.00,0.0
+CZBIL,balance,Deposits from customers,2nd Quarter 2082/2083,"210,223,564.91",210223564.91
+CZBIL,balance,Borrowing,2nd Quarter 2082/2083,0.00,0.0
+CZBIL,balance,Current Tax Liabilities,2nd Quarter 2082/2083,0.00,0.0
+CZBIL,balance,Provisions,2nd Quarter 2082/2083,"5,306.63",5306.63
+CZBIL,balance,Deferred tax liabilities,2nd Quarter 2082/2083,0.00,0.0
+CZBIL,balance,Other liabilities,2nd Quarter 2082/2083,"2,729,851.70",2729851.7
+CZBIL,balance,Debt securities issued,2nd Quarter 2082/2083,"5,473,051.24",5473051.24
+CZBIL,balance,Subordinated Liabilities,2nd Quarter 2082/2083,0.00,0.0
+CZBIL,balance,Total liabilities,2nd Quarter 2082/2083,"222,424,797.49",222424797.49
+CZBIL,balance,Share capital,2nd Quarter 2082/2083,"15,507,463.61",15507463.61
+CZBIL,balance,Share premium,2nd Quarter 2082/2083,0.00,0.0
+CZBIL,balance,Retained earnings,2nd Quarter 2082/2083,"-1,100,493.66",-1100493.66
+CZBIL,balance,Reserves,2nd Quarter 2082/2083,"8,821,724.25",8821724.25
+CZBIL,balance,Total equity,2nd Quarter 2082/2083,"23,228,694.20",23228694.2
+CZBIL,balance,Total liabilities and equity,2nd Quarter 2082/2083,"245,653,491.69",245653491.69
+CZBIL,profitloss,Interest income,2nd Quarter 2082/2083,"7,723,863.53",7723863.53
+CZBIL,profitloss,Interest expense,2nd Quarter 2082/2083,"4,579,317.40",4579317.4
+CZBIL,profitloss,Net interest income,2nd Quarter 2082/2083,"3,144,546.13",3144546.13
+CZBIL,profitloss,Fees and commission income,2nd Quarter 2082/2083,"703,913.27",703913.27
+CZBIL,profitloss,Fees and commission expense,2nd Quarter 2082/2083,"80,073.99",80073.99
+CZBIL,profitloss,Net fee and commission income,2nd Quarter 2082/2083,"623,839.28",623839.28
+CZBIL,profitloss,"Net interest, fee and commission income",2nd Quarter 2082/2083,"3,768,385.42",3768385.42
+CZBIL,profitloss,Net trading income,2nd Quarter 2082/2083,"231,405.56",231405.56
+CZBIL,profitloss,Other operating income,2nd Quarter 2082/2083,"118,958.83",118958.83
+CZBIL,profitloss,Total operating income,2nd Quarter 2082/2083,"4,118,749.81",4118749.81
+CZBIL,profitloss,Impairment charge/(reversal) for loan and other losses,2nd Quarter 2082/2083,"1,832,792.54",1832792.54
+CZBIL,profitloss,Net operating income,2nd Quarter 2082/2083,"2,285,957.27",2285957.27
+CZBIL,profitloss,Personnel expense,2nd Quarter 2082/2083,"1,089,210.53",1089210.53
+CZBIL,profitloss,Other operating expense,2nd Quarter 2082/2083,"490,254.89",490254.89
+CZBIL,profitloss,Depreciation & Amortisation,2nd Quarter 2082/2083,"202,320.00",202320.0
+CZBIL,profitloss,Operating Profit,2nd Quarter 2082/2083,"504,171.85",504171.85
+CZBIL,profitloss,Non operating income,2nd Quarter 2082/2083,"14,029.44",14029.44
+CZBIL,profitloss,Non operating expense,2nd Quarter 2082/2083,0.00,0.0
+CZBIL,profitloss,Profit before income tax,2nd Quarter 2082/2083,"518,201.29",518201.29
+CZBIL,profitloss,Current Tax,2nd Quarter 2082/2083,"733,233.15",733233.15
+CZBIL,profitloss,Deferred Tax,2nd Quarter 2082/2083,"-573,890.95",-573890.95
+CZBIL,profitloss,Profit for the period,2nd Quarter 2082/2083,"358,859.10",358859.1
+CZBIL,profitloss,Gains/(losses) from investments in equity instruments measured at fair value,2nd Quarter 2082/2083,0.00,0.0
+CZBIL,profitloss,Gains/(losses) on revalution,2nd Quarter 2082/2083,0.00,0.0
+CZBIL,profitloss,Actuarial gains/(losses) on defined benefit plans,2nd Quarter 2082/2083,0.00,0.0
+CZBIL,profitloss,Income tax relating to above items,2nd Quarter 2082/2083,0.00,0.0
+CZBIL,profitloss,Net other comprehsive income that will not be reclassified to profit or loss,2nd Quarter 2082/2083,0.00,0.0
+CZBIL,profitloss,Gains/(losses) on cash flow hedge,2nd Quarter 2082/2083,0.00,0.0
+CZBIL,profitloss,Exchange gains/(losses) (arising from translating financial assets of foreign operation),2nd Quarter 2082/2083,0.00,0.0
+CZBIL,profitloss,Income tax relating to above items,2nd Quarter 2082/2083,0.00,0.0
+CZBIL,profitloss,Net other comprehsive income that are or may be reclassified to profit or loss,2nd Quarter 2082/2083,0.00,0.0
+CZBIL,profitloss,"Other Comprehensive Income For The Period, Net Of Income Tax",2nd Quarter 2082/2083,"-39,012.38",-39012.38
+CZBIL,profitloss,Total Comprehensive Income For The Period,2nd Quarter 2082/2083,"319,846.72",319846.72
+CZBIL,keymetrics,Basic Earnings Per Share(Annualized EPS),2nd Quarter 2082/2083,4.63,4.63
+CZBIL,keymetrics,Diluted Earnings Per Share,2nd Quarter 2082/2083,4.63,4.63
+CZBIL,keymetrics,Capital fund to RWA,2nd Quarter 2082/2083,12.43,12.43
+CZBIL,keymetrics,Tier I Capital to RWA,2nd Quarter 2082/2083,8.69,8.69
+CZBIL,keymetrics,CET I Capital to RWA,2nd Quarter 2082/2083,8.69,8.69
+CZBIL,keymetrics,Non-Performing loan(NPL) to Total Loan,2nd Quarter 2082/2083,6.86,6.86
+CZBIL,keymetrics,Total Loan loss provision to Total NPL,2nd Quarter 2082/2083,91.48,91.48
+CZBIL,keymetrics,Cost of Funds,2nd Quarter 2082/2083,3.78,3.78
+CZBIL,keymetrics,Credit to Deposit Ratio,2nd Quarter 2082/2083,82.66,82.66
+CZBIL,keymetrics,Base Rate,2nd Quarter 2082/2083,5.62,5.62
+CZBIL,keymetrics,Interest Spread Rate,2nd Quarter 2082/2083,3.69,3.69
+CZBIL,keymetrics,Total Shareholder's Equity (in Rs '000'),2nd Quarter 2082/2083,"23,228,694.20",23228694.2
+CZBIL,keymetrics,No. of Outstanding Shares,2nd Quarter 2082/2083,"155,074,636.14",155074636.14
+CZBIL,keymetrics,Net Worth Per Share,2nd Quarter 2082/2083,149.79,149.79
+CZBIL,keymetrics,P/E Ratio,2nd Quarter 2082/2083,41.70,41.7
+CZBIL,keymetrics,Price to Book (P/B) Ratio,2nd Quarter 2082/2083,1.29,1.29
+CZBIL,keymetrics,Return on Equity,2nd Quarter 2082/2083,3.09,3.09
+CZBIL,keymetrics,Return on Assets,2nd Quarter 2082/2083,0.29,0.29

@@ -1,0 +1,80 @@
+# Cloud Run service manifest for the NRC orchestrator.
+# Deploy via:
+#   gcloud run services replace infra/cloud-run/orchestrator.yaml \
+#     --region=us-central1 --project=gen-lang-client-0419947814
+#
+# Secrets are expected to be in Google Secret Manager (not in the manifest).
+# Rotate the Vertex API key by: write new secret version, bump
+# `revisions.serving.secrets` to force a new revision, traffic = 100% new.
+
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: nrc-orchestrator
+  annotations:
+    run.googleapis.com/ingress: internal-and-cloud-load-balancing
+spec:
+  template:
+    metadata:
+      annotations:
+        # Autoscale: research team is small; cap tight.
+        autoscaling.knative.dev/minScale: "0"
+        autoscaling.knative.dev/maxScale: "5"
+        # Long-lived connections to Postgres via the connector.
+        run.googleapis.com/execution-environment: gen2
+        run.googleapis.com/cpu-throttling: "false"
+    spec:
+      serviceAccountName: nrc-orchestrator@PROJECT_ID.iam.gserviceaccount.com
+      containerConcurrency: 10
+      timeoutSeconds: 300
+      containers:
+      - image: REGION-docker.pkg.dev/PROJECT_ID/nrc/orchestrator:GIT_SHA
+        ports:
+        - name: http1
+          containerPort: 8080
+        resources:
+          limits:
+            memory: 1Gi
+            cpu: "1"
+        env:
+        # Non-secret config.
+        - name: GCP_PROJECT_ID
+          value: PROJECT_ID
+        - name: GCP_REGION
+          value: global
+        - name: LLM_INTENT_MODEL
+          value: gemini-2.5-flash-lite
+        - name: LLM_SYNTHESIZER_MODEL
+          value: gemini-2.5-pro
+        - name: LOG_LEVEL
+          value: info
+        # Secrets from Secret Manager.
+        - name: GCP_VERTEX_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: nrc-vertex-api-key
+              key: latest
+        - name: POSTGRES_URL
+          valueFrom:
+            secretKeyRef:
+              name: nrc-postgres-url
+              key: latest
+        - name: REDIS_URL
+          valueFrom:
+            secretKeyRef:
+              name: nrc-redis-url
+              key: latest
+        startupProbe:
+          httpGet:
+            path: /health
+            port: 8080
+          periodSeconds: 5
+          failureThreshold: 6
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8080
+          periodSeconds: 30
+  traffic:
+  - percent: 100
+    latestRevision: true

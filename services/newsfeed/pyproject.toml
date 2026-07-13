@@ -1,0 +1,23 @@
+[project]
+name = "nrc-newsfeed"
+version = "0.1.0"
+description = "Live NEPSE news ingestion → Gemini sentiment enrichment → serving layer"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "nrc-contracts",
+  "nrc-storage",
+  "nrc-llm",
+  "nrc-nepal",
+  "httpx>=0.27",
+  "typer>=0.12",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["nrc_newsfeed"]
+
+[project.scripts]
+nrc-newsfeed = "nrc_newsfeed.cli:app"

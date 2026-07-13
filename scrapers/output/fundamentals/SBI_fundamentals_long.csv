@@ -1,0 +1,87 @@
+scrip,section,metric,period,value_raw,value_num
+SBI,balance,Cash and cash equivalent,2nd Quarter 2082/2083,"39,080,891.28",39080891.28
+SBI,balance,Due from Nepal Rastra Bank,2nd Quarter 2082/2083,"10,613,909.28",10613909.28
+SBI,balance,Placement with Bank and Financial Institutions,2nd Quarter 2082/2083,"18,795,963.75",18795963.75
+SBI,balance,Derivative financial instruments,2nd Quarter 2082/2083,"1,812.85",1812.85
+SBI,balance,Other trading assets,2nd Quarter 2082/2083,"130,438.00",130438.0
+SBI,balance,Loan and advances to B/FIs,2nd Quarter 2082/2083,"6,532,446.71",6532446.71
+SBI,balance,Loans and advances to customers,2nd Quarter 2082/2083,"141,991,958.70",141991958.7
+SBI,balance,Investment securities,2nd Quarter 2082/2083,"32,173,396.42",32173396.42
+SBI,balance,Current tax assets,2nd Quarter 2082/2083,"292,034.81",292034.81
+SBI,balance,Investment in subsidiaries,2nd Quarter 2082/2083,"188,888.89",188888.89
+SBI,balance,Investment in associates,2nd Quarter 2082/2083,0.00,0.0
+SBI,balance,Investment property,2nd Quarter 2082/2083,"1,013,141.73",1013141.73
+SBI,balance,Property and equipment,2nd Quarter 2082/2083,"1,296,294.24",1296294.24
+SBI,balance,Goodwill and Intangible assets,2nd Quarter 2082/2083,"42,145.64",42145.64
+SBI,balance,Deferred tax assets,2nd Quarter 2082/2083,"458,559.73",458559.73
+SBI,balance,Other assets,2nd Quarter 2082/2083,"2,230,720.37",2230720.37
+SBI,balance,Total Assets,2nd Quarter 2082/2083,"254,842,602.39",254842602.39
+SBI,balance,Due to Bank and Financial Institutions,2nd Quarter 2082/2083,"4,550,455.82",4550455.82
+SBI,balance,Due to Nepal Rastra Bank,2nd Quarter 2082/2083,0.00,0.0
+SBI,balance,Derivative financial instruments,2nd Quarter 2082/2083,0.00,0.0
+SBI,balance,Deposits from customers,2nd Quarter 2082/2083,"216,104,869.32",216104869.32
+SBI,balance,Borrowing,2nd Quarter 2082/2083,0.00,0.0
+SBI,balance,Current Tax Liabilities,2nd Quarter 2082/2083,0.00,0.0
+SBI,balance,Provisions,2nd Quarter 2082/2083,0.00,0.0
+SBI,balance,Deferred tax liabilities,2nd Quarter 2082/2083,0.00,0.0
+SBI,balance,Other liabilities,2nd Quarter 2082/2083,"4,300,045.55",4300045.55
+SBI,balance,Debt securities issued,2nd Quarter 2082/2083,"8,840,854.55",8840854.55
+SBI,balance,Subordinated Liabilities,2nd Quarter 2082/2083,0.00,0.0
+SBI,balance,Total liabilities,2nd Quarter 2082/2083,"233,796,225.24",233796225.24
+SBI,balance,Share capital,2nd Quarter 2082/2083,"10,899,158.07",10899158.07
+SBI,balance,Share premium,2nd Quarter 2082/2083,0.00,0.0
+SBI,balance,Retained earnings,2nd Quarter 2082/2083,"1,201,306.33",1201306.33
+SBI,balance,Reserves,2nd Quarter 2082/2083,"8,945,912.75",8945912.75
+SBI,balance,Total equity,2nd Quarter 2082/2083,"21,046,377.15",21046377.15
+SBI,balance,Total liabilities and equity,2nd Quarter 2082/2083,"254,842,602.39",254842602.39
+SBI,profitloss,Interest income,2nd Quarter 2082/2083,"7,270,138.05",7270138.05
+SBI,profitloss,Interest expense,2nd Quarter 2082/2083,"4,709,114.92",4709114.92
+SBI,profitloss,Net interest income,2nd Quarter 2082/2083,"2,561,023.13",2561023.13
+SBI,profitloss,Fees and commission income,2nd Quarter 2082/2083,"789,739.37",789739.37
+SBI,profitloss,Fees and commission expense,2nd Quarter 2082/2083,"74,360.32",74360.32
+SBI,profitloss,Net fee and commission income,2nd Quarter 2082/2083,"715,379.05",715379.05
+SBI,profitloss,"Net interest, fee and commission income",2nd Quarter 2082/2083,"3,276,402.18",3276402.18
+SBI,profitloss,Net trading income,2nd Quarter 2082/2083,"142,754.68",142754.68
+SBI,profitloss,Other operating income,2nd Quarter 2082/2083,"129,065.35",129065.35
+SBI,profitloss,Total operating income,2nd Quarter 2082/2083,"3,548,222.21",3548222.21
+SBI,profitloss,Impairment charge/(reversal) for loan and other losses,2nd Quarter 2082/2083,"566,176.87",566176.87
+SBI,profitloss,Net operating income,2nd Quarter 2082/2083,"2,982,045.34",2982045.34
+SBI,profitloss,Personnel expense,2nd Quarter 2082/2083,"1,007,654.02",1007654.02
+SBI,profitloss,Other operating expense,2nd Quarter 2082/2083,"358,151.82",358151.82
+SBI,profitloss,Depreciation & Amortisation,2nd Quarter 2082/2083,"144,841.31",144841.31
+SBI,profitloss,Operating Profit,2nd Quarter 2082/2083,"1,471,398.20",1471398.2
+SBI,profitloss,Non operating income,2nd Quarter 2082/2083,"1,948.83",1948.83
+SBI,profitloss,Non operating expense,2nd Quarter 2082/2083,0.00,0.0
+SBI,profitloss,Profit before income tax,2nd Quarter 2082/2083,"1,473,347.02",1473347.02
+SBI,profitloss,Current Tax,2nd Quarter 2082/2083,"442,004.11",442004.11
+SBI,profitloss,Deferred Tax,2nd Quarter 2082/2083,0.00,0.0
+SBI,profitloss,Profit for the period,2nd Quarter 2082/2083,"1,031,342.92",1031342.92
+SBI,profitloss,Gains/(losses) from investments in equity instruments measured at fair value,2nd Quarter 2082/2083,0.00,0.0
+SBI,profitloss,Gains/(losses) on revalution,2nd Quarter 2082/2083,0.00,0.0
+SBI,profitloss,Actuarial gains/(losses) on defined benefit plans,2nd Quarter 2082/2083,0.00,0.0
+SBI,profitloss,Income tax relating to above items,2nd Quarter 2082/2083,0.00,0.0
+SBI,profitloss,Net other comprehsive income that will not be reclassified to profit or loss,2nd Quarter 2082/2083,0.00,0.0
+SBI,profitloss,Gains/(losses) on cash flow hedge,2nd Quarter 2082/2083,0.00,0.0
+SBI,profitloss,Exchange gains/(losses) (arising from translating financial assets of foreign operation),2nd Quarter 2082/2083,0.00,0.0
+SBI,profitloss,Income tax relating to above items,2nd Quarter 2082/2083,0.00,0.0
+SBI,profitloss,Net other comprehsive income that are or may be reclassified to profit or loss,2nd Quarter 2082/2083,0.00,0.0
+SBI,profitloss,"Other Comprehensive Income For The Period, Net Of Income Tax",2nd Quarter 2082/2083,"-3,564.70",-3564.7
+SBI,profitloss,Total Comprehensive Income For The Period,2nd Quarter 2082/2083,"1,027,778.22",1027778.22
+SBI,keymetrics,Basic Earnings Per Share(Annualized EPS),2nd Quarter 2082/2083,18.93,18.93
+SBI,keymetrics,Diluted Earnings Per Share,2nd Quarter 2082/2083,18.93,18.93
+SBI,keymetrics,Capital fund to RWA,2nd Quarter 2082/2083,14.12,14.12
+SBI,keymetrics,Tier I Capital to RWA,2nd Quarter 2082/2083,9.42,9.42
+SBI,keymetrics,CET I Capital to RWA,2nd Quarter 2082/2083,9.42,9.42
+SBI,keymetrics,Non-Performing loan(NPL) to Total Loan,2nd Quarter 2082/2083,2.64,2.64
+SBI,keymetrics,Total Loan loss provision to Total NPL,2nd Quarter 2082/2083,154.89,154.89
+SBI,keymetrics,Cost of Funds,2nd Quarter 2082/2083,4.23,4.23
+SBI,keymetrics,Credit to Deposit Ratio,2nd Quarter 2082/2083,68.68,68.68
+SBI,keymetrics,Base Rate,2nd Quarter 2082/2083,5.68,5.68
+SBI,keymetrics,Interest Spread Rate,2nd Quarter 2082/2083,3.54,3.54
+SBI,keymetrics,Total Shareholder's Equity (in Rs '000'),2nd Quarter 2082/2083,"21,046,377.15",21046377.15
+SBI,keymetrics,No. of Outstanding Shares,2nd Quarter 2082/2083,"108,991,580.68",108991580.68
+SBI,keymetrics,Net Worth Per Share,2nd Quarter 2082/2083,193.10,193.1
+SBI,keymetrics,P/E Ratio,2nd Quarter 2082/2083,21.66,21.66
+SBI,keymetrics,Price to Book (P/B) Ratio,2nd Quarter 2082/2083,2.12,2.12
+SBI,keymetrics,Return on Equity,2nd Quarter 2082/2083,9.80,9.8
+SBI,keymetrics,Return on Assets,2nd Quarter 2082/2083,0.81,0.81

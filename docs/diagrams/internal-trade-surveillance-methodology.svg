@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1140" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#8a93a6"/>
+    </marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#b45309"/>
+    </marker>
+  </defs>
+
+  <style>
+    .h1{font-size:24px;font-weight:700;fill:#1d2230}
+    .sub{font-size:13px;fill:#5a6172}
+    .col{font-size:11.5px;font-weight:700;letter-spacing:.14em;fill:#5a6172}
+    .bt{font-size:13.5px;font-weight:700;fill:#1d2230}
+    .q{font-size:12px;font-style:italic;fill:#1d2230}
+    .t{font-size:11.8px;fill:#3c4254}
+    .cap{font-size:10.5px;font-style:italic;fill:#8a93a6}
+    .chip{font-size:11px;font-weight:700}
+    .box{fill:#ffffff;stroke:#d8dce6;stroke-width:1.2}
+    .flow{fill:none;stroke:#8a93a6;stroke-width:1.4}
+  </style>
+
+  <rect width="1600" height="1140" fill="#f7f8fb"/>
+
+  <!-- ───────────────────────── title ───────────────────────── -->
+  <text x="40" y="46" class="h1">Internal Trade Surveillance — how every one of our fills is scored</text>
+  <text x="40" y="70" class="sub">Each trade our funds execute is checked through five independent lenses against the whole market’s tape. A flag for review, not a verdict.</text>
+
+  <!-- ───────────────────────── column 1 · data ───────────────────────── -->
+  <text x="40" y="118" class="col">WHAT WE HOLD</text>
+
+  <rect x="40" y="130" width="300" height="168" rx="10" class="box" stroke="#2563eb"/>
+  <rect x="40" y="130" width="300" height="30" rx="10" fill="#eaf0fe"/>
+  <text x="56" y="150" class="bt" fill="#2563eb">1 · Our own trade book</text>
+  <text x="56" y="180" class="t">Every fill our funds executed:</text>
+  <text x="56" y="198" class="t">fund / scheme · scrip · buy or sell</text>
+  <text x="56" y="216" class="t">price · quantity · exact trade time</text>
+  <text x="56" y="234" class="t" font-weight="700">NEPSE contract number — the key</text>
+  <text x="56" y="258" class="cap">the firm’s own record · fund-level,</text>
+  <text x="56" y="272" class="cap">deliberately not person-level</text>
+
+  <rect x="40" y="322" width="300" height="150" rx="10" class="box" stroke="#2563eb"/>
+  <rect x="40" y="322" width="300" height="30" rx="10" fill="#eaf0fe"/>
+  <text x="56" y="342" class="bt" fill="#2563eb">2 · NEPSE floor sheet (whole market)</text>
+  <text x="56" y="372" class="t">Every contract traded on the exchange:</text>
+  <text x="56" y="390" class="t">contract number · buying broker</text>
+  <text x="56" y="408" class="t">selling broker · price · quantity</text>
+  <text x="56" y="432" class="cap">the public market tape, captured</text>
+  <text x="56" y="446" class="cap">every trading day</text>
+
+  <rect x="40" y="496" width="300" height="128" rx="10" class="box" stroke="#2563eb"/>
+  <rect x="40" y="496" width="300" height="30" rx="10" fill="#eaf0fe"/>
+  <text x="56" y="516" class="bt" fill="#2563eb">3 · Daily price history</text>
+  <text x="56" y="546" class="t">open · high · low · close per scrip</text>
+  <text x="56" y="564" class="t">each scrip’s 20-day volatility — the</text>
+  <text x="56" y="582" class="t">yardstick for “how unusual is this?”</text>
+
+  <!-- ───────────────────────── column 2 · enrichment + signals ───────────────────────── -->
+  <text x="395" y="118" class="col">WHAT THE MATCH REVEALS</text>
+
+  <rect x="395" y="130" width="330" height="190" rx="10" class="box" stroke="#7c3aed"/>
+  <rect x="395" y="130" width="330" height="30" rx="10" fill="#f1ebfd"/>
+  <text x="411" y="150" class="bt" fill="#7c3aed">Every fill, market-enriched</text>
+  <text x="411" y="178" class="cap">our book ⋈ floor sheet, joined on contract number</text>
+  <text x="411" y="202" class="t">→ which broker we traded through</text>
+  <text x="411" y="220" class="t">→ which broker was on the other side</text>
+  <text x="411" y="238" class="t">→ the market’s own price in the ±15-min</text>
+  <text x="411" y="256" class="t">    window around our fill (interval VWAP)</text>
+  <text x="411" y="282" class="cap">join verified: price &amp; quantity reconcile</text>
+  <text x="411" y="296" class="cap">exactly on covered dates</text>
+
+  <rect x="395" y="352" width="330" height="272" rx="10" class="box" stroke="#7c3aed"/>
+  <rect x="395" y="352" width="330" height="30" rx="10" fill="#f1ebfd"/>
+  <text x="411" y="372" class="bt" fill="#7c3aed">Market-wide signals (from the full tape)</text>
+  <text x="411" y="402" class="t" font-weight="700">broker flow &amp; accumulation</text>
+  <text x="411" y="419" class="t">who is quietly building or unloading a position</text>
+  <text x="411" y="445" class="t" font-weight="700">concentration days</text>
+  <text x="411" y="462" class="t">one broker dominating a scrip’s volume</text>
+  <text x="411" y="488" class="t" font-weight="700">wash-pair graph</text>
+  <text x="411" y="505" class="t">brokers circling volume between themselves</text>
+  <text x="411" y="531" class="t" font-weight="700">speculation score per scrip</text>
+  <text x="411" y="548" class="t">pump / operator-pattern tier</text>
+  <text x="411" y="565" class="t">(HIGH · ELEVATED · MODERATE)</text>
+  <text x="411" y="594" class="cap">computed across the whole market — then pointed</text>
+  <text x="411" y="608" class="cap">back at our own trades</text>
+
+  <!-- ───────────────────────── column 3 · five lenses ───────────────────────── -->
+  <text x="790" y="118" class="col">FIVE LENSES ON EVERY FILL</text>
+
+  <!-- L1 -->
+  <rect x="790" y="130" width="420" height="112" rx="10" class="box" stroke="#d8a64a"/>
+  <rect x="1124" y="142" width="70" height="20" rx="10" fill="#fdf3e0"/>
+  <text x="1159" y="156" text-anchor="middle" class="chip" fill="#b45309">25%</text>
+  <text x="806" y="156" class="bt">Execution quality</text>
+  <text x="806" y="178" class="q">“Did we pay worse than the market at that minute?”</text>
+  <text x="806" y="200" class="t">slippage vs the ±15-min market VWAP, measured in units of</text>
+  <text x="806" y="217" class="t">the scrip’s own volatility · traded outside the day’s entire</text>
+  <text x="806" y="234" class="t">high–low range = automatic maximum</text>
+
+  <!-- L2 -->
+  <rect x="790" y="256" width="420" height="112" rx="10" class="box" stroke="#d8a64a"/>
+  <rect x="1124" y="268" width="70" height="20" rx="10" fill="#fdf3e0"/>
+  <text x="1159" y="282" text-anchor="middle" class="chip" fill="#b45309">20%</text>
+  <text x="806" y="282" class="bt">Scrip context</text>
+  <text x="806" y="304" class="q">“Was the stock already flashing manipulation signals?”</text>
+  <text x="806" y="326" class="t">worst signal on the scrip that day: speculation tier ·</text>
+  <text x="806" y="343" class="t">broker-concentration day · wash circularity · pump pattern</text>
+
+  <!-- L3 -->
+  <rect x="790" y="382" width="420" height="112" rx="10" class="box" stroke="#d8a64a"/>
+  <rect x="1124" y="394" width="70" height="20" rx="10" fill="#fdf3e0"/>
+  <text x="1159" y="408" text-anchor="middle" class="chip" fill="#b45309">25%</text>
+  <text x="806" y="408" class="bt">Counterparty pattern</text>
+  <text x="806" y="430" class="q">“Does the same broker keep facing our flow beyond chance?”</text>
+  <text x="806" y="452" class="t">how often they pair with us vs their real market share</text>
+  <text x="806" y="469" class="t">(statistical surprise, z) · market-flagged counterparty ·</text>
+  <text x="806" y="486" class="t">exit liquidity: we bought while they unloaded a built-up stake</text>
+
+  <!-- L4 -->
+  <rect x="790" y="508" width="420" height="112" rx="10" class="box" stroke="#d8a64a"/>
+  <rect x="1124" y="520" width="70" height="20" rx="10" fill="#fdf3e0"/>
+  <text x="1159" y="534" text-anchor="middle" class="chip" fill="#b45309">15%</text>
+  <text x="806" y="534" class="bt">Intra-firm crossing</text>
+  <text x="806" y="556" class="q">“Did our own funds trade against each other?”</text>
+  <text x="806" y="578" class="t">opposite fills across our books within 5 minutes ·</text>
+  <text x="806" y="595" class="t">same fund buying and selling the same scrip the same day</text>
+
+  <!-- L5 -->
+  <rect x="790" y="634" width="420" height="112" rx="10" class="box" stroke="#d8a64a"/>
+  <rect x="1124" y="646" width="70" height="20" rx="10" fill="#fdf3e0"/>
+  <text x="1159" y="660" text-anchor="middle" class="chip" fill="#b45309">15%</text>
+  <text x="806" y="660" class="bt">Post-trade outcome</text>
+  <text x="806" y="682" class="q">“Did the price move against us right after?”</text>
+  <text x="806" y="704" class="t">markout: price drift 1, 5 and 20 sessions after the fill,</text>
+  <text x="806" y="721" class="t">in volatility units · bought in the top tenth of the</text>
+  <text x="806" y="738" class="t">20-day price range</text>
+
+  <!-- ───────────────────────── column 4 · score + verdict ───────────────────────── -->
+  <text x="1265" y="118" class="col">SCORE → CASE → VERDICT</text>
+
+  <rect x="1265" y="130" width="300" height="240" rx="10" class="box" stroke="#b45309"/>
+  <rect x="1265" y="130" width="300" height="30" rx="10" fill="#fdf3e0"/>
+  <text x="1281" y="150" class="bt" fill="#b45309">Suspicion score · 0–100</text>
+  <text x="1281" y="178" class="t">weighted blend of the five lenses;</text>
+  <text x="1281" y="195" class="t">every fired check listed in plain words</text>
+  <rect x="1281" y="210" width="268" height="26" rx="6" fill="#fdecec"/>
+  <text x="1293" y="227" class="chip" fill="#dc2626">HIGH ≥ 70 — investigate first</text>
+  <rect x="1281" y="242" width="268" height="26" rx="6" fill="#fdf1e3"/>
+  <text x="1293" y="259" class="chip" fill="#ea7317">ELEVATED ≥ 45</text>
+  <rect x="1281" y="274" width="268" height="26" rx="6" fill="#fdf8e3"/>
+  <text x="1293" y="291" class="chip" fill="#b48708">MODERATE ≥ 25 — worth a look</text>
+  <rect x="1281" y="306" width="268" height="26" rx="6" fill="#e8f7ef"/>
+  <text x="1293" y="323" class="chip" fill="#059669">LOW &lt; 25 — the clean book</text>
+  <text x="1281" y="352" class="cap">flagged fills only move forward ↓</text>
+
+  <rect x="1265" y="400" width="300" height="92" rx="10" class="box" stroke="#059669"/>
+  <text x="1281" y="426" class="bt" fill="#059669">Group into cases</text>
+  <text x="1281" y="448" class="t">flagged fills cluster into one case per</text>
+  <text x="1281" y="465" class="t">fund × scrip × day, with all evidence</text>
+  <text x="1281" y="482" class="t">rolled up (fills, markout curve, z)</text>
+
+  <rect x="1265" y="514" width="300" height="124" rx="10" class="box" stroke="#059669"/>
+  <text x="1281" y="540" class="bt" fill="#059669">Reality-check vs the market</text>
+  <text x="1281" y="562" class="q">“Or was that broker simply the day’s liquidity?”</text>
+  <text x="1281" y="584" class="t">the broker’s share &amp; rank of ALL market</text>
+  <text x="1281" y="601" class="t">volume that day · its past 30 / 90 sessions ·</text>
+  <text x="1281" y="618" class="t">whether it was accumulating or distributing</text>
+
+  <rect x="1265" y="660" width="300" height="160" rx="10" class="box" stroke="#059669"/>
+  <text x="1281" y="686" class="bt" fill="#059669">Classification &amp; human review</text>
+  <text x="1281" y="710" class="chip" fill="#059669">LIKELY NORMAL MARKET BEHAVIOR</text>
+  <text x="1281" y="728" class="chip" fill="#ea7317">ELEVATED CONCENTRATION</text>
+  <text x="1281" y="746" class="chip" fill="#dc2626">POTENTIALLY EXCEPTIONAL</text>
+  <text x="1281" y="770" class="t">each with a confidence level · plain-language</text>
+  <text x="1281" y="787" class="t">case note · analyst investigates &amp; records</text>
+  <text x="1281" y="804" class="t">the finding on the case</text>
+
+  <!-- ───────────────────────── arrows ───────────────────────── -->
+  <!-- trade book + floorsheet → enriched fill -->
+  <path class="flow" d="M 340 214 C 368 214 368 200 388 198" marker-end="url(#arr)"/>
+  <path class="flow" d="M 340 397 C 372 397 366 262 388 245" marker-end="url(#arr)"/>
+  <!-- floorsheet → market signals -->
+  <path class="flow" d="M 340 430 C 370 432 368 470 388 474" marker-end="url(#arr)"/>
+  <!-- price history → lenses (volatility yardstick + markouts), routed under col2 -->
+  <path class="flow" d="M 190 624 L 190 668 C 190 690 220 690 280 690 L 783 690" marker-end="url(#arr)"/>
+  <text x="420" y="681" class="cap">volatility yardstick · markouts</text>
+  <!-- enriched fill → lenses -->
+  <path class="flow" d="M 725 210 C 758 210 756 188 783 186" marker-end="url(#arr)"/>
+  <text x="733" y="172" class="cap">per fill</text>
+  <!-- market signals → lenses (context + counterparty) -->
+  <path class="flow" d="M 725 470 C 758 470 756 438 783 436" marker-end="url(#arr)"/>
+  <text x="733" y="500" class="cap">context</text>
+  <!-- lenses → score -->
+  <path d="M 1210 186 C 1244 186 1240 220 1262 226" fill="none" stroke="#b45309" stroke-width="1.4" marker-end="url(#arrG)"/>
+  <path d="M 1210 312 C 1244 312 1240 268 1262 252" fill="none" stroke="#b45309" stroke-width="1.4" marker-end="url(#arrG)"/>
+  <path d="M 1210 438 C 1244 438 1240 296 1262 276" fill="none" stroke="#b45309" stroke-width="1.4" marker-end="url(#arrG)"/>
+  <path d="M 1210 564 C 1248 564 1244 320 1262 300" fill="none" stroke="#b45309" stroke-width="1.4" marker-end="url(#arrG)"/>
+  <path d="M 1210 690 C 1252 690 1248 348 1262 326" fill="none" stroke="#b45309" stroke-width="1.4" marker-end="url(#arrG)"/>
+  <!-- score → cases → context check → classification -->
+  <path class="flow" d="M 1415 370 L 1415 396" marker-end="url(#arr)"/>
+  <path class="flow" d="M 1415 492 L 1415 510" marker-end="url(#arr)"/>
+  <path class="flow" d="M 1415 638 L 1415 656" marker-end="url(#arr)"/>
+
+  <!-- ───────────────────────── bottom strip ───────────────────────── -->
+  <rect x="40" y="858" width="740" height="206" rx="10" class="box" stroke="#2563eb"/>
+  <rect x="40" y="858" width="740" height="30" rx="10" fill="#eaf0fe"/>
+  <text x="56" y="878" class="bt" fill="#2563eb">What it caught in our own book — June 2026</text>
+  <text x="56" y="910" class="t">• NMB buys vs ABC Securities — <tspan font-weight="700">76% of our flow vs their 4% market share</tspan> (z = 6.3), while they were unloading a stake</text>
+  <text x="72" y="927" class="chip" fill="#dc2626">→ POTENTIALLY EXCEPTIONAL</text>
+  <text x="56" y="951" class="t">• MEN sells vs Online Securities — 72% of our flow vs their 3.6% market share (z = 6.4)</text>
+  <text x="72" y="968" class="chip" fill="#dc2626">→ POTENTIALLY EXCEPTIONAL</text>
+  <text x="56" y="992" class="t">• MNBBL buys vs Ashutosh — 58% of our flow, <tspan font-weight="700">but that broker was #1 with 28% of the entire market that day</tspan></text>
+  <text x="72" y="1009" class="chip" fill="#059669">→ LIKELY NORMAL — they simply were the liquidity</text>
+  <text x="56" y="1033" class="t">• Execution overall ≈ at market VWAP · zero fills outside the day’s range · no intra-firm crosses</text>
+  <text x="72" y="1050" class="chip" fill="#059669">→ CLEAN</text>
+
+  <rect x="820" y="858" width="740" height="206" rx="10" class="box" stroke="#8a93a6" stroke-dasharray="5 4"/>
+  <rect x="820" y="858" width="740" height="30" rx="10" fill="#eef0f4"/>
+  <text x="836" y="878" class="bt" fill="#5a6172">Where it can get more robust — the open asks</text>
+  <text x="836" y="910" class="t">• <tspan font-weight="700">order-level data</tspan> (placement time, limit price, modifications) → detect true front-running, not just bad fills</text>
+  <text x="836" y="934" class="t">• <tspan font-weight="700">full floor-sheet history</tspan> → deeper baselines for counterparty surprise, benchmarks and markouts</text>
+  <text x="836" y="958" class="t">• <tspan font-weight="700">the complete trade record</tspan> across all brokers &amp; schemes — today’s per-fill book covers part of the flow</text>
+  <text x="836" y="982" class="t">• <tspan font-weight="700">scheme holdings / NAV</tspan> → churn relative to fund size; approved lists per scheme</text>
+  <text x="836" y="1006" class="t">• <tspan font-weight="700">related-party declarations</tspan> → employee / affiliated-broker relationships, routing to affiliated brokers</text>
+  <text x="836" y="1030" class="t">• threshold calibration with the desk → agree what scores genuinely deserve a knock on the door</text>
+
+  <text x="40" y="1100" class="cap" font-size="12">A flag for review, not a verdict — attribution is at the fund/scheme level, deliberately never at the individual level.</text>
+</svg>

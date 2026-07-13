@@ -1,0 +1,53 @@
+# dbt project for NRC Gold-layer analytics.
+#
+# Scope: ONLY the Gold layer lives here. Bronze (file ingest) and Silver
+# (Pydantic contract validation, ticker canonicalization, source-tier
+# dedup) stay in Python — those are jobs dbt can't do idiomatically. Every
+# Gold model reads from `silver.*` via `{{ source(...) }}` and writes a
+# Delta table at `s3://nepse-lakehouse/gold/<name>/` via the delta plugin.
+#
+# Lineage visibility: run `dbt docs generate && dbt docs serve --port 8081`
+# for the column-level lineage UI. Dagster (via dagster-dbt) renders the
+# same models as first-class assets so you never have to context-switch
+# between UIs.
+
+name: nrc_analytics
+version: 1.0.0
+config-version: 2
+
+profile: nrc_analytics          # → dbt/profiles.yml target entry
+require-dbt-version: ">=1.8.0"
+
+# Paths — deliberately explicit. The seeds / snapshots / analyses dirs
+# exist as empty stubs today but are standard dbt layout so a new dev
+# finds what they expect.
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Per-directory config. Gold models materialize as external Delta tables
+# on MinIO. The location is constructed per-model by the
+# `gold_external_location()` macro (see macros/) — that macro has access
+# to `this` which project-level configs don't.
+models:
+  nrc_analytics:
+    gold:
+      # External Parquet on MinIO. Each model writes to
+      # s3://nepse-lakehouse/gold/<model_name>.parquet via
+      # gold_external_location() (see macros/). dbt-duckdb picks Parquet
+      # as the default format for external materialization when no plugin
+      # is specified. Rebuild-whole semantics — we don't need incremental
+      # for Gold at current data volumes (1,100 snapshot rows, 50k
+      # indicator rows).
+      +materialized: external
+      +format: parquet
+      +schema: gold
+      +meta:
+        owner: "data-platform"

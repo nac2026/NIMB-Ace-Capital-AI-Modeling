@@ -1,0 +1,78 @@
+[project]
+name = "nrc"
+version = "0.0.0"
+description = "NEPSE Research Copilot — monorepo root"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "nrc-contracts",
+  "nrc-compute",
+  "nrc-storage",
+  "nrc-smtm",
+  "nrc-llm",
+  "nrc-embeddings",
+  "nrc-nepal",
+  "nrc-observability",
+  "nrc-ingestion",
+  "nrc-processing",
+  "nrc-pipelines",
+  "nrc-tools",
+  "nrc-orchestrator",
+  "nrc-ui",
+  "nrc-simulator",
+  "nrc-marketfeed",
+  "nrc-newsfeed",
+  "nrc-notifications",
+]
+
+[tool.uv.workspace]
+members = ["libs/*", "services/*"]
+exclude = ["services/web"]
+
+# Wire internal packages as workspace sources so `uv sync` installs them editable.
+[tool.uv.sources]
+nrc-contracts      = { workspace = true }
+nrc-compute        = { workspace = true }
+nrc-storage        = { workspace = true }
+nrc-smtm           = { workspace = true }
+nrc-llm            = { workspace = true }
+nrc-embeddings     = { workspace = true }
+nrc-nepal          = { workspace = true }
+nrc-observability  = { workspace = true }
+nrc-ingestion      = { workspace = true }
+nrc-processing     = { workspace = true }
+nrc-pipelines      = { workspace = true }
+nrc-tools          = { workspace = true }
+nrc-orchestrator   = { workspace = true }
+nrc-ui             = { workspace = true }
+nrc-simulator      = { workspace = true }
+nrc-marketfeed     = { workspace = true }
+nrc-newsfeed       = { workspace = true }
+nrc-notifications  = { workspace = true }
+
+[tool.uv]
+# Root is workspace-only, not a distributable package.
+package = false
+
+[dependency-groups]
+dev = [
+  "pytest>=8",
+  "pytest-asyncio>=0.23",
+  "ruff>=0.6",
+  "mypy>=1.10",
+  "ipython>=8",
+  "psycopg[binary]>=3.3.3",
+  "openpyxl>=3.1.5",
+  "python-docx>=1.2.0",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
